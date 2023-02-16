@@ -71,6 +71,9 @@ class StaffCheck {
 						//writer.write(name.substring(0, name.indexOf("(")).trim()+"\n");
 						expApp++;
 						String job = name.substring(name.indexOf("(") + 1, name.lastIndexOf(")"));
+						if(job.contains("(")) {
+							System.err.println("Corrupted job: " + name + " at " + lineNum);
+						}
 						addAppearance(apps, new Appearance(job, name.substring(0, name.indexOf("(")).trim(), aspects[0]), lineNum);
 					}else {
 						System.err.println("Uncomplete bracket at " + lineNum);
