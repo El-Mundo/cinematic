@@ -2,6 +2,8 @@
 *.mp4
 *.mov
 *.avi
+#Do not include unconverted xlsx OCR files
+OCR/JAVA/source-xls/
 
 ##################### PYTHON IGNORE ##########################
 # Byte-compiled / optimized / DLL files
