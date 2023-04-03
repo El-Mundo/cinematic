@@ -5,10 +5,10 @@ package GUI.JAVA.gui;
  * https://github.com/El-Mundo/Soundshop
  */
 
-import java.awt.Graphics2D;
-import java.awt.RenderingHints;
+//import java.awt.Graphics2D;
+//import java.awt.RenderingHints;
 
-import GUI.JAVA.MetaVisual;
+//import GUI.JAVA.MetaVisual;
 import processing.awt.PGraphicsJava2D;
 import processing.core.PApplet;
 
@@ -23,14 +23,14 @@ public abstract class Scene extends PGraphicsJava2D {
 	
 	public void draw() {
 		beginDraw();
-		antialiase();
+		//antialiase();
 		drawContent();
 		endDraw();
 	}
 	
 	public abstract void drawContent();
 	
-	private void antialiase() {
+	/*private void antialiase() {
 		//Processing's anti-aliasing params can only be changed in settings() in non-PDE mode,
 		//so I used JAVA's native anti-aliasing functions in the Graphics2D class.
 		Graphics2D nativGraphics2d;
@@ -53,5 +53,5 @@ public abstract class Scene extends PGraphicsJava2D {
 			//Nothing done if no anti-aliasing needed
 			break;
 		}
-	}
+	}*/
 }

@@ -10,7 +10,7 @@ import java.io.IOException;
 //Use this program to filter the name of private and state-owned film studios
 public class PrivateFilter {
 	private static final String MAIN_META = "metadata.csv", EXTRA_META = "metadata-extra.csv";
-	private static final String STUDIOS = "OCR/studioes.csv";
+	private static final String STUDIOS = "OCR/studios.csv";
 
 	// In the extra metadata, there are two exceptional entries made by state-owned studios: 
 	// "中央电影摄影场一厂", "中央电影摄影场二厂".
@@ -27,57 +27,77 @@ public class PrivateFilter {
 		eReader.readLine();
 
 		while((line = eReader.readLine()) != null) {
-			String studio = line.split(",")[4];
-			
-			if(!isRecordedStudio(studio)) {
-				System.out.println("New private studio \"" + studio + "\" found.");
+			String studioString = line.split(",")[4];
+			String[] studios;
 
-				appendStudio(studio, "Shanghai (private)");
-				count++;
+			if(studioString.contains("&")) {
+				studios = studioString.split("&");
+				for (int i=0; i<studios.length; i++) {
+					studios[i] = studios[i].trim();
+				}
+			} else {
+				studios = new String[1];
+				studios[0] = studioString;
+			}
+			
+			for (String studio : studios) {
+				if(!isRecordedStudio(studio)) {
+					System.out.println("New private studio \"" + studio + "\" found.");
+
+					appendStudio(studio, "Shanghai (private)");
+					count++;
+				}
 			}
 		}
 
-		System.out.println(count + " private studios in extra list found.");
+		System.out.println(count + " new private studios in extra list found.");
 		count = 0;
 		int count2 = 0;
 		System.console().readLine();
 
 		while((line = mReader.readLine()) != null) {
-			String studio = line.split(",")[4];
-			
-			if(!isRecordedStudio(studio)) {
-				System.out.println("New studio \"" + studio + "\" found. Add to recordance?\n(-b: Beijing, -s: Shanghai (state), -p: Shanghai (private), -c: Changchun, -g: Canton, -m: misc");
-				String input = System.console().readLine();
-				if(input.equalsIgnoreCase("b")) {
-					count++;
-					appendStudio(studio, "Beijing");
-				} else if(input.equalsIgnoreCase("s")) {
-					count++;
-					appendStudio(studio, "Shanghai (state)");
-				} else if(input.equalsIgnoreCase("p")) {
-					count2++;
-					appendStudio(studio, "Shanghai (private)");
-				} else if(input.equalsIgnoreCase("c")) {
-					count++;
-					appendStudio(studio, "Changchun");
-				} else if(input.equalsIgnoreCase("g")) {
-					count++;
-					appendStudio(studio, "Canton");
-				} else {
-					count++;
-					appendStudio(studio, "Misc");
+			String studioString = line.split(",")[4];
+			String[] studios;
+
+			if(studioString.contains("&")) {
+				studios = studioString.split("&");
+				for (int i=0; i<studios.length; i++) {
+					studios[i] = studios[i].trim();
 				}
 			} else {
-				if(isPrivate(studio)) {
-					count2++;
-				}else {
-					count++;
+				studios = new String[1];
+				studios[0] = studioString;
+			}
+			
+			for (String studio : studios) {
+				if(!isRecordedStudio(studio)) {
+					System.out.println("New studio \"" + studio + "\" found. Add to recordance?\n(-b: Beijing, -s: Shanghai (state), -p: Shanghai (private), -c: Northeast, -g: Canton, -m: misc");
+					String input = System.console().readLine();
+					if(input.equalsIgnoreCase("b")) {
+						count++;
+						appendStudio(studio, "Beijing");
+					} else if(input.equalsIgnoreCase("s")) {
+						count++;
+						appendStudio(studio, "Shanghai (state)");
+					} else if(input.equalsIgnoreCase("p")) {
+						count2++;
+						appendStudio(studio, "Shanghai (private)");
+					} else if(input.equalsIgnoreCase("c")) {
+						count++;
+						appendStudio(studio, "Northeast");
+					} else if(input.equalsIgnoreCase("g")) {
+						count++;
+						appendStudio(studio, "Canton");
+					} else {
+						count++;
+						appendStudio(studio, "Misc");
+					}
 				}
 			}
 		}
 
-		System.out.println(count2 + " private studios in main list found.");
-		System.out.println(count + " state studios in main list found.");
+		System.out.println(count2 + " new private studios in main list found.");
+		System.out.println(count + " new state studios in main list found.");
 
 		eReader.close();
 		mReader.close();

@@ -12,8 +12,14 @@ package GUI.JAVA;
 import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.Toolkit;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
+
+import javax.swing.JFrame;
 
 import processing.core.*;
+import processing.awt.PSurfaceAWT.SmoothCanvas;
+import GUI.JAVA.scenes.TestScene;
 
 public class MetaVisual extends PApplet {
 	private final static int DEFAULT_WIDTH = 720, DEFAULT_HEIGHT = 480;
@@ -25,9 +31,15 @@ public class MetaVisual extends PApplet {
 
 	public static Frame nativeWindow;
 	public static MetaVisual main;
+	public static boolean forceQuit = false;
 
 	public static int antialiasingLevel = 0;
-	private static int state = 0;
+	private static int state = -1;
+
+	public static int cursorX, cursorY, pCursorX, pcursorY;
+	public static boolean clicked = false, pClicked = false;
+
+	private TestScene testScene;
 
 	public static void main(String args[]) {
 		PApplet.main("GUI.JAVA.MetaVisual");
@@ -53,7 +65,7 @@ public class MetaVisual extends PApplet {
 	public void setup() {
 		//surface.setIcon(GraphicResouces.ICON);
 		//Initialize the first scene
-		fileSelectScene = new FileSelectScene(DEFAULT_WIDTH, DEFAULT_HEIGHT, this);
+		testScene = new TestScene(DEFAULT_WIDTH, DEFAULT_HEIGHT, this);
 				
 		//To make the window adaptable for most devices
 		surface.setResizable(true);
@@ -64,6 +76,85 @@ public class MetaVisual extends PApplet {
 		
 		JFrame frame = (JFrame)nativeWindow;
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+	@Override
+	public void draw() {
+		background(0);
+		translate(frameOffsetX, frameOffsetY);
+		scale(frameScale);
+		
+		switch (state) {
+		case -1: //Test scene
+			if(testScene != null) {
+				testScene.draw();
+				image(testScene, 0, 0);
+			}
+			break;
+		}
+				
+		pCursorX = cursorX;
+		pcursorY = cursorY;
+		pClicked = clicked;
+		cursorX = (int)((float)(this.mouseX - frameOffsetX) / frameScale);
+		cursorY = (int)((float)(this.mouseY - frameOffsetY) / frameScale);
+		circle(cursorX, cursorY, 6.0f / frameScale);
+		
+		if(forceQuit) exit();
+	}
+	
+	@Override
+	public void mousePressed() {
+		clicked = true;
+	}
+	
+	@Override
+	public void mouseReleased() {
+		clicked = false;
+	}
+	
+	@Override
+	public void mouseExited() {
+		clicked = false;
+	}
+	
+	@Override
+	public void focusLost() {
+		clicked = false;
+		pClicked = false;
+	}
+	
+	public void resize() {
+		//Use the shorter edge to define the scale factor
+		if((float)width / (float)height < DEFAULT_RATIO) {
+			//When the new ratio is higher than the default, use width for resizing
+			frameScale = (float)width / DEFAULT_WIDTH;
+			frameOffsetY = ((float)height - (float)DEFAULT_HEIGHT * frameScale) * 0.5f;
+			frameOffsetX = 0;
+		}else {
+			//When the new ratio is wider than the default, use height for resizing
+			frameScale = (float)height / DEFAULT_HEIGHT;
+			frameOffsetX = ((float)width - (float)DEFAULT_WIDTH * frameScale) * 0.5f;
+			frameOffsetY = 0;
+		}
+	}
+	
+	private static ComponentListener resizeListener = new ComponentListener() {
+		@Override
+		public void componentResized(ComponentEvent e) {
+			((MetaVisual)main).resize();
+		}
+		
+		@Override
+		public void componentShown(ComponentEvent e) {}
+		@Override
+		public void componentMoved(ComponentEvent e) {}
+		@Override
+		public void componentHidden(ComponentEvent e) {}
+	};
+	
+	public int getState() {
+		return state;
 	}
 	
 }
