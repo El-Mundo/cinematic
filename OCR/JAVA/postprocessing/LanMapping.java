@@ -488,7 +488,9 @@ class LanMapping {
 			reader.close();
 		}
 		System.out.println(total + " movies found in total.");
+		System.out.println("Main line: " + mainLine);
 		writer.close();
+		mReader.close();
 }
 
 }

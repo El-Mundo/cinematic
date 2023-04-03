@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,7 +9,7 @@ import net.sourceforge.pinyin4j.*;
 import net.sourceforge.pinyin4j.format.*;
 import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
 
-class Main {
+public class RomanizeMain {
 	public static String inputPath = "OCR_CHRONICAL.csv", outputPath = "OCR_PINYIN.csv";
 	public static String listPath = "Romanized_List.csv";
 	public static boolean numeric_accent = false;
