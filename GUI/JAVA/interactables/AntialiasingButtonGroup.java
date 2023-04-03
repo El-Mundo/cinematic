@@ -1,6 +1,6 @@
 package GUI.JAVA.interactables;
 
-import GUI.JAVA.MetaVisual;
+import GUI.JAVA.main.MetaVisual;
 
 public class AntialiasingButtonGroup extends ButtonGroup {
 

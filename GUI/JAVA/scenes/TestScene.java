@@ -27,7 +27,9 @@ public class TestScene extends Scene {
 	public void drawContent() {
 		background(255);
 
-		text("Hello World.", 20, 20);
+		fill(0);
+		textSize(80);
+		text("Hello World.", 20, 120);
 		
 		/*for(Button b : buttons) {
 			b.display(this);

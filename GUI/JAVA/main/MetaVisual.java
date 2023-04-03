@@ -1,4 +1,4 @@
-package GUI.JAVA;
+package GUI.JAVA.main;
 
 /*
  * @version 2.0.1
@@ -22,7 +22,7 @@ import processing.awt.PSurfaceAWT.SmoothCanvas;
 import GUI.JAVA.scenes.TestScene;
 
 public class MetaVisual extends PApplet {
-	private final static int DEFAULT_WIDTH = 720, DEFAULT_HEIGHT = 480;
+	private final static int DEFAULT_WIDTH = 1920, DEFAULT_HEIGHT = 1080;
 	private final static float DEFAULT_SCALE = 0.75F, DEFAULT_RATIO = (float)DEFAULT_WIDTH / (float)DEFAULT_HEIGHT;
 	private final static Dimension WINDOW_MINIMUM = new Dimension(DEFAULT_WIDTH / 2, DEFAULT_HEIGHT / 2);
 	

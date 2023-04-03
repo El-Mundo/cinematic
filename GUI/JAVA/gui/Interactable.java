@@ -1,11 +1,6 @@
 package GUI.JAVA.gui;
 
-/* 
- * This GUI framework was originally used in:
- * https://github.com/El-Mundo/Soundshop
- */
-
-import GUI.JAVA.MetaVisual;
+import GUI.JAVA.main.MetaVisual;
 import processing.core.PGraphics;
 import processing.core.PImage;
 
