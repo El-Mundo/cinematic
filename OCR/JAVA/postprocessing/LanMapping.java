@@ -9,8 +9,8 @@ import java.util.ArrayList;
 class LanMapping {
 	private static final String PARENT = "OCR/source/plain_text/csv/";
 	private static final String MAIN_META = "metadata.csv";
-	private static final String ORGANIZATIONS = "OCR/source/organizations.csv", NONHAN_NAMES = "OCR/source/non-han_chn_names_or_special_authorship.csv";
-	private static final String JOB_TITLES = "OCR/source/jobs.csv";
+	private static final String ORGANIZATIONS = "OCR/organizations.csv", NONHAN_NAMES = "OCR/non-han_chn_names_or_special_authorship.csv";
+	private static final String JOB_TITLES = "OCR/jobs.csv";
 	private static final String TEMP_LIST = "metadata_temp.csv";
 	private static final String[] DIRECTORSHIP_SIGNS = {"导演", "编导", "总导演"},
 		SCRIPT_AUTHOTSHIP_SIGNS = {"编剧", "舞剧编剧", "粤剧编剧", "改编", "原作", "编导", "舞剧编导", "剧本整理", "舞台剧本整理", "舞台本整理", "整理改编"}; //"编导"：Scriptwriter+director
