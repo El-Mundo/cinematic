@@ -1,3 +1,9 @@
+/* 
+ * Library:
+ * -Pinyin4j
+ * https://pinyin4j.sourceforge.net
+ */
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;

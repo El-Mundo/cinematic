@@ -14,13 +14,12 @@ public class TestScene extends Scene {
 	public TestScene(int width, int height, PApplet parent) {
 		super(width, height, parent);
 		
-		/*smoothSetting = new AntialiasingButtonGroup();
-		amplitudeFilterSwitch = new AmplitudeFilterButtonGroup();
+		smoothSetting = new AntialiasingButtonGroup();
 		
-		buttons = new Button[8];
+		buttons = new Button[3];
 		buttons[0] = new ButtonGroup.GroupedButton(GraphicResouces.SMOOTH_OFF, 128, 8, 2, smoothSetting);
 		buttons[1] = new ButtonGroup.GroupedButton(GraphicResouces.SMOOTH_2X, 192, 8, 2, smoothSetting);
-		buttons[2] = new ButtonGroup.GroupedButton(GraphicResouces.SMOOTH_3X, 240, 8, 2, smoothSetting);*/
+		buttons[2] = new ButtonGroup.GroupedButton(GraphicResouces.SMOOTH_3X, 240, 8, 2, smoothSetting);
 	}
 
 	@Override
@@ -30,10 +29,11 @@ public class TestScene extends Scene {
 		fill(0);
 		textSize(80);
 		text("Hello World.", 20, 120);
+		image(GraphicResouces.SMOOTH, 16, 10, 96, 20);
 		
-		/*for(Button b : buttons) {
+		for(Button b : buttons) {
 			b.display(this);
-		}*/
+		}
 	}
 
 }

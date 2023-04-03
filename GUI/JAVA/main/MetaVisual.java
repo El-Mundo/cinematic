@@ -1,12 +1,16 @@
 package GUI.JAVA.main;
 
 /*
- * @version 2.0.1
+ * @version 0.0.1
  * @author Shuangyuan Cao
  * @since 0.0.1
  * 
  * Github page:
  * https://github.com/El-Mundo/cinematic
+ * 
+ * Libraries:
+ * -Processing 4.1.1
+ * https://processing.org/download
  */
 
 import java.awt.Dimension;
@@ -19,7 +23,8 @@ import javax.swing.JFrame;
 
 import processing.core.*;
 import processing.awt.PSurfaceAWT.SmoothCanvas;
-import GUI.JAVA.scenes.TestScene;
+import GUI.JAVA.gui.Scene;
+import GUI.JAVA.scenes.*;
 
 public class MetaVisual extends PApplet {
 	private final static int DEFAULT_WIDTH = 1920, DEFAULT_HEIGHT = 1080;
@@ -39,10 +44,11 @@ public class MetaVisual extends PApplet {
 	public static int cursorX, cursorY, pCursorX, pcursorY;
 	public static boolean clicked = false, pClicked = false;
 
-	private TestScene testScene;
+	private Scene loadedScene;
+	private MainScene mainScene;
 
 	public static void main(String args[]) {
-		PApplet.main("GUI.JAVA.MetaVisual");
+		PApplet.main("GUI.JAVA.main.MetaVisual");
 	}
 
 	@Override
@@ -65,7 +71,8 @@ public class MetaVisual extends PApplet {
 	public void setup() {
 		//surface.setIcon(GraphicResouces.ICON);
 		//Initialize the first scene
-		testScene = new TestScene(DEFAULT_WIDTH, DEFAULT_HEIGHT, this);
+		mainScene = new MainScene(DEFAULT_WIDTH, DEFAULT_HEIGHT, this);
+		loadedScene = new TestScene(DEFAULT_WIDTH, DEFAULT_HEIGHT, this);
 				
 		//To make the window adaptable for most devices
 		surface.setResizable(true);
@@ -84,14 +91,12 @@ public class MetaVisual extends PApplet {
 		translate(frameOffsetX, frameOffsetY);
 		scale(frameScale);
 		
-		switch (state) {
-		case -1: //Test scene
-			if(testScene != null) {
-				testScene.draw();
-				image(testScene, 0, 0);
-			}
-			break;
+		if(loadedScene != null) {
+			loadedScene.draw();
+			image(loadedScene, 0, 0);
 		}
+		mainScene.draw();
+		image(mainScene, 0, 0);
 				
 		pCursorX = cursorX;
 		pcursorY = cursorY;

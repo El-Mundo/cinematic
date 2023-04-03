@@ -118,7 +118,7 @@ public class PrivateFilter {
 		return false;
 	}
 
-	//Must be used for recorded studios
+	/*//Must be used for recorded studios
 	private static boolean isPrivate(String name) throws IOException {
 		File f = new File(STUDIOS);
 		BufferedReader r = new BufferedReader(new FileReader(f));
@@ -132,7 +132,7 @@ public class PrivateFilter {
 		}
 		r.close();
 		return false;
-	}
+	}*/
 	
 	private static void appendStudio(String name, String category) throws IOException {
 		File org = new File(STUDIOS);
