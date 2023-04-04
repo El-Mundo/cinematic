@@ -69,6 +69,7 @@ public class MetaVisual extends PApplet {
 
 	@Override
 	public void setup() {
+		GUI.JAVA.gui.GraphicResouces.initializeImages();
 		//surface.setIcon(GraphicResouces.ICON);
 		//Initialize the first scene
 		mainScene = new MainScene(DEFAULT_WIDTH, DEFAULT_HEIGHT, this);

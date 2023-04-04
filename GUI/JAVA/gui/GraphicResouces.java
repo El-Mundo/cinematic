@@ -1,14 +1,36 @@
 package GUI.JAVA.gui;
 
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
+import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+import GUI.JAVA.main.MetaVisual;
+import processing.core.PApplet;
 import processing.core.PImage;
 
+@SuppressWarnings("deprecation")
 public class GraphicResouces {
+
+	public static PImage res_map;
+
+	public static void initializeImages() {
+		PApplet p = MetaVisual.main;
+		res_map = p.loadImage("GUI/res/China_map.png");
+	}
+
+	private static Image loadNativeImage(String relativePath) {
+		BufferedImage img = new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);
+		try {
+			img = ImageIO.read(new File(relativePath));
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return img;
+	}
 	
 	private static PImage byteToImage(byte[] bytes) {
 	    try {
@@ -61,6 +83,7 @@ public class GraphicResouces {
 				-20,0,0,0,0,73,69,78,68,-82,66,96,-126
 			}
 	};
+
 	private final static byte[][] BYTE_ANTIALIASE_SWITCH = {
 			{
 				-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,24,

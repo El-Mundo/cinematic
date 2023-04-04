@@ -8,7 +8,7 @@ package GUI.JAVA.gui;
 //import java.awt.Graphics2D;
 //import java.awt.RenderingHints;
 
-//import GUI.JAVA.MetaVisual;
+//import GUI.JAVA.main.MetaVisual;
 import processing.awt.PGraphicsJava2D;
 import processing.core.PApplet;
 
