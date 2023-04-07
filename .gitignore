@@ -1,5 +1,7 @@
 # Do not include video files
 *.mp4
+!CV/WomanBasketballNo5_clip.mp4
+CV/Temp/
 *.mov
 *.avi
 #Do not include unconverted xlsx OCR files
