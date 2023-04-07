@@ -11,6 +11,14 @@ public class VideoFormatting {
 		File[] files = dir.listFiles();
 		try{
 			for (File file : files) {
+				if(file.getName().equals(".DS_Store")) continue;
+
+				if(file.getName().endsWith(".mp4")) {
+					//System.out.println("File: " + file.getName() + " is already in mp4 format");
+					continue;
+				}
+
+				//Rename to .mp4 if not
 				File rename = new File(file.getAbsolutePath() + ".mp4");
 
 				if (rename.exists())
@@ -23,7 +31,6 @@ public class VideoFormatting {
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
-			
 	}
 	
 }
