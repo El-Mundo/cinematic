@@ -3,6 +3,7 @@ package CV.JAVA;
 import java.io.File;
 import java.io.IOException;
 
+//This script converts downloaded source videos to mp4 format
 public class VideoFormatting {
 	private static final String TEMP_VIDEO_DIR = "../Temp";
 
