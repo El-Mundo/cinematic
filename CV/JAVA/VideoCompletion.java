@@ -22,6 +22,9 @@ public class VideoCompletion {
 		int collectedDocumentary = 0, documentaryTotal = 0;
 		int collectedPerformance = 0, performanceTotal = 0;
 		int collectedOpera = 0, operaTotal = 0;
+
+		int documentaryAvgReel = 0, featureAvgReel = 0;
+		int reelAvailibleDocumentary = 0, reelAvailibleFeature = 0;
 		
 		String line = null;
 		
@@ -31,7 +34,7 @@ public class VideoCompletion {
 			String key = values[0];
 
 			//if(!isFeatureFilm(key)) System.out.println(getFilmType(key));
-			System.out.println(values[1] + " is Feature: " + isFeatureFilm(key) + ", is Private:" + isPrivateFilm(values[3]));
+			//System.out.println(values[1] + " is Feature: " + isFeatureFilm(key) + ", is Private:" + isPrivateFilm(values[3]));
 			if(isFeatureFilm(key)) {
 				featureTotal++;
 				if(!values[4].isEmpty()) collectedFeature++;
@@ -39,6 +42,13 @@ public class VideoCompletion {
 				if(!isPrivateFilm(values[3])) {
 					stateFeatureTotal++;
 					if(!values[4].isEmpty()) collectedStateFeature++;
+					else System.out.println("Undetected state feature: " + values[1]);
+				}
+
+				int r = getFilmReels(key);
+				if(r > 0) {
+					featureAvgReel += r;
+					reelAvailibleFeature++;
 				}
 			}
 			if(isPrivateFilm(values[3])) {
@@ -49,6 +59,11 @@ public class VideoCompletion {
 			if(getFilmType(key).equals("Artistic Documentary")) {
 				documentaryTotal++;
 				if(!values[4].isEmpty()) collectedDocumentary++;
+				int r = getFilmReels(key);
+				if(r > 0) {
+					documentaryAvgReel += r;
+					reelAvailibleDocumentary++;
+				}
 			}
 
 			if(getFilmType(key).equals("Performance")) {
@@ -71,6 +86,8 @@ public class VideoCompletion {
 		System.out.println("Collected " + collectedDocumentary + " out of " + documentaryTotal + " documentaries.");
 		System.out.println("Collected " + collectedPerformance + " out of " + performanceTotal + " performances.");
 		System.out.println("Collected " + collectedOpera + " out of " + operaTotal + " operas.");
+		System.out.println("\nFeature film average reel length: " + (featureAvgReel / reelAvailibleFeature));
+		System.out.println("Documentary average reel length: " + (documentaryAvgReel / reelAvailibleDocumentary));
 	}
 
 	private static boolean isFeatureFilm(String key) throws IOException {
@@ -134,6 +151,37 @@ public class VideoCompletion {
 				mReader.close();
 				eReader.close();
 				return type;
+			}
+		}
+		mReader.close();
+		eReader.close();
+		throw new IOException("Cannot find film with key: " + key);
+	}
+
+	//Return -1 if not presented in data
+	private static int getFilmReels(String key) throws IOException {
+		File mFile = new File(META);
+		File eFile = new File(EXTRA);
+		BufferedReader mReader = new BufferedReader(new FileReader(mFile));
+		BufferedReader eReader = new BufferedReader(new FileReader(eFile));
+
+		String line = null;
+		while((line = mReader.readLine()) != null) {
+			String[] values = line.split(",");
+			String mKey = values[0];
+			if(mKey.equals(key)) {
+				mReader.close();
+				eReader.close();
+				return Integer.parseInt(values[6]);
+			}
+		}
+		while((line = eReader.readLine()) != null) {
+			String[] values = line.split(",");
+			String eKey = values[0];
+			if(eKey.equals(key)) {
+				mReader.close();
+				eReader.close();
+				return -1;
 			}
 		}
 		mReader.close();
