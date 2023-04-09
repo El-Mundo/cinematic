@@ -1,3 +1,5 @@
+package OCR.JAVA.postprocessing;
+
 public class Entry {
 	public String romanized, title, year, translated, description;
 	public int code = -1;
