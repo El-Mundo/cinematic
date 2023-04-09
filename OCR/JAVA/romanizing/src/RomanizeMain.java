@@ -1,3 +1,5 @@
+package OCR.JAVA.romanizing.src;
+
 /* 
  * Library:
  * -Pinyin4j

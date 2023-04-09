@@ -4,14 +4,66 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class VideoCompletion {
 	public static final boolean COUNT_MUSICAL_AS_FEATURE = true;
 
 	public static final String SOURCE = "CV/video_collection.csv";
 	public static final String META = "metadata.csv", EXTRA = "metadata-extra.csv";
+	public static final String VIDEO_FILES = "../Temp";
 
 	public static void main(String[] args) throws IOException {
+		//checkCompletion();
+		checkMissingFile();
+	}
+
+	public static void checkMissingFile() throws IOException {
+		File source = new File(SOURCE);
+		BufferedReader reader = new BufferedReader(new FileReader(source));
+		reader.readLine();
+
+		String line = null;
+		ArrayList<String> titles = new ArrayList<String>();
+
+		File dir = new File(VIDEO_FILES);
+		File[] files = dir.listFiles();
+		
+		for (File file : files) {
+			if(file.getName().endsWith(".mp4")) {
+				String expectedTitle = file.getName().substring(0, file.getName().length() - 4);
+				titles.add(expectedTitle);
+			}
+		}
+
+		while((line = reader.readLine()) != null) {
+			String[] values = line.split(",", -1);
+			String title = values[1];
+			title = title.replace("、", "");
+			title = title.replace("“", "");
+			title = title.replace("”", "");
+			String downloadable = values[4];
+			if(downloadable.equals("True")) {
+				boolean found = false;
+				for (String string : titles) {
+					if(string.equals(title)) {
+						titles.remove(string);
+						found = true;
+						break;
+					}
+				}
+				if(!found) System.out.println("Missing entry: " + title);
+			}
+		}
+
+		for (String t : titles) {
+			System.out.println("File " + t + ".mp4 cannot match with any enrty.");
+		}
+
+		reader.close();
+	}
+
+	public static void checkCompletion() throws IOException {
 		File source = new File(SOURCE);
 		BufferedReader reader = new BufferedReader(new FileReader(source));
 		reader.readLine();
