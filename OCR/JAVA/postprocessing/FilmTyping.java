@@ -121,6 +121,7 @@ public class FilmTyping {
 		return aspects;
 	}
 
+	@SuppressWarnings("unused")
 	protected static void typeFilms() throws IOException {
 		System.out.println("Hello World!");
 
@@ -142,6 +143,36 @@ public class FilmTyping {
 
 		mReader.close();
 		eReader.close();
+	}
+
+	public static String getFilmType(String line, boolean isExtra) throws IOException {
+		String[] data = line.split(",", -1);
+		Film film = new Film(data[0], data[1], data[2], data[3], data[4], data[5], isExtra ? "" : data[6], isExtra ? data[6] : data[7]);
+
+		String[] aspects = film.special.split(";");
+		for(int i=0; i<aspects.length; i++) {
+			aspects[i] = aspects[i].trim();
+
+			File asp = new File(ASPECTS);
+			BufferedReader sReader = new BufferedReader(new FileReader(asp));
+	
+			String line2, cat = "";
+			while((line2 = sReader.readLine()) != null) {
+				String as = line2.split(",")[0];
+				if(as.equals(aspects[i])) {
+					cat = line2.split(",")[1];
+					break;
+				}
+			}
+			sReader.close();
+			
+			if(cat.isBlank()) continue;
+			else {
+				return cat;
+			}
+		}
+
+		return "Feature";
 	}
 
 }
