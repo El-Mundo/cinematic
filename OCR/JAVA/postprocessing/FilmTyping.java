@@ -31,7 +31,8 @@ class Film {
 
 public class FilmTyping {
 	private static final String MAIN = "metadata.csv", EXTRA = "metadata-extra.csv", ASPECTS = "OCR/special_aspects.csv";
-	public static String[] types = {"Feature", "Musical", "Performance", "Artistic Documentary", "Opera"};
+	public static String[] SUGGESTED_TYPES = {"Feature", "Musical", "Performance", "Artistic Documentary", "Opera"};
+	public static String[] FILM_TYPES = {"Feature", "Performance", "Artistic Documentary", "Opera"};
 	//Performance: All non-operatic performances, including singing, dancing, and stage drama.
 
 	public static void main(String[] args) throws IOException {
@@ -98,11 +99,11 @@ public class FilmTyping {
 					if(aspects[i].contains("Opera")) {
 						System.out.println("New aspect \"" + aspects[i] + "\" found. Added to Opera type.");
 						System.console().readLine();
-						type = types[4];
+						type = SUGGESTED_TYPES[4];
 					} else {
 						System.out.println("New aspect \"" + aspects[i] + "\" found. Add to recordance by type:\n(-(-1):None, -0:Feature, -1:Musical, -2:Performance, -3:Artistic Documentary, -4:Opera");
 						int input = Integer.parseInt(System.console().readLine());
-						type = input > 0 ? types[input] : "";
+						type = input > 0 ? SUGGESTED_TYPES[input] : "";
 					}
 					System.out.println();
 				}
