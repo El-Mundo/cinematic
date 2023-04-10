@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /*
  * Use this finalised utility class to store information about a film.
@@ -158,6 +159,23 @@ public class Film {
 		return staffArray;
 	}
 
+	public HashMap<String, String> getOtherStaffNameArrayWithRole() throws IOException {
+		HashMap<String, String> staffMap = new HashMap<String, String>();
+		if(staff.isBlank()) return staffMap; //Return an empty map if there is no staff
+
+		String[] staffArray = this.staff.split("/");
+		for(int i = 0; i < staffArray.length; i++) {
+			if(!staffArray[i].contains("(")) {
+				throw new IOException("A member of staff does not have a role: " + staffArray[i] + " in film: " + this.title + "(" + this.key + ")");
+			}
+			String name = staffArray[i].substring(0, staffArray[i].indexOf("("));
+			name = name.trim();
+			String role = staffArray[i].substring(staffArray[i].indexOf("(") + 1, staffArray[i].indexOf(")"));
+			staffMap.put(name, role);
+		}
+		return staffMap;
+	}
+
 	//Only returns true if a name is found in the director, scriptwriter, or other staff fields
 	public boolean hasFilmmaker(String name) throws IOException {
 		String[] directorArray = getDirectorNameArray();
@@ -203,6 +221,29 @@ public class Film {
 			if(acting.equals(name)) return true;
 		}
 		return false;
+	}
+
+	//Returns a list of roles that a name has in a film
+	public ArrayList<String> getRolesOfAName(String name) throws IOException {
+		String[] directorArray = getDirectorNameArray();
+		String[] scriptwriterArray = getScriptwriterNameArray();
+		HashMap<String, String> otherStaffArrayWithRole = getOtherStaffNameArrayWithRole();
+		String[] otherStaffArray = otherStaffArrayWithRole.keySet().toArray(new String[0]);
+		String[] actingArray = getActingNameArray();
+		ArrayList<String> roles = new ArrayList<String>();
+		for(String director : directorArray) {
+			if(director.equals(name)) roles.add("Director");
+		}
+		for(String scriptwriter : scriptwriterArray) {
+			if(scriptwriter.equals(name)) roles.add("Scriptwriter");
+		}
+		for(String otherStaff : otherStaffArray) {
+			if(otherStaff.equals(name)) roles.add(otherStaffArrayWithRole.get(name));
+		}
+		for(String acting : actingArray) {
+			if(acting.equals(name)) roles.add("Acting");
+		}
+		return roles;
 	}
 
 	//Use this method to get an array of all entry films

@@ -11,7 +11,7 @@ import OCR.JAVA.Studio;
 
 public class GetNetwork {
 	protected static final boolean KEEP_ORGANIZATION_NAMES = false,
-			RUN_ALL_YEARS_AT_ONCE = true;
+			RUN_ALL_YEARS_AT_ONCE = false;
 
 	static final String META = "metadata-staff_plot.csv", EXTRA = "metadata-extra.csv", 
 			EDGES = "Network/edges.csv", NODES = "Network/nodes.csv";
@@ -25,8 +25,8 @@ public class GetNetwork {
 		try {
 			films = Film.initAllFilms();
 			if(!RUN_ALL_YEARS_AT_ONCE) {
-				for(int i=1949; i<1967; i++)
-					getAllNodesInYear(i);
+				//for(int i=1949; i<1967; i++)
+					getAllNodesInYear(1949);
 			} else {
 				getAllNodes();
 			}
@@ -59,10 +59,15 @@ public class GetNetwork {
 		}
 	}
 
-	private static void addAffiliationsToNode(Node node, ArrayList<Film> filmRange) throws IOException {
+	private static void addAffiliationsAndRolesToNode(Node node, ArrayList<Film> filmRange) throws IOException {
 		for (Film film : filmRange) {
 			if(film.hasName(node.name)) {
 				node.addAffiliation(film.production);
+
+				ArrayList<String> roles = film.getRolesOfAName(node.name);
+				for (String role : roles) {
+					node.addRole(role);
+				}
 			}
 		}
 	}
@@ -89,9 +94,13 @@ public class GetNetwork {
 			addNodes(staff, nodes, film);
 		}
 
+		int i = 0;
 		for (Node node : nodes) {
-			addAffiliationsToNode(node, filmsInYear);
+			addAffiliationsAndRolesToNode(node, filmsInYear);
 			node.getMainAffiliatedCategory();
+			node.getMainRole();
+			node.assignLocationInList(i);
+			i++;
 		}
 
 		System.out.println("\n\nTotal nodes: " + nodes.size() + " in year " + year + ".");
@@ -112,6 +121,7 @@ public class GetNetwork {
 			fWriter = new FileWriter(file);
 		}
 		BufferedWriter writer = new BufferedWriter(fWriter);
+		writer.append("Id,Label,GeoCategory,Affilations,Main Role,All Roles\n");
 		for (Node node : nodes) {
 			writer.append(node.toString() + "\n");
 		}
@@ -154,10 +164,14 @@ public class GetNetwork {
 			addNodes(staff, nodes, film);
 		}
 
+		int i = 0;
 		for (Node node : nodes) {
-			addAffiliationsToNode(node, films);
+			addAffiliationsAndRolesToNode(node, films);
 			node.getMainAffiliatedCategory();
+			node.getMainRole();
 			node.getFirstAppearanceCategory();
+			node.assignLocationInList(i);
+			i++;
 		}
 
 		System.out.println("\n\nTotal nodes: " + nodes.size() + ".");
