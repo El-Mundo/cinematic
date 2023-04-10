@@ -11,16 +11,18 @@ import java.util.ArrayList;
  * A Film with reels as negative number is one with no recordance of such information.
  */
 public class Film {
-	public String key, title, translated, production, colour, special, director, scriptwriter, acting, staff, plot;
+	public String key, title, translated, colour, special, director, scriptwriter, acting, staff, plot;
 	public int year, reels;
+	public Studio[] production;
 
 	public static final String METADATA_PATH = "metadata.csv", EXTRA_METADATA_PATH = "metadata-extra.csv", STAFF_PLOT_DATA_PATH = "metadata-staff_plot.csv";
+	public static final String ORGANISATION_LIST_PATH = "OCR/organizations.csv", LONG_PERSON_NAME_LIST_PATH = "OCR/non-han_chn_names_or_special_authorship.csv";
 
-	public Film(String key, String title, int year, String translated, String production, String colour, int reels, String special, String director, String scriptwriter, String acting, String staff, String plot) {
+	public Film(String key, String title, int year, String translated, String production, String colour, int reels, String special, String director, String scriptwriter, String acting, String staff, String plot) throws IOException {
 		this.key = key;
 		this.title = title;
 		this.translated = translated;
-		this.production = production;
+		this.production = productionAttributeToStudioNameArray(production);
 		this.colour = colour;
 		this.special = special;
 		this.director = director;
@@ -38,7 +40,7 @@ public class Film {
 		title = values[1];
 		year = Integer.parseInt(values[2]);
 		translated = values[3];
-		production = values[4];
+		production = productionAttributeToStudioNameArray(values[4]);
 		colour = values[5];
 		
 		if(isInMainMetadata) {
@@ -109,11 +111,25 @@ public class Film {
 	}
 
 	private static String[] staffAttributeToArray(String attribute) {
+		if(attribute.isBlank()) return new String[0];
+
 		String[] staffArray = attribute.split("/");
 		for(int i = 0; i < staffArray.length; i++) {
 			staffArray[i] = staffArray[i].trim();
 		}
 		return staffArray;
+	}
+	
+	private static Studio[] productionAttributeToStudioNameArray(String production) throws IOException {
+		if(production.isBlank()) return new Studio[0];
+
+		String[] proArray = production.split("&");
+		Studio[] proList = new Studio[proArray.length];
+		for(int i = 0; i < proArray.length; i++) {
+			proArray[i] = proArray[i].trim();
+			proList[i] = new Studio(proArray[i]);
+		}
+		return proList;
 	}
 
 	public String[] getDirectorNameArray() {
@@ -136,9 +152,57 @@ public class Film {
 			if(!staffArray[i].contains("(")) {
 				throw new IOException("A member of staff does not have a role: " + staffArray[i] + " in film: " + this.title + "(" + this.key + ")");
 			}
-			staffArray[i] = staffArray[i].substring(0, staffArray[i].indexOf("(")).trim();
+			staffArray[i] = staffArray[i].substring(0, staffArray[i].indexOf("("));
+			staffArray[i] = staffArray[i].trim();
 		}
 		return staffArray;
+	}
+
+	//Only returns true if a name is found in the director, scriptwriter, or other staff fields
+	public boolean hasFilmmaker(String name) throws IOException {
+		String[] directorArray = getDirectorNameArray();
+		String[] scriptwriterArray = getScriptwriterNameArray();
+		String[] otherStaffArray = getOtherStaffNameArray();
+		for(String director : directorArray) {
+			if(director.equals(name)) return true;
+		}
+		for(String scriptwriter : scriptwriterArray) {
+			if(scriptwriter.equals(name)) return true;
+		}
+		for(String otherStaff : otherStaffArray) {
+			if(otherStaff.equals(name)) return true;
+		}
+		return false;
+	}
+
+	//Only returns true if a name is found in the acting attribute
+	public boolean hasActorOrActress(String name) throws IOException {
+		String[] actingArray = getActingNameArray();
+		for(String acting : actingArray) {
+			if(acting.equals(name)) return true;
+		}
+		return false;
+	}
+
+	//Returns true if a name is found in the film
+	public boolean hasName(String name) throws IOException {
+		String[] directorArray = getDirectorNameArray();
+		String[] scriptwriterArray = getScriptwriterNameArray();
+		String[] otherStaffArray = getOtherStaffNameArray();
+		String[] actingArray = getActingNameArray();
+		for(String director : directorArray) {
+			if(director.equals(name)) return true;
+		}
+		for(String scriptwriter : scriptwriterArray) {
+			if(scriptwriter.equals(name)) return true;
+		}
+		for(String otherStaff : otherStaffArray) {
+			if(otherStaff.equals(name)) return true;
+		}
+		for(String acting : actingArray) {
+			if(acting.equals(name)) return true;
+		}
+		return false;
 	}
 
 	//Use this method to get an array of all entry films
@@ -162,4 +226,36 @@ public class Film {
 		eReader.close();
 		return films;
 	}
+
+	//Use this function to check if a name signed in a certain role is an organisation or a person
+	public static boolean isOrganisation(String name) throws IOException {
+		if(name.length() <= 3) return false;
+
+		File orgFile = new File(ORGANISATION_LIST_PATH);
+		File pFile = new File(LONG_PERSON_NAME_LIST_PATH);
+		BufferedReader orgReader = new BufferedReader(new FileReader(orgFile));
+		BufferedReader pReader = new BufferedReader(new FileReader(pFile));
+		String line = null;
+
+		while((line = orgReader.readLine()) != null) {
+			if(line.equals(name)) {
+				pReader.close();
+				orgReader.close();
+				return true;
+			}
+		}
+
+		while((line = pReader.readLine()) != null) {
+			if(line.equals(name)) {
+				pReader.close();
+				orgReader.close();
+				return false;
+			}
+		}
+			
+		pReader.close();
+		orgReader.close();
+		throw new IOException("Unexpected filmmaker name: \"" + name + "\"");
+	}
+	
 }
