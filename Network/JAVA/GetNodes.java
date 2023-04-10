@@ -82,12 +82,12 @@ public class GetNodes {
 			addNodes(staff, nodes, film);
 		}
 
-		System.out.println("\n\nTotal nodes: " + nodes.size() + " in year " + year + ".");
-
 		for (Node node : nodes) {
 			addAffiliationsToNode(node, filmsInYear);
-			node.getMainAffiatedCategory();
+			node.getMainAffiliatedCategory();
 		}
+
+		System.out.println("\n\nTotal nodes: " + nodes.size() + " in year " + year + ".");
 
 		//DEBUG_checkStudioEquality(new Studio("长春电影制片厂", "Changchun"), new Studio("长春电影制片厂", "Changchun"));
 		//DEBUG_checkStudioEquality(new Studio("北京电影制片厂", "Beijing"), new Studio("八一电影制片厂", "Beijing"));

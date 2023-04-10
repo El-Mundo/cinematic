@@ -34,13 +34,13 @@ public class Node {
 	}
 
 	public void addAffiliation(Studio studio) {
-		allAffiliated.add(studio);
+		if(!allAffiliated.contains(studio)) allAffiliated.add(studio);
 		addAffiliationCount(studio);
 	}
 
 	public void addAffiliation(Studio[] studio) {
 		for (Studio s : studio) {
-			allAffiliated.add(s);
+			if(!allAffiliated.contains(s)) allAffiliated.add(s);
 			addAffiliationCount(s);
 		}
 	}
@@ -56,7 +56,7 @@ public class Node {
 		}
 	}
 
-	public void getMainAffiatedCategory() {
+	public void getMainAffiliatedCategory() {
 		ArrayList<String> mostFrequent = mostFrequentCategory();
 		if(mostFrequent.size() > 1) {
 			System.out.println("Warning: " + name + " has more than one most frequent categories: ");
