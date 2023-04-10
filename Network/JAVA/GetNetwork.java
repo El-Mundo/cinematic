@@ -25,8 +25,8 @@ public class GetNetwork {
 		try {
 			films = Film.initAllFilms();
 			if(!RUN_ALL_YEARS_AT_ONCE) {
-				//for(int i=1949; i<1967; i++)
-					getAllNodesInYear(1949);
+				for(int i=1949; i<1967; i++)
+					getAllNodesInYear(i);
 			} else {
 				getAllNodes();
 			}
@@ -92,6 +92,11 @@ public class GetNetwork {
 			addNodes(actors, nodes, film);
 			String[] staff = film.getOtherStaffNameArray();
 			addNodes(staff, nodes, film);
+
+			if(film.year == 1960 && film.hasName("王丹凤")) {
+				System.out.println(film.title);
+				System.in.read();
+			}
 		}
 
 		int i = 0;
