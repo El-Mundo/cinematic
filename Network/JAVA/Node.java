@@ -254,9 +254,9 @@ public class Node {
 			String line;
 			while ((line = reader.readLine()) != null) {
 				String[] parts = line.split(",");
-				if(parts[0].equals(name)) {
+				if(parts[1].replaceAll("\"", "").equals(name)) {
 					reader.close();
-					NodeAppearance na = new NodeAppearance(year, parts[1], parts[1].contains("Shanghai (private)"));
+					NodeAppearance na = new NodeAppearance(year, parts[2].replaceAll("\"", ""), parts[2].contains("Shanghai (private)"));
 					this.firstAppearance = na;
 					return;
 				}

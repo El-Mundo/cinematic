@@ -11,7 +11,7 @@ import OCR.JAVA.Studio;
 
 public class GetNetwork {
 	protected static final boolean KEEP_ORGANIZATION_NAMES = false,
-			RUN_ALL_YEARS_AT_ONCE = false;
+			RUN_ALL_YEARS_AT_ONCE = true;
 
 	static final String META = "metadata-staff_plot.csv", EXTRA = "metadata-extra.csv", 
 			EDGES = "Network/edges.csv", NODES = "Network/nodes.csv";
@@ -92,11 +92,6 @@ public class GetNetwork {
 			addNodes(actors, nodes, film);
 			String[] staff = film.getOtherStaffNameArray();
 			addNodes(staff, nodes, film);
-
-			if(film.year == 1960 && film.hasName("王丹凤")) {
-				System.out.println(film.title);
-				System.in.read();
-			}
 		}
 
 		int i = 0;
@@ -104,6 +99,7 @@ public class GetNetwork {
 			addAffiliationsAndRolesToNode(node, filmsInYear);
 			node.getMainAffiliatedCategory();
 			node.getMainRole();
+			node.getFirstAppearanceCategory();
 			node.assignLocationInList(i);
 			i++;
 		}
@@ -126,7 +122,7 @@ public class GetNetwork {
 			fWriter = new FileWriter(file);
 		}
 		BufferedWriter writer = new BufferedWriter(fWriter);
-		writer.append("Id,Label,GeoCategory,Affilations,Main Role,All Roles\n");
+		writer.append("Id,Label,GeoCategory,Affilations,Main Role,All Roles,Debut Year,Debut Region,Debut at Private Studio\n");
 		for (Node node : nodes) {
 			writer.append(node.toString() + "\n");
 		}
