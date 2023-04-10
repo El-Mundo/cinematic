@@ -16,13 +16,15 @@ public class GetNodes {
 			EDGES = "Network/edges.csv", NODES = "Network/nodes.csv";
 	static int globalCounter = 0;
 
+	private static final String NODES_ROOT = "Network/csv/nodes";
+
 	private static ArrayList<Film> films;
 
 	public static void main(String[] args) {
 		try {
 			films = Film.initAllFilms();
-			//for(int i=1949; i<1967; i++)
-				getAllNodesInYear(1949);
+			for(int i=1949; i<1967; i++)
+				getAllNodesInYear(i);
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.exit(1);
@@ -88,16 +90,33 @@ public class GetNodes {
 		}
 
 		System.out.println("\n\nTotal nodes: " + nodes.size() + " in year " + year + ".");
-
+		writeAllNodes(nodes, Integer.toString(year));
+		
 		//DEBUG_checkStudioEquality(new Studio("长春电影制片厂", "Changchun"), new Studio("长春电影制片厂", "Changchun"));
 		//DEBUG_checkStudioEquality(new Studio("北京电影制片厂", "Beijing"), new Studio("八一电影制片厂", "Beijing"));
-		DEBUG_writeAllNodes(nodes);
+		//DEBUG_writeAllNodes(nodes);
 	}
 
-	//@SuppressWarnings("unused")
+	private static void writeAllNodes(ArrayList<Node> nodes, String tag) throws IOException {
+		File file = new File(NODES_ROOT + "/nodes-" + tag + ".csv");
+		FileWriter fWriter;
+		if (file.exists()) {
+			fWriter = new FileWriter(file, false);
+		} else {
+			file.createNewFile();
+			fWriter = new FileWriter(file);
+		}
+		BufferedWriter writer = new BufferedWriter(fWriter);
+		for (Node node : nodes) {
+			writer.append(node.toString() + "\n");
+		}
+		writer.close();
+	}
+
+	@SuppressWarnings("unused")
 	private static void DEBUG_writeAllNodes(ArrayList<Node> nodes) throws IOException {
-		File testNodes = new File(NODES);
-		BufferedWriter writer = new BufferedWriter(new FileWriter(testNodes, true));
+		File targetPath = new File(NODES);
+		BufferedWriter writer = new BufferedWriter(new FileWriter(targetPath, true));
 		for (Node node : nodes) {
 			writer.append(node.toString() + "\n");
 		}

@@ -72,7 +72,7 @@ public class Node {
 	public String toString() {
 		String s = name + ",";
 		for (int i=0; i<mainAffiliatedCategory.size(); i++) {
-			s += mainAffiliatedCategory.get(i) + ((i < mainAffiliatedCategory.size() - 1) ? " & " : "");
+			s += mainAffiliatedCategory.get(i) + ((i < mainAffiliatedCategory.size() - 1) ? " / " : "");
 		}
 		s += ",";
 		for (int i=0; i<allAffiliated.size(); i++) {
