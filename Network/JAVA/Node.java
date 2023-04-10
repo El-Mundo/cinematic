@@ -167,7 +167,7 @@ public class Node {
 	}
 
 	public void getFirstAppearanceCategory() throws IOException {
-		File nodesDir = new File(GetNodes.NODES_ROOT);
+		File nodesDir = new File(GetNetwork.NODES_ROOT);
 		
 		for(int year=1949; year<1967; year++) {
 			File yearNodes = new File(nodesDir, "nodes-" + year + ".csv");
