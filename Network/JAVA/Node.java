@@ -1,5 +1,9 @@
 package Network.JAVA;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -16,6 +20,7 @@ public class Node {
 	public ArrayList<Studio> allAffiliated; //This represents all studios with which the person had made films (in a specified period of time; may duplicate if this person collaborated with a studio for several times).
 	public HashMap<Studio, Integer> allAffiliatedCount; //This represents the number of films the person had made with each studio (in a specified period of time).
 	public ArrayList<String> mainAffiliatedCategory; //This represents the categroy of the studios with which the person had made most films (in a specified period of time).
+	public NodeAppearance firstAppearance; //This represents the info about the first film the person had appeared in (in a specified period of time).
 	//public NodeType type;
 
 	public Node(String name) {
@@ -78,6 +83,9 @@ public class Node {
 		for (int i=0; i<allAffiliated.size(); i++) {
 			s += allAffiliated.get(i).name + " (" + allAffiliatedCount.get(allAffiliated.get(i)) + ")" + ((i < allAffiliated.size() - 1) ? " & " : "");
 		}
+		if(firstAppearance != null) {
+			s += "," + firstAppearance.toString();
+		}
 		return s;
 	}
 
@@ -139,6 +147,44 @@ public class Node {
 		}
 
 		return keys;
+	}
+
+	public static class NodeAppearance {
+		public int year;
+		public String category;
+		public boolean firstAppearInPrivate;
+
+		public NodeAppearance(int year, String category, boolean firstAppearInPrivate) {
+			this.year = year;
+			this.category = category;
+			this.firstAppearInPrivate = firstAppearInPrivate;
+		}
+
+		@Override
+		public String toString() {
+			return year + "," + category + "," + (firstAppearInPrivate ? "True"	: "False");
+		}
+	}
+
+	public void getFirstAppearanceCategory() throws IOException {
+		File nodesDir = new File(GetNodes.NODES_ROOT);
+		
+		for(int year=1949; year<1967; year++) {
+			File yearNodes = new File(nodesDir, "nodes-" + year + ".csv");
+			BufferedReader reader = new BufferedReader(new FileReader(yearNodes));
+			String line;
+			while ((line = reader.readLine()) != null) {
+				String[] parts = line.split(",");
+				if(parts[0].equals(name)) {
+					reader.close();
+					NodeAppearance na = new NodeAppearance(year, parts[1], parts[1].contains("Shanghai (private)"));
+					this.firstAppearance = na;
+					return;
+				}
+			}
+			reader.close();
+		}
+		throw new IOException("Could not find first appearance of " + name + " in nodes files!");
 	}
 
 }

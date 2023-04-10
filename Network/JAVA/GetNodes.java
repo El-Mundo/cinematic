@@ -10,21 +10,26 @@ import OCR.JAVA.Film;
 import OCR.JAVA.Studio;
 
 public class GetNodes {
-	protected static final boolean KEEP_ORGANIZATION_NAMES = false;
+	protected static final boolean KEEP_ORGANIZATION_NAMES = false,
+			RUN_ALL_YEARS_AT_ONCE = true;
 
 	static final String META = "metadata-staff_plot.csv", EXTRA = "metadata-extra.csv", 
 			EDGES = "Network/edges.csv", NODES = "Network/nodes.csv";
 	static int globalCounter = 0;
 
-	private static final String NODES_ROOT = "Network/csv/nodes";
+	protected static final String NODES_ROOT = "Network/csv/nodes";
 
 	private static ArrayList<Film> films;
 
 	public static void main(String[] args) {
 		try {
 			films = Film.initAllFilms();
-			for(int i=1949; i<1967; i++)
-				getAllNodesInYear(i);
+			if(!RUN_ALL_YEARS_AT_ONCE) {
+				for(int i=1949; i<1967; i++)
+					getAllNodesInYear(i);
+			} else {
+				getAllNodes();
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.exit(1);
@@ -132,6 +137,31 @@ public class GetNodes {
 		} else {
 			System.out.println("NOT EQUAL");
 		}
+	}
+
+	private static void getAllNodes() throws IOException {
+		ArrayList<Node> nodes = new ArrayList<Node>();
+
+		for (Film film : films) {
+			//System.out.println(film.title);
+			String[] directors = film.getDirectorNameArray();
+			addNodes(directors, nodes, film);
+			String[] scriptwriters = film.getScriptwriterNameArray();
+			addNodes(scriptwriters, nodes, film);
+			String[] actors = film.getActingNameArray();
+			addNodes(actors, nodes, film);
+			String[] staff = film.getOtherStaffNameArray();
+			addNodes(staff, nodes, film);
+		}
+
+		for (Node node : nodes) {
+			addAffiliationsToNode(node, films);
+			node.getMainAffiliatedCategory();
+			node.getFirstAppearanceCategory();
+		}
+
+		System.out.println("\n\nTotal nodes: " + nodes.size() + ".");
+		writeAllNodes(nodes, "all");
 	}
 	
 }

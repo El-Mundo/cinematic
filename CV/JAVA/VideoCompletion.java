@@ -14,8 +14,8 @@ public class VideoCompletion {
 	public static final String VIDEO_FILES = "../Temp";
 
 	public static void main(String[] args) throws IOException {
-		//checkCompletion();
-		checkMissingFile();
+		checkCompletion();
+		//checkMissingFile();
 	}
 
 	public static void checkMissingFile() throws IOException {
@@ -70,6 +70,7 @@ public class VideoCompletion {
 
 		int collectedPrivate = 0, privateTotal = 0;
 		int collectedFeature = 0, featureTotal = 0;
+		int collectedState = 0, stateTotal = 0;
 		int collectedStateFeature = 0, stateFeatureTotal = 0;
 		int collectedDocumentary = 0, documentaryTotal = 0;
 		int collectedPerformance = 0, performanceTotal = 0;
@@ -106,6 +107,9 @@ public class VideoCompletion {
 			if(isPrivateFilm(values[3])) {
 				privateTotal++;
 				if(!values[4].isEmpty()) collectedPrivate++;
+			} else {
+				stateTotal++;
+				if(!values[4].isEmpty()) collectedState++;
 			}
 
 			if(getFilmType(key).equals("Artistic Documentary")) {
@@ -134,6 +138,7 @@ public class VideoCompletion {
 		System.out.println();
 		System.out.println("Collected " + collectedPrivate + " out of " + privateTotal + " private films.");
 		System.out.println("Collected " + collectedFeature + " out of " + featureTotal + " feature films.");
+		System.out.println("Collected " + collectedState + " out of " + (stateTotal-2) + " state films (exclusive of 2 films produced by the Republic of China).");
 		System.out.println("Collected " + collectedStateFeature + " out of " + stateFeatureTotal + " state feature films.");
 		System.out.println("Collected " + collectedDocumentary + " out of " + documentaryTotal + " documentaries.");
 		System.out.println("Collected " + collectedPerformance + " out of " + performanceTotal + " performances.");
