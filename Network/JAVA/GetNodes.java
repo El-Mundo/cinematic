@@ -1,15 +1,19 @@
 package Network.JAVA;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
 import OCR.JAVA.Film;
+import OCR.JAVA.Studio;
 
 public class GetNodes {
 	protected static final boolean KEEP_ORGANIZATION_NAMES = false;
 
 	private static final String META = "metadata-staff_plot.csv", EXTRA = "metadata-extra.csv", 
-			EDGES = "edges.csv", NODES = "nodes.csv";
+			EDGES = "Network/edges.csv", NODES = "Network/nodes.csv";
 
 	private static ArrayList<Film> films;
 	private static int globalCounter = 0;
@@ -83,6 +87,31 @@ public class GetNodes {
 		for (Node node : nodes) {
 			addAffiliationsToNode(node, filmsInYear);
 			node.getMainAfiiliation();
+		}
+
+		//DEBUG_checkStudioEquality(new Studio("长春电影制片厂", "Changchun"), new Studio("长春电影制片厂", "Changchun"));
+		//DEBUG_checkStudioEquality(new Studio("北京电影制片厂", "Beijing"), new Studio("八一电影制片厂", "Beijing"));
+		//DEBUG_writeAllNodes(nodes);
+	}
+
+	@SuppressWarnings("unused")
+	private static void DEBUG_writeAllNodes(ArrayList<Node> nodes) throws IOException {
+		File testNodes = new File(NODES);
+		BufferedWriter writer = new BufferedWriter(new FileWriter(testNodes, true));
+		for (Node node : nodes) {
+			writer.append(node.toString());
+		}
+		writer.close();
+	}
+
+	@SuppressWarnings("unused")
+	private static void DEBUG_checkStudioEquality(Studio a, Studio b) {
+		//Checks if the equals function overriden in Studio works.
+		System.out.println("Studio a: " + a.name + " and b: " + b.name + " are equal?");
+		if(a.equals(b)) {
+			System.out.println("EQUAL");
+		} else {
+			System.out.println("NOT EQUAL");
 		}
 	}
 	

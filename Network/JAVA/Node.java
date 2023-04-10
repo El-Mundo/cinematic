@@ -14,7 +14,7 @@ public class Node {
 
 	public String name; //For a node representing a filmmaker/actor-or-actress, name is the ID to identify the person, as duplicate names are extremely rare.
 	public ArrayList<Studio> allAffiliated; //This represents all studios with which the person had made films (in a specified period of time; may duplicate if this person collaborated with a studio for several times).
-	public Studio mainAffiliatedProduction; //This represents the studio with which the person had made most films (in a specified period of time).
+	public String mainAffiliatedCategory; //This represents the categroy of the studios with which the person had made most films (in a specified period of time).
 	//public NodeType type;
 
 	public Node(String name) {
@@ -36,16 +36,21 @@ public class Node {
 		ArrayList<Studio> mostFrequent = mostFrequentStudio(allAffiliated.toArray(new Studio[allAffiliated.size()]));
 		if(mostFrequent.size() > 1) {
 			System.out.println("Warning: " + name + " has more than one most frequent studio: ");
-			for (Studio studio : allAffiliated) {
+			/*for (Studio studio : allAffiliated) {
 				System.out.println(studio.name);
 			}
-			System.out.println();
+			System.out.println();*/
 		}
 	}
 
 	@Override
 	public String toString() {
-		return name + "," + mainAffiliatedProduction;
+		String s = name + ",";
+		for (int i=0; i<allAffiliated.size(); i++) {
+			s += allAffiliated.get(i).name + ((i < allAffiliated.size() - 1) ? " & " : "");
+		}
+		s += "," + mainAffiliatedCategory;
+		return s;
 	}
 
 	private static ArrayList<Studio> mostFrequentStudio(Studio[] studios) {
@@ -67,7 +72,6 @@ public class Node {
         ArrayList<Studio> keys = new ArrayList<Studio>();
 		for (Map.Entry<Studio, Integer> me : set) {
 			if (me.getValue() == freq) {
-				freq = me.getValue();
 				keys.add(me.getKey());
 			}
 		}

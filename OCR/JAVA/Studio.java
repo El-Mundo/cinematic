@@ -10,30 +10,36 @@ public class Studio {
 
 	public String name;
 	public String category;
+	private int orderInList; //Recorded to be Hashcode
 	
-	public Studio(String name, String category) {
+	public Studio(String name, String category, int orderInList) {
 		this.name = name;
 		this.category = category;
+		this.orderInList = orderInList;
 	}
 
 	public Studio(String name) throws IOException {
 		this.name = name;
-		this.category = getCategory(name);
+		getCategoryAndOrder();
 	}
 
-	private static String getCategory(String studioName) throws IOException {
+	private void getCategoryAndOrder() throws IOException {
 		File f = new File(STUDIOS_LIST);
 		BufferedReader r = new BufferedReader(new FileReader(f));
 		String l = "";
+		int line = 0;
 
 		while ((l = r.readLine()) != null) {
-			if(l.split(",")[0].equals(studioName)) {
+			if(l.split(",")[0].equals(name)) {
+				this.category = l.split(",")[1];
+				this.orderInList = line;
 				r.close();
-				return (l.split(",")[1]);
+				return;
 			}
+			line++;
 		}
 		r.close();
-		throw new IOException("Unexpected studio found: \"" + studioName + "\" in the film metadata.");
+		throw new IOException("Unexpected studio found: \"" + name + "\" in the film metadata.");
 	}
 
 	@Override
@@ -45,6 +51,11 @@ public class Studio {
 
         Studio studio = (Studio)obj;
         return this.name.equals(studio.name);
+	}
+
+	@Override
+	public int hashCode() {
+		return orderInList;
 	}
 	
 }
