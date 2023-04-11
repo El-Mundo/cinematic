@@ -263,9 +263,11 @@ public class GetEdges {
 		while((line = br.readLine()) != null) {
 			String[] parts = line.split(",");
 			if(parts[1].replaceAll("\"", "").equals(name)) {
+				br.close();
 				return Integer.parseInt(parts[0]);
 			}
 		}
+		br.close();
 		throw new IOException("Node not found: " + name + " in year " + year);
 	}
 
@@ -276,9 +278,11 @@ public class GetEdges {
 		while((line = br.readLine()) != null) {
 			String[] parts = line.split(",");
 			if(parts[1].replaceAll("\"", "").equals(name)) {
+				br.close();
 				return Integer.parseInt(parts[0]);
 			}
 		}
+		br.close();
 		throw new IOException("Node not found: " + name + " in all-year nodes.");
 	}
 	
