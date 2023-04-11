@@ -4,6 +4,9 @@
 CV/Temp/
 *.mov
 *.avi
+# Ignore Gephi files
+*.gexf
+*.gephi
 #Do not include unconverted xlsx OCR files
 OCR/JAVA/source-xls/
 
