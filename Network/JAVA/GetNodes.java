@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import OCR.JAVA.Film;
 import OCR.JAVA.Studio;
 
-public class GetNetwork {
+public class GetNodes {
 	protected static final boolean KEEP_ORGANIZATION_NAMES = false,
 			RUN_ALL_YEARS_AT_ONCE = true;
 

@@ -18,6 +18,9 @@ public class Film {
 
 	public static final String METADATA_PATH = "metadata.csv", EXTRA_METADATA_PATH = "metadata-extra.csv", STAFF_PLOT_DATA_PATH = "metadata-staff_plot.csv";
 	public static final String ORGANISATION_LIST_PATH = "OCR/organizations.csv", LONG_PERSON_NAME_LIST_PATH = "OCR/non-han_chn_names_or_special_authorship.csv";
+	public static final String STUDIO_LIST_PATH = "OCR/studios.csv";
+
+	public static HashMap<String, String> studioCategoryMap;
 
 	public Film(String key, String title, int year, String translated, String production, String colour, int reels, String special, String director, String scriptwriter, String acting, String staff, String plot) throws IOException {
 		this.key = key;
@@ -80,6 +83,18 @@ public class Film {
 		throw new IOException("Cannot find film with key: " + key);
 	}
 
+	public String[] getCategory() throws IOException {
+		ArrayList<String> categories = new ArrayList<String>();
+		for (Studio studio : production) {
+			String cat = studioCategoryMap.get(studio.name);
+			if(cat != null) {
+				if(!categories.contains(cat))
+					categories.add(cat);
+			} else throw new IOException("Unexpected studio name: " + studio.name);
+		}
+		return categories.toArray(new String[categories.size()]);
+	}
+
 	public String getFilmType() throws IOException {
 		File mFile = new File(METADATA_PATH);
 		File eFile = new File(EXTRA_METADATA_PATH);
@@ -109,6 +124,14 @@ public class Film {
 		mReader.close();
 		eReader.close();
 		throw new IOException("Cannot find film with key: " + key);
+	}
+
+	public String productionToString() {
+		String result = "";
+		for (Studio studio : production) {
+			result += studio.name + " & ";
+		}
+		return result.substring(0, result.length() - 3);
 	}
 
 	private static String[] staffAttributeToArray(String attribute) {
@@ -265,6 +288,18 @@ public class Film {
 			
 		mReader.close();
 		eReader.close();
+
+		//Init studios map
+		studioCategoryMap = new HashMap<String, String>();
+		File studioFile = new File(STUDIO_LIST_PATH);
+		BufferedReader sReader = new BufferedReader(new FileReader(studioFile));
+		sReader.readLine(); //Skip header
+		while((line = sReader.readLine()) != null) {
+			String[] lineArray = line.split(",");
+			studioCategoryMap.put(lineArray[0], lineArray[1]);
+		}
+		sReader.close();
+
 		return films;
 	}
 
@@ -297,6 +332,24 @@ public class Film {
 		pReader.close();
 		orgReader.close();
 		throw new IOException("Unexpected filmmaker name: \"" + name + "\"");
+	}
+
+	public String[] getAllNamesArrayWithoutDuplication() throws IOException {
+		ArrayList<String> names = new ArrayList<String>();
+		String[][] allStaff = new String[4][];
+		allStaff[0] = getDirectorNameArray();
+		allStaff[1] = getScriptwriterNameArray();
+		allStaff[2] = getOtherStaffNameArray();
+		allStaff[3] = getActingNameArray();
+
+		for(int i = 0; i < allStaff.length; i++) {
+			for(int j = 0; j < allStaff[i].length; j++) {
+				if(!names.contains(allStaff[i][j]))
+					names.add(allStaff[i][j]);
+			}
+		}
+
+		return names.toArray(new String[names.size()]);
 	}
 	
 }
