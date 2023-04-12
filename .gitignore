@@ -9,6 +9,8 @@ CV/Temp/
 *.gephi
 #Do not include unconverted xlsx OCR files
 OCR/JAVA/source-xls/
+#Ignore the unweighted network source data, as it is too large
+Network/csv/edges/edges-all-unweighted.csv
 
 ##################### PYTHON IGNORE ##########################
 # Byte-compiled / optimized / DLL files

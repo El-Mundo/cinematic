@@ -13,7 +13,7 @@ import OCR.JAVA.Film;
 
 public class GetEdges {
 	protected static final String EDGES_ROOT = "Network/csv/edges";
-	private static final boolean USE_WEIGHT = true, RUN_ALL_ONCE = true;
+	private static final boolean USE_WEIGHT = false, RUN_ALL_ONCE = true;
 
 	private static ArrayList<Film> films;
 
@@ -23,7 +23,7 @@ public class GetEdges {
 			if(!RUN_ALL_ONCE) {
 				getAllEdgesInYear(1966);
 			} else {
-				getAllWeightedEdges();
+				getAllEdges();
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -31,11 +31,18 @@ public class GetEdges {
 		}
 	}
 
+	private static void getAllEdges() throws IOException {
+		if(USE_WEIGHT)
+			getAllWeightedEdges();
+		else
+			getAllUnweightedEdges();
+	}
+
 	private static void getAllEdgesInYear(int year) throws IOException {
 		if(USE_WEIGHT)
 			getAllWeightedEdgesInYear(year);
 		else
-			getAllNodesInYear(year);
+			getAllUnweightedEdgesInYear(year);
 	}
 
 	private static void getAllWeightedEdgesInYear(int year) throws IOException {
@@ -108,6 +115,44 @@ public class GetEdges {
 		writeAllWeightedEdges(edges, Integer.toString(year));
 	}
 
+	private static void getAllUnweightedEdges() throws IOException {
+		ArrayList<Edge> edges = new ArrayList<Edge>();
+		int n = 0;
+
+		for (Film film : films) {
+			String type = film.getFilmType();
+			String category = formatCategories(film.getCategory());
+			String production = film.productionToString();
+			String key = film.key;
+			String[] allNames = film.getAllNamesArrayWithoutDuplication();
+			ArrayList<String> estimatedEdges = new ArrayList<String>();
+			int year = film.year;
+			
+			for (String name : allNames) {
+				for (String name2 : allNames) {
+					if(Film.isOrganisation(name) || Film.isOrganisation(name2)) continue; //Skip organisations
+					if(name.equals(name2)) continue; //Skip the same node
+
+					String rep = name + "->" + name2;
+					String rev = name2 + "->" + name;
+					if(!estimatedEdges.contains(rep) && !estimatedEdges.contains(rev)) {
+						//The network is undirected, so we only need to add one edge for a pair of nodes
+						estimatedEdges.add(rep);
+					}
+				}
+			}
+
+			for (String edge : estimatedEdges) {
+				String[] names = edge.split("->");
+				edges.add(new Edge(nameToAllYearId(names[0]), nameToAllYearId(names[1]), year, production, category, type, key));
+			}
+			n++;
+			System.out.println("Film (" + n + "/" + films.size() + ") " + film.title + " done. " + estimatedEdges.size() + " edges found.");
+		}
+
+		writeAllEdges(edges, "all-unweighted");
+	}
+
 	private static void getAllWeightedEdges() throws IOException {
 		HashMap<String, Integer> estimatedEdges = new HashMap<String, Integer>();
 
@@ -171,7 +216,7 @@ public class GetEdges {
 	}
 
 	@Deprecated
-	private static void getAllNodesInYear(int year) throws IOException {
+	private static void getAllUnweightedEdgesInYear(int year) throws IOException {
 		ArrayList<Film> filmsInYear = new ArrayList<Film>();
 		ArrayList<Edge> edges = new ArrayList<Edge>();
 
