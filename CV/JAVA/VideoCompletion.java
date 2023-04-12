@@ -14,8 +14,8 @@ public class VideoCompletion {
 	public static final String VIDEO_FILES = "../Temp";
 
 	public static void main(String[] args) throws IOException {
-		checkCompletion();
-		//checkMissingFile();
+		//checkCompletion();
+		checkMissingFile();
 	}
 
 	public static void checkMissingFile() throws IOException {
@@ -28,6 +28,8 @@ public class VideoCompletion {
 
 		File dir = new File(VIDEO_FILES);
 		File[] files = dir.listFiles();
+
+		int downloaded = 0;
 		
 		for (File file : files) {
 			if(file.getName().endsWith(".mp4")) {
@@ -43,12 +45,13 @@ public class VideoCompletion {
 			title = title.replace("“", "");
 			title = title.replace("”", "");
 			String downloadable = values[4];
-			if(downloadable.equals("True")) {
+			if(downloadable.equals("True") || downloadable.equals("False")) {
 				boolean found = false;
 				for (String string : titles) {
 					if(string.equals(title)) {
 						titles.remove(string);
 						found = true;
+						downloaded++;
 						break;
 					}
 				}
@@ -61,6 +64,7 @@ public class VideoCompletion {
 		}
 
 		reader.close();
+		System.out.println("Downloaded " + downloaded + " out of " + (downloaded + titles.size()) + " files.");
 	}
 
 	public static void checkCompletion() throws IOException {
