@@ -372,5 +372,30 @@ public class Film {
 		}
 		writer.close();
 	}
+
+	@SuppressWarnings("unused")
+	@Deprecated
+	private static void DEBUG_PrintAllPlots(String args[]) {
+		try {
+			ArrayList<Film> films = initAllFilms();
+			for(Film film : films) {
+				//System.out.println(film.key + " " + film.title + "\n" + film.plot + "\n");
+				String plot = film.plot;
+				char[] plotArray = plot.toCharArray();
+				boolean isDigit = false;
+				for(int i = 0; i < plotArray.length; i++) {
+					if(Character.isDigit(plotArray[i])) {
+						if(!isDigit)
+							System.out.println(film.key + " " + film.title + "\n" + film.plot);
+						isDigit = true;
+						System.out.print(plotArray[i]);
+					}
+				}
+				if(isDigit) System.out.println();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 	
 }
