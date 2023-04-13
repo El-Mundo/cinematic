@@ -14,7 +14,7 @@ public class GetNodes {
 			RUN_ALL_YEARS_AT_ONCE = true;
 
 	static final String META = "metadata-staff_plot.csv", EXTRA = "metadata-extra.csv", 
-			EDGES = "Network/edges.csv", NODES = "Network/nodes.csv";
+			EDGES = "Network/edges.csv", NODES = "Network/JAVA/nodes.csv";
 	static int globalCounter = 0;
 
 	protected static final String NODES_ROOT = "Network/csv/nodes";
