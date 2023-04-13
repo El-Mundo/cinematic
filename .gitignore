@@ -7,6 +7,9 @@ CV/Temp/
 # Ignore Gephi files
 *.gexf
 *.gephi
+!Gephi-AllYearUndir.gephi
+# Ignore mapbox token
+.mapbox_token
 #Do not include unconverted xlsx OCR files
 OCR/JAVA/source-xls/
 #Ignore the unweighted network source data, as it is too large

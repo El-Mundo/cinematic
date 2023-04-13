@@ -1,8 +1,10 @@
 package OCR.JAVA;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -350,6 +352,25 @@ public class Film {
 		}
 
 		return names.toArray(new String[names.size()]);
+	}
+
+	public static void WriteAllFilmTypes() throws IOException {
+		File tar = new File("OCR/categorized_types.csv");
+		BufferedWriter writer = new BufferedWriter(new FileWriter(tar));
+		ArrayList<Film> films = initAllFilms();
+		for(Film film : films) {
+			String line = film.key + "," + film.title + "," + film.getFilmType() + ",";
+			for (Studio s : film.production) {
+				line += s.name + " & ";
+			}
+			line = line.substring(0, line.length() - 3) + ",";
+			for (String c : film.getCategory()) {
+				line += c + " / ";
+			}
+			line = line.substring(0, line.length() - 3);
+			writer.append(line + "\n");
+		}
+		writer.close();
 	}
 	
 }

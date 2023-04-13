@@ -30,6 +30,7 @@ public class GetNodes {
 			} else {
 				getAllNodes();
 			}
+			//getSingleAuthorship();
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.exit(1);
@@ -177,6 +178,21 @@ public class GetNodes {
 
 		System.out.println("\n\nTotal nodes: " + nodes.size() + ".");
 		writeAllNodes(nodes, "all");
+	}
+
+	@SuppressWarnings("unused")
+	private static void getSingleAuthorship() throws IOException {
+		int i = 0;
+
+		for (Film film : films) {
+			String[] names = film.getAllNamesArrayWithoutDuplication();
+			if(names.length < 2) {
+				System.out.println(film.title);
+				i++;
+			}
+		}
+
+		System.out.println("Single authorship films: " + i + ".");
 	}
 	
 }
