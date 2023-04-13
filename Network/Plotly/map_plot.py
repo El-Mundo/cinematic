@@ -1,7 +1,7 @@
 import plotly.express as px
 import pandas as pd
 
-px.set_mapbox_access_token(open("Network/Plotly/.mapbox_token").read())
+px.set_mapbox_access_token(open("Network/Plotly/mapbox_token.txt").read())
 df = pd.read_csv(
     "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_us_airport_traffic.csv"
 )
