@@ -1,4 +1,6 @@
 from scenedetect import detect, ContentDetector, split_video_ffmpeg
 
-scene_list = detect('CV/test.mp4', ContentDetector())
-split_video_ffmpeg('CV/test.mp4', scene_list, show_progress=True)
+VIDEO_FILE = 'CV/WomanBasketballNo5_clip.mp4'
+
+scene_list = detect(VIDEO_FILE, ContentDetector())
+split_video_ffmpeg(VIDEO_FILE, scene_list, show_progress=True)

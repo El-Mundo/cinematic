@@ -13,7 +13,7 @@ import OCR.JAVA.Film;
 
 public class GetEdges {
 	protected static final String EDGES_ROOT = "Network/csv/edges";
-	private static final boolean USE_WEIGHT = false, RUN_ALL_ONCE = true;
+	private static final boolean USE_WEIGHT = true, RUN_ALL_ONCE = false, RUN_YEAR_RANGE = true;
 
 	private static ArrayList<Film> films;
 
@@ -21,7 +21,11 @@ public class GetEdges {
 		try {
 			films = Film.initAllFilms();
 			if(!RUN_ALL_ONCE) {
-				getAllEdgesInYear(1966);
+				if(!RUN_YEAR_RANGE) {
+					getAllEdgesInYear(1966);
+				} else {
+					getAllEdgesInYear(1950, 1953);
+				}
 			} else {
 				getAllEdges();
 			}
@@ -39,19 +43,34 @@ public class GetEdges {
 	}
 
 	private static void getAllEdgesInYear(int year) throws IOException {
-		if(USE_WEIGHT)
-			getAllWeightedEdgesInYear(year);
-		else
-			getAllUnweightedEdgesInYear(year);
+		getAllEdgesInYear(year, year);
 	}
 
-	private static void getAllWeightedEdgesInYear(int year) throws IOException {
+	private static void getAllEdgesInYear(int startYear, int endYear) throws IOException {
+		if(USE_WEIGHT)
+			getAllWeightedEdgesInYear(startYear, endYear);
+		else
+			getAllUnweightedEdgesInYear(startYear, endYear);
+	}
+
+	private static void getAllWeightedEdgesInYear(int startYear, int endYear) throws IOException {
+		if(startYear > endYear) {
+			System.err.println("Start year must be smaller than end year!");
+			System.exit(1);
+		}
+		String tag = startYear == endYear ? Integer.toString(startYear) : startYear + "-" + endYear;
+		File nodeFile = new File("Network/csv/nodes/nodes-" + tag + ".csv");
+		if(!nodeFile.exists()) {
+			System.err.println("Node file does not exist for year " + tag + "!");
+			System.exit(1);
+		}
+
 		ArrayList<Film> filmsInYear = new ArrayList<Film>();
 		HashMap<String, Integer> estimatedEdges = new HashMap<String, Integer>();
 		//Use a special format to represent an edge: "A->B"
 
 		for (Film film : films) {
-			if(film.year == year) {
+			if(film.year >= startYear && film.year <= endYear) {
 				filmsInYear.add(film);
 			}
 		}
@@ -59,6 +78,7 @@ public class GetEdges {
 		int totalWeight = 0;
 		int maxWeight = 1;
 		String maxWeightRep = "";
+		int n = 0;
 
 		for (Film film : filmsInYear) {
 			String[] allNames = film.getAllNamesArrayWithoutDuplication();
@@ -105,14 +125,27 @@ public class GetEdges {
 		ArrayList<WeightedEdge> edges = new ArrayList<WeightedEdge>();
 		for (String edge : estimatedEdges.keySet()) {
 			String[] names = edge.split("->");
-			edges.add(new WeightedEdge(nameToId(names[0], year), nameToId(names[1], year), estimatedEdges.get(edge)));
+			edges.add(new WeightedEdge(nameToId(names[0], tag), nameToId(names[1], tag), estimatedEdges.get(edge)));
+			n++;
+			System.out.println(n + "/" + estimatedEdges.size());
 		}
 
-		System.out.println("Year " + year + " done. " + edges.size() + " edges found.");
+		if(startYear == endYear) {
+			int year = startYear;
+			System.out.println("Year " + year + " done. " + edges.size() + " edges found.");
+		} else {
+			System.out.println("Years " + startYear + " to " + endYear + " done. " + edges.size() + " edges found.");
+		}
+		
 		System.out.println("Total weight: " + totalWeight);
 		System.out.println("Max weight: " + maxWeight + " (" + maxWeightRep + ")");
 	
-		writeAllWeightedEdges(edges, Integer.toString(year));
+		if(startYear == endYear) {
+			int year = startYear;
+			writeAllWeightedEdges(edges, Integer.toString(year));
+		} else {
+			writeAllWeightedEdges(edges, startYear + "-" + endYear);
+		}
 	}
 
 	private static void getAllUnweightedEdges() throws IOException {
@@ -216,12 +249,22 @@ public class GetEdges {
 	}
 
 	@Deprecated
-	private static void getAllUnweightedEdgesInYear(int year) throws IOException {
+	private static void getAllUnweightedEdgesInYear(int startYear, int endYear) throws IOException {
+		if(startYear > endYear) {
+			throw new IOException("Start year must be smaller than end year!");
+		}
+		String tag = startYear == endYear ? Integer.toString(startYear) : startYear + "-" + endYear;
+		File nodeFile = new File("Network/csv/nodes/nodes-" + tag + ".csv");
+		if(!nodeFile.exists()) {
+			System.err.println("Node file does not exist for year " + tag + "!");
+			System.exit(1);
+		}
+
 		ArrayList<Film> filmsInYear = new ArrayList<Film>();
 		ArrayList<Edge> edges = new ArrayList<Edge>();
 
 		for (Film film : films) {
-			if(film.year == year) {
+			if(film.year >= startYear && film.year <= endYear) {
 				filmsInYear.add(film);
 			}
 		}
@@ -250,13 +293,18 @@ public class GetEdges {
 
 			for (String edge : estimatedEdges) {
 				String[] names = edge.split("->");
-				edges.add(new Edge(nameToId(names[0], year), nameToId(names[1], year), year, production, category, type, key));
+				edges.add(new Edge(nameToId(names[0], tag), nameToId(names[1], tag), film.year, production, category, type, key));
 			}
 		}
 
-		System.out.println("Year " + year + " done. " + edges.size() + " edges found.");
-
-		writeAllEdges(edges, Integer.toString(year));
+		if(startYear == endYear) {
+			int year = startYear;
+			System.out.println("Year " + year + " done. " + edges.size() + " edges found.");
+			writeAllEdges(edges, Integer.toString(year));
+		} else {
+			System.out.println("Years " + startYear + "-" + endYear + " done. " + edges.size() + " edges found.");
+			writeAllEdges(edges, startYear + "-" + endYear);
+		}
 	}
 
 	private static String formatCategories(String[] categories) {
@@ -301,8 +349,8 @@ public class GetEdges {
 		writer.close();
 	}
 
-	private static int nameToId(String name, int year) throws IOException {
-		File nodeFile = new File(GetNodes.NODES_ROOT + "/nodes-" + year + ".csv");
+	private static int nameToId(String name, String tag) throws IOException {
+		File nodeFile = new File(GetNodes.NODES_ROOT + "/nodes-" + tag + ".csv");
 		BufferedReader br = new BufferedReader(new FileReader(nodeFile));
 		String line;
 		while((line = br.readLine()) != null) {
@@ -313,7 +361,7 @@ public class GetEdges {
 			}
 		}
 		br.close();
-		throw new IOException("Node not found: " + name + " in year " + year);
+		throw new IOException("Node not found: " + name + " in year " + tag + ".");
 	}
 
 	private static int nameToAllYearId(String name) throws IOException {

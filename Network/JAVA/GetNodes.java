@@ -11,7 +11,7 @@ import OCR.JAVA.Studio;
 
 public class GetNodes {
 	protected static final boolean KEEP_ORGANIZATION_NAMES = false,
-			RUN_ALL_YEARS_AT_ONCE = true;
+			RUN_ALL_YEARS_AT_ONCE = false, RUN_YEAR_RANGE = true;
 
 	static final String META = "metadata-staff_plot.csv", EXTRA = "metadata-extra.csv", 
 			EDGES = "Network/edges.csv", NODES = "Network/JAVA/nodes.csv";
@@ -25,8 +25,12 @@ public class GetNodes {
 		try {
 			films = Film.initAllFilms();
 			if(!RUN_ALL_YEARS_AT_ONCE) {
-				for(int i=1949; i<1967; i++)
-					getAllNodesInYear(i);
+				if(!RUN_YEAR_RANGE) {
+					for(int i=1949; i<1967; i++)
+						getAllNodesInYear(i);
+				} else {
+					getAllNodesInYear(1950, 1953);
+				}
 			} else {
 				getAllNodes();
 			}
@@ -73,12 +77,17 @@ public class GetNodes {
 		}
 	}
 
-	private static void getAllNodesInYear(int year) throws IOException {
+	private static void getAllNodesInYear(int startYear, int endYear) throws IOException {
+		if(startYear > endYear) {
+			System.out.println("Start year cannot be greater than end year.");
+			System.exit(1);
+		}
+
 		ArrayList<Film> filmsInYear = new ArrayList<Film>();
 		ArrayList<Node> nodes = new ArrayList<Node>();
 
 		for (Film film : films) {
-			if(film.year == year) {
+			if(film.year >= startYear && film.year <= endYear) {
 				filmsInYear.add(film);
 			}
 		}
@@ -105,12 +114,22 @@ public class GetNodes {
 			i++;
 		}
 
-		System.out.println("\n\nTotal nodes: " + nodes.size() + " in year " + year + ".");
-		writeAllNodes(nodes, Integer.toString(year));
+		if(startYear == endYear) {
+			int year = startYear;
+			System.out.println("\n\nTotal nodes: " + nodes.size() + " in year " + year + ".");
+			writeAllNodes(nodes, Integer.toString(year));
+		} else {
+			System.out.println("\n\nTotal nodes: " + nodes.size() + " in years " + startYear + "-" + endYear + ".");
+			writeAllNodes(nodes, startYear + "-" + endYear);
+		}
 		
 		//DEBUG_checkStudioEquality(new Studio("长春电影制片厂", "Changchun"), new Studio("长春电影制片厂", "Changchun"));
 		//DEBUG_checkStudioEquality(new Studio("北京电影制片厂", "Beijing"), new Studio("八一电影制片厂", "Beijing"));
 		//DEBUG_writeAllNodes(nodes);
+	}
+
+	private static void getAllNodesInYear(int year) throws IOException {
+		getAllNodesInYear(year, year);
 	}
 
 	private static void writeAllNodes(ArrayList<Node> nodes, String tag) throws IOException {
