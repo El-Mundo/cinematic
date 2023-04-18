@@ -1,5 +1,7 @@
 # cinematic
 
+This project preserves the information about 702 Chinese films produced in the "Seventeen Years Period" (1949-1966).
+
 ## Data
 
 Some [formatted csv files](Network/csv) that can be directly imported to Gephi for social network analysis (7038 nodes and 246658 edges)
