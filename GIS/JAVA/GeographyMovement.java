@@ -1,8 +1,13 @@
-package Visualiser.JAVA;
+package GIS.JAVA;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -14,10 +19,19 @@ public class GeographyMovement {
 
 	public static void main(String[] args) {
 		try {
-			films = Film.initAllFilms();
+			writeMetadataJSON();
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+	private static void writeMetadataJSON() throws IOException {
+		films = Film.initAllFilms();
+		ObjectMapper mapper = new ObjectMapper();
+		String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(films);
+		BufferedWriter writer = new BufferedWriter(new FileWriter("metadata-all.json"));
+		writer.write(json);
+		writer.close();
 	}
 
 	private static void initAllNodesAsMapPlots() throws IOException {

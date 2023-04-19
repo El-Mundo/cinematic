@@ -1,4 +1,4 @@
-package Visualiser.JAVA;
+package GIS.JAVA;
 
 import java.util.ArrayList;
 

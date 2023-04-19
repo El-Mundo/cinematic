@@ -9,12 +9,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /*
  * Use this finalised utility class to store information about a film.
  * A Film with reels as negative number is one with no recordance of such information.
  */
 public class Film {
-	public String key, title, translated, colour, special, director, scriptwriter, acting, staff, plot;
+	public String key, title, translated, colour, special, plot;
+	@JsonIgnore
+	public String director, scriptwriter, acting, staff;
 	public int year, reels;
 	public Studio[] production;
 
@@ -170,6 +174,7 @@ public class Film {
 		return staffAttributeToArray(this.acting);
 	}
 
+	@JsonIgnore
 	public String[] getOtherStaffNameArray() throws IOException {
 		if(staff.isBlank()) return new String[0];
 
@@ -336,6 +341,7 @@ public class Film {
 		throw new IOException("Unexpected filmmaker name: \"" + name + "\"");
 	}
 
+	@JsonIgnore
 	public String[] getAllNamesArrayWithoutDuplication() throws IOException {
 		ArrayList<String> names = new ArrayList<String>();
 		String[][] allStaff = new String[4][];

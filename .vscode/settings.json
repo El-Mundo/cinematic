@@ -2,6 +2,7 @@
     "java.project.referencedLibraries": [
         "GUI/JAVA/lib/**/*.jar",
 		"GUI/JAVA/lib/processing/macos-aarch64/*.jar",
-		"OCR/JAVA/lib/*.jar"
+		"OCR/JAVA/lib/*.jar",
+		"GIS/JAVA/lib/*.jar"
     ]
 }
