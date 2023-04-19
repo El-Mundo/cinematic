@@ -4,12 +4,12 @@ This project preserves the information about 702 Chinese films produced in the "
 
 ## Data
 
-[Modelled data of the 656 entries](metadata.csv) in *The Catalogue of Chinese Artistic Films* with romanised title, original title, translated title, release year, production, colour, length in film reels, and recorded special aspects
+[Modelled data of the 656 entries](metadata.csv) in *The Catalogue of Chinese Artistic Films* (*中国艺术影片编目*; China Film Archive, 1982) with romanised title, original title, translated title, release year, production, colour, length in film reels, and recorded special aspects
 
 [The staff information and plot summary](metadata-staff_plot.csv) of the 656 entries, separated from the main file due to the large file size
 
 [An extra collection](metadata-extra.csv) of 46 entries not included by the book
 
-Some [formatted csv files](Network/csv) that can be directly imported to Gephi for social network analysis (7038 nodes and 246658 edges)
+Some [formatted csv files](Network/csv) that can be directly imported to **Gephi** for social network analysis (7038 nodes and 246658 edges)
 
 [OCR source data](OCR/source) scanned from *The Catalogue of Chinese Artistic Films* (the source data may contain some missing attributes, which have been fixed in [the main metadata file](metadata.csv))
