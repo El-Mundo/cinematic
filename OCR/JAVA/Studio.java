@@ -23,6 +23,22 @@ public class Studio {
 		getCategoryAndOrder();
 	}
 
+	public static String getStudioCategory(String studio) throws IOException {
+		File f = new File(STUDIOS_LIST);
+		BufferedReader r = new BufferedReader(new FileReader(f));
+		String l = "";
+
+		while ((l = r.readLine()) != null) {
+			if(l.split(",")[0].equals(studio)) {
+				String category = l.split(",")[1];
+				r.close();
+				return category;
+			}
+		}
+		r.close();
+		throw new IOException("Unexpected studio found: \"" + studio + "\" in the film metadata.");
+	}
+
 	private void getCategoryAndOrder() throws IOException {
 		File f = new File(STUDIOS_LIST);
 		BufferedReader r = new BufferedReader(new FileReader(f));

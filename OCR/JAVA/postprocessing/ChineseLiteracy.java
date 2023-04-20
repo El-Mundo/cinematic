@@ -89,7 +89,7 @@ public class ChineseLiteracy {
 			"拳四郎", "",
 			"人类文明毁于核子战争的未来，存活下来的人类过着弱肉强食的生活，直到出现了一个胸口带着北斗七星状伤痕、古老中国神秘暗杀拳法\"北斗神拳\"的传人————拳四郎成为救世主。"));*/
 		
-		int st = 0, ed = 50;
+		int st = 350, ed = films.size();
 		int i = st;
 		for (i=st; i<ed; i++) {
 			checkResult r;
