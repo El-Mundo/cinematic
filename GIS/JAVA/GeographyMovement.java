@@ -1,7 +1,6 @@
 package GIS.JAVA;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -19,12 +18,14 @@ public class GeographyMovement {
 
 	public static void main(String[] args) {
 		try {
-			writeMetadataJSON();
+			//writeMetadataJSON();
+			initAllNodesAsMapPlots();
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
 	}
 
+	@SuppressWarnings("unused")
 	private static void writeMetadataJSON() throws IOException {
 		films = Film.initAllFilms();
 		ObjectMapper mapper = new ObjectMapper();
@@ -45,6 +46,7 @@ public class GeographyMovement {
 			int id = Integer.parseInt(lineSplit[1]);
 			mapPlots.add(new MapPlot(name, id));
 		}
+		reader.close();
 	}
 	
 }
