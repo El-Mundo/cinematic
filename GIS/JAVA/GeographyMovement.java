@@ -14,7 +14,7 @@ public class GeographyMovement {
 	private static final String TAR = "GIS/source/map_plots.csv";
 
 	public static void main(String[] args) {
-		try {;
+		try {
 			initAllNodesAsMapPlots();
 		} catch(IOException e) {
 			e.printStackTrace();

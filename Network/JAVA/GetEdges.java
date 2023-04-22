@@ -22,7 +22,10 @@ public class GetEdges {
 			films = Film.initAllFilms();
 			if(!RUN_ALL_ONCE) {
 				if(!RUN_YEAR_RANGE) {
-					getAllEdgesInYear(1966);
+					for(int year = 1949; year <= 1966; year++) {
+						getAllEdgesInYear(year);
+						System.out.println(year + " done.");
+					}
 				} else {
 					getAllEdgesInYear(1950, 1953);
 				}
@@ -193,6 +196,8 @@ public class GetEdges {
 		int maxWeight = 1;
 		String maxWeightRep = "";
 
+		int n = 0;
+
 		for (Film film : films) {
 			String[] allNames = film.getAllNamesArrayWithoutDuplication();
 			ArrayList<String> estimatedEdgesInEntry = new ArrayList<String>();
@@ -233,12 +238,17 @@ public class GetEdges {
 					}
 				}
 			}
+			n++;
+			System.out.println("Filtering " + n + "/" + films.size());
 		}
 
+		n = 0;
 		ArrayList<WeightedEdge> edges = new ArrayList<WeightedEdge>();
 		for (String edge : estimatedEdges.keySet()) {
 			String[] names = edge.split("->");
 			edges.add(new WeightedEdge(nameToAllYearId(names[0]), nameToAllYearId(names[1]), estimatedEdges.get(edge)));
+			n++;
+			System.out.println("Converting " + n + "/" + estimatedEdges.size());
 		}
 
 		System.out.println("Year 1949-1966 all done. " + edges.size() + " edges found.");

@@ -6,12 +6,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import Network.JAVA.Node.NodeAppearance;
 import OCR.JAVA.Film;
 import OCR.JAVA.Studio;
 
 public class GetNodes {
 	protected static final boolean KEEP_ORGANIZATION_NAMES = false,
-			RUN_ALL_YEARS_AT_ONCE = false, RUN_YEAR_RANGE = true;
+			RUN_ALL_YEARS_AT_ONCE = false, RUN_YEAR_RANGE = true, GET_DEBUT_FOR_SELECTED_YEAR = true;
 
 	static final String META = "metadata-staff_plot.csv", EXTRA = "metadata-extra.csv", 
 			EDGES = "Network/edges.csv", NODES = "Network/JAVA/nodes.csv";
@@ -109,7 +110,10 @@ public class GetNodes {
 			addAffiliationsAndRolesToNode(node, filmsInYear);
 			node.getMainAffiliatedCategory();
 			node.getMainRole();
-			node.getFirstAppearanceCategory();
+			if(GET_DEBUT_FOR_SELECTED_YEAR)
+				node.getFirstAppearanceCategory();
+			else
+				node.firstAppearance = new NodeAppearance(-1, "N/A", false);
 			node.assignLocationInList(i);
 			i++;
 		}

@@ -14,6 +14,7 @@ import OCR.JAVA.Film;
 public class NameRoman {
 	private final static String JOBS = "OCR/JAVA/romanizing/translated-jobs.csv";
 	private final static String NONHAN_NAMES = "OCR/JAVA/romanizing/roman-non-han_names.csv";
+	private final static String TAR = "OCR/translated-names.tsv";
 
 	private static HashMap<String, String> jobToEng = new HashMap<String, String>();
 	private static HashMap<String, String> nonHanNameToEng = new HashMap<String, String>();
@@ -90,7 +91,15 @@ public class NameRoman {
 				else
 					roman = RomanizeMain.romanizeStandardHanName(name);
 
-				roman += " (" + (jobToEng.containsKey(title) ? jobToEng.get(title) : title) + ")";
+				String engTitle = "";
+				if(jobToEng.containsKey(title)) {
+					engTitle = jobToEng.get(title);
+				} else {
+					engTitle = title;
+					throw new RuntimeException("Unrecognized job title: " + title);
+				}
+
+				roman += " (" + engTitle + ")";
 				otherStaff += roman + ", ";
 			}
 			if(otherStaff.endsWith(", "))
@@ -102,7 +111,7 @@ public class NameRoman {
 			System.out.println("Translated " + i + "/" + films.size());
 		}
 		
-		BufferedWriter writer = new BufferedWriter(new FileWriter("OCR/translated-names.tsv"));
+		BufferedWriter writer = new BufferedWriter(new FileWriter(TAR));
 		i = 0;
 		for (TranslateTemp t : translated) {
 			writer.write(t.toString());
