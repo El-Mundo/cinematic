@@ -84,11 +84,13 @@ public class NameRoman {
 			for (String name : other.keySet()) {
 				String title = other.get(name);
 				String roman = "";
+				
 				if(nonHanNameToEng.containsKey(name))
 					roman = nonHanNameToEng.get(name);
 				else
 					roman = RomanizeMain.romanizeStandardHanName(name);
-				roman += " (" + jobToEng.get(title) + ")";
+
+				roman += " (" + (jobToEng.containsKey(title) ? jobToEng.get(title) : title) + ")";
 				otherStaff += roman + ", ";
 			}
 			if(otherStaff.endsWith(", "))
@@ -125,7 +127,7 @@ public class NameRoman {
 
 		@Override
 		public String toString() {
-			return key + "\t" + dir + "\t" + script + "\t" + act + "\t" + other;
+			return key + ";" + dir + ";" + script + ";" + act + ";" + other;
 		}
 	}
 

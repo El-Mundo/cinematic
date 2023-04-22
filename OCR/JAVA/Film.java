@@ -25,7 +25,7 @@ public class Film {
 	public static final String METADATA_PATH = "metadata.csv", EXTRA_METADATA_PATH = "metadata-extra.csv", STAFF_PLOT_DATA_PATH = "metadata-staff_plot.csv";
 	public static final String ORGANISATION_LIST_PATH = "OCR/organizations.csv", LONG_PERSON_NAME_LIST_PATH = "OCR/non-han_chn_names_or_special_authorship.csv";
 	public static final String STUDIO_LIST_PATH = "OCR/studios.csv";
-	public static final String TRANSLATED_NAMES = "OCR/translated-names.csv", TRANSLATED_PLOTS = "OCR/translated-plot.csv";
+	public static final String TRANSLATED_NAMES = "OCR/translated-names.tsv", TRANSLATED_PLOTS = "OCR/translated-plot.tsv";
 
 	public static HashMap<String, String> studioCategoryMap;
 
@@ -367,7 +367,14 @@ public class Film {
 		String line = null;
 
 		while((line = reader.readLine()) != null) {
-			String[] lineArray = line.split(",");
+			String[] lineArray = line.split("\\t");
+			if(lineArray[0].equals(this.key)) {
+				reader.close();
+				String plot = lineArray[1];
+				if(plot.endsWith("\"") && plot.startsWith("\""))
+					plot = plot.substring(1, plot.length() - 1);
+				return plot;
+			}
 		}
 			
 		reader.close();
@@ -417,5 +424,39 @@ public class Film {
 			e.printStackTrace();
 		}
 	}
+
+	//1-directors, 2-scriptwriters, 3-acting members, 4-other staff
+	@JsonIgnore
+	private String getTranslatedMembership(int col) throws IOException {
+		File file = new File(TRANSLATED_NAMES);
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		String line = null;
+		while((line = reader.readLine()) != null) {
+			String[] lineArray = line.split(";", -1);
+			if(lineArray[0].equals(this.key)) {
+				reader.close();
+				String directors = lineArray[col];
+				return directors;
+			}
+		}
+		reader.close();
+		throw new IOException("Unexpected film key in translated names: \"" + this.key + "\"");
+	}
 	
+	public String getTranslatedDirectors() throws IOException {
+		return getTranslatedMembership(1);
+	}
+
+	public String getTranslatedScriptwriters() throws IOException {
+		return getTranslatedMembership(2);
+	}
+
+	public String getTranslatedActing() throws IOException {
+		return getTranslatedMembership(3);
+	}
+
+	public String getTranslatedOtherStaff() throws IOException {
+		return getTranslatedMembership(4);
+	}
+
 }
