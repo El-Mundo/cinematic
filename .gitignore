@@ -18,6 +18,8 @@ OCR/JAVA/source-xls/
 Network/csv/edges/edges-all-unweighted.csv
 #Ignore Baidu API key
 baidu_key.txt
+#Do not include the non-Han name list
+roman-non-han_names.csv
 
 ##################### PYTHON IGNORE ##########################
 # Byte-compiled / optimized / DLL files

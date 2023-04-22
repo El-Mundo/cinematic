@@ -1,41 +1,24 @@
 package GIS.JAVA;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 
-import OCR.JAVA.Film;
-
 public class GeographyMovement {
-	private static ArrayList<Film> films;
 	private static final String ALL_NODES_LIST = "Network/csv/nodes/nodes-all.csv";
 	private static final String NODES_DIRECTORY = "Network/csv/nodes/";
 	private static final String TAR = "GIS/source/map_plots.csv";
 
 	public static void main(String[] args) {
-		try {
-			//writeMetadataJSON();
+		try {;
 			initAllNodesAsMapPlots();
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
-	}
-
-	@SuppressWarnings("unused")
-	private static void writeMetadataJSON() throws IOException {
-		films = Film.initAllFilms();
-		ObjectMapper mapper = new ObjectMapper();
-		String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(films);
-		BufferedWriter writer = new BufferedWriter(new FileWriter("metadata-all.json"));
-		writer.write(json);
-		writer.close();
 	}
 
 	private static void initAllNodesAsMapPlots() throws IOException {

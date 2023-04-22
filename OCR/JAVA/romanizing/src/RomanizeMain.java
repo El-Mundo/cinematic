@@ -28,6 +28,33 @@ public class RomanizeMain {
 		GenerateRomanizedList();
 	}
 
+	protected static String romanizeStandardHanName(String name) {
+		char[] chineseCharacters = name.toCharArray();
+		String output = "";
+
+		int surname = 0; //0-Surname, 1-First letter in give name, 2- other chars in name
+		for(char c : chineseCharacters){
+			String p = chineseCharToPinyin(c);
+			if(p.isBlank())
+				p = c + "";
+			else
+				p = p.trim();
+
+			if(surname == 0) {
+				if(Character.isLetter(p.charAt(0)))
+					p = p.substring(0, 1).toUpperCase() + p.substring(1);
+				p += " ";
+				surname = 1;
+			}else if(surname == 1) {
+				if(Character.isLetter(p.charAt(0)))
+					p = p.substring(0, 1).toUpperCase() + p.substring(1);
+				surname = 2;
+			}
+			output += p;
+		}
+		return output;
+	}
+
 	protected static void romanize() throws IOException {
 		File file = new File(inputPath);
 		FileReader fr = new FileReader(file);

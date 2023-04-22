@@ -25,6 +25,7 @@ public class Film {
 	public static final String METADATA_PATH = "metadata.csv", EXTRA_METADATA_PATH = "metadata-extra.csv", STAFF_PLOT_DATA_PATH = "metadata-staff_plot.csv";
 	public static final String ORGANISATION_LIST_PATH = "OCR/organizations.csv", LONG_PERSON_NAME_LIST_PATH = "OCR/non-han_chn_names_or_special_authorship.csv";
 	public static final String STUDIO_LIST_PATH = "OCR/studios.csv";
+	public static final String TRANSLATED_NAMES = "OCR/translated-names.csv", TRANSLATED_PLOTS = "OCR/translated-plot.csv";
 
 	public static HashMap<String, String> studioCategoryMap;
 
@@ -358,6 +359,19 @@ public class Film {
 		}
 
 		return names.toArray(new String[names.size()]);
+	}
+
+	public String getTranslatedPlotSummary() throws IOException {
+		File file = new File(TRANSLATED_PLOTS);
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		String line = null;
+
+		while((line = reader.readLine()) != null) {
+			String[] lineArray = line.split(",");
+		}
+			
+		reader.close();
+		throw new IOException("Unexpected film key in translated plots: \"" + this.key + "\"");
 	}
 
 	public static void WriteAllFilmTypes() throws IOException {
