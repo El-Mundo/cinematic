@@ -21,8 +21,8 @@ public class GeographyMovement {
 	*/
 	protected static final boolean APPLY_INERT = true, SPLIT_SHANGHAI_STUDIOS = true;  //These two only work for "initAllPlotlyAnimatedMapPlots()"
 	protected static final boolean APPLY_RANDOM_OFFSET = true;
-	protected static final double RANDOM_OFFSET = 5.0;
-	protected static final boolean USE_PIXEL_DATA_AS_SOURCE = true; //Whether to use latitude and longitude data or pixel data as the source of geographical positions
+	protected static final double RANDOM_OFFSET = 0.5;
+	protected static final boolean USE_PIXEL_DATA_AS_SOURCE = false; //Whether to use latitude and longitude data or pixel data as the source of geographical positions
 
 	protected static class Pos {
 		double lat, lon;
@@ -204,7 +204,10 @@ public class GeographyMovement {
 		}
 
 		int k = 0;
-		File target = new File(SRC);
+		String path = SRC;
+		if(USE_PIXEL_DATA_AS_SOURCE) path = path.substring(0, path.lastIndexOf(".")) + "(pixel-axis).csv";
+		else path = path.substring(0, path.lastIndexOf(".")) + "(geographical).csv";
+		File target = new File(path);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(target, false));
 		writer.write("Network ID,Name,Debut Year,Last Appearance,Debut from Private Studio,Debut Region");
 		for(int year = 1949; year < 1967; year++) {

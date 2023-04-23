@@ -8,42 +8,11 @@ GROUP_BY_WHETHER_DEBUT_FROM_PRIVATE_STUDIOS = False
 image_filename = "GIS/Plotly/res/map.png"
 world_map = Image.open(image_filename)
 
-df = pd.read_csv("GIS/source/people_plots(pixel-axis).csv")
-
-years = ["1949", "1950", "1951", "1952", "1953", "1954", "1955", "1956", "1957", "1958",
-         "1959", "1960", "1961", "1962", "1963", "1964", "1965", "1966"]
-
-sliders_dict = {
-    "active":0,
-    "yanchor":"top",
-    "xanchor":"left",
-    "currentvalue":{
-        "font":{"size": 20},
-        "prefix":"Year:",
-        "visible":True,
-        "xanchor":"right"
-	},
-    "transition": {"duration": 2400, "easing": "cubic-in-out"},
-    "pad": {"b": 10, "t": 50},
-    "len": 0.9,
-    "x": 0.1,
-    "y": 0,
-    "steps": []
-}
-
-for year in years:
-    slider_step = {"args": [
-        [year],
-        {"frame": {"duration": 2400, "redraw": False},
-         "mode": "immediate",
-         "transition": {"duration": 2400}}
-    ],
-        "label": year,
-        "method": "animate"}
-    sliders_dict["steps"].append(slider_step)
+px.set_mapbox_access_token(open("GIS/Plotly/mapbox_token.txt").read())
+df = pd.read_csv("GIS/source/people_plots(geographical).csv")
 
 if(GROUP_BY_WHETHER_DEBUT_FROM_PRIVATE_STUDIOS == False):
-	fig = px.scatter(df, y="lat", x="long",
+	fig = px.scatter_mapbox(df, lat="lat", lon="long",
 						color_continuous_scale="matter",
 						color="dg",
 						color_discrete_map={
@@ -96,38 +65,42 @@ if(GROUP_BY_WHETHER_DEBUT_FROM_PRIVATE_STUDIOS == False):
 							"Beijing / Shanghai (state) / Anhui": "#A3a3a3",
 							"Beijing / Shanghai (state) / Northeast": "#A3a3a3"
 						},
-						hover_name="name", range_x=[1000,2000], range_y=[-900,-400],
-						animation_frame="yr", animation_group="id")
-else:
-	fig = px.scatter(df, y="lat", x="long",
-						color_continuous_scale="matter",
-						color="pri",
-						color_discrete_map={
-							"true" : "#10ce5e",#green
-							"false" : "#f5a623" #orange
-						},
-						hover_name="name", range_x=[1000,2000], range_y=[-900,-400],
-						animation_frame="yr", animation_group="id")
+						hover_name="name", zoom=3,
+						animation_frame="yr", animation_group="id",
+						mapbox_style="mapbox://styles/el-mundo/clgse9vm7001x01p6hrli21dq")
+years = ["1949", "1950", "1951", "1952", "1953", "1954", "1955", "1956", "1957", "1958",
+         "1959", "1960", "1961", "1962", "1963", "1964", "1965", "1966"]
 
-fig.update_layout(height = 800, width = 1280,
-				margin={"r": 0, "t": 0, "l": 0, "b": 0},
-				sliders = [sliders_dict])
+sliders_dict = {
+    "active":0,
+    "yanchor":"top",
+    "xanchor":"left",
+    "currentvalue":{
+        "font":{"size": 20},
+        "prefix":"Year:",
+        "visible":True,
+        "xanchor":"right"
+	},
+    "transition": {"duration": 2400, "easing": "cubic-in-out"},
+    "pad": {"b": 10, "t": 50},
+    "len": 0.9,
+    "x": 0.1,
+    "y": 0,
+    "steps": []
+}
 
-fig.add_layout_image(
-        dict(
-            source=world_map,
-            xref="x",
-            yref="y",
-            x=0,
-            y=0,
-            sizex=2410,
-            sizey=1169,
-            #sizing="stretch",
-            opacity=1,
-            layer="below")
-)
-fig.update_yaxes(
-    scaleanchor="x",
-    scaleratio=1,
-)
+for year in years:
+    slider_step = {"args": [
+        [year],
+        {"frame": {"duration": 2400, "redraw": False},
+         "mode": "immediate",
+         "transition": {"duration": 2400}}
+    ],
+        "label": year,
+        "method": "animate"}
+    sliders_dict["steps"].append(slider_step)
+
+
+fig.update_traces(cluster=dict(enabled=True))
+fig.update_layout(height = 800, width = 1280, margin={"r": 10, "t": 10, "l": 10, "b": 10},sliders=[sliders_dict])
 fig.show()
