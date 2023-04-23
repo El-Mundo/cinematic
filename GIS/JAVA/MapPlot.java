@@ -3,7 +3,11 @@ package GIS.JAVA;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+import java.util.Set;
 
+import GIS.JAVA.GeographyMovement.Pos;
 import OCR.JAVA.Studio;
 
 public class MapPlot {
@@ -112,6 +116,191 @@ public class MapPlot {
 		@Override
 		public int hashCode() {
 			return id;
+		}
+	}
+
+	//The appearance of a person in a year
+	protected static class GeoAppearance {
+		public HashMap<String, Integer> affiliatedCategories;//"Studio Category" -> "Number of appearances"
+		protected static Random random = new Random();
+
+		public GeoAppearance() {
+			this.affiliatedCategories = new HashMap<String, Integer>();
+		}
+
+		public String[] getMainCategory() {
+			HashMap<String, Integer> hs = new HashMap<String, Integer>();
+			int freq = 0;
+	
+			for (String cat : this.affiliatedCategories.keySet()) {
+				int newFreq = 0;
+				if (hs.containsKey(cat)) {
+					newFreq = hs.get(cat) + this.affiliatedCategories.get(cat);
+					throw new RuntimeException("Unexpected studio duplication!");
+				} else {
+					newFreq = this.affiliatedCategories.get(cat);
+				}
+				hs.put(cat, newFreq);
+				freq = Math.max(newFreq, freq);
+			}
+	
+			Set<Map.Entry<String, Integer> > set = hs.entrySet();
+			ArrayList<String> keys = new ArrayList<String>();
+			for (Map.Entry<String, Integer> me : set) {
+				if (me.getValue() == freq) {
+					keys.add(me.getKey());
+				}
+			}
+			return keys.toArray(new String[keys.size()]);
+		}
+
+		@Override
+		public String toString() {
+			String s = "";
+			String[] cats = getMainCategory();
+			if(cats.length > 0) {
+				for(String cat : cats) {
+					s += cat + " & ";
+				}
+			} else {
+				s += "None & ";
+			}
+			Pos tar = estimateGeographicalPosition(cats);
+
+			if(tar != null) {
+				return s.substring(0, s.length() - 3) + "," + tar.toString();
+			}else{
+				return s.substring(0, s.length() - 3) + ",,";
+			}
+		}
+
+		public static Pos estimateGeographicalPosition(String[] cats) {
+			Pos tar = null;
+			Pos out;
+			if(cats.length > 3) throw new RuntimeException("Unexpected string length!");
+			if(cats.length == 1) {
+				tar = GeographyMovement.studioPos.get(cats[0]);
+				out = new Pos(tar.lat, tar.lon);
+			}else if(cats.length == 2) {
+				Pos a = GeographyMovement.studioPos.get(cats[0]);
+				Pos b = GeographyMovement.studioPos.get(cats[1]);
+				out = Pos.getMiddlePoint(a, b);
+			}else if(cats.length == 3) {
+				Pos a = GeographyMovement.studioPos.get(cats[0]);
+				Pos b = GeographyMovement.studioPos.get(cats[1]);
+				Pos c = GeographyMovement.studioPos.get(cats[2]);
+				out = Pos.getMiddlePoint(a, b, c);
+			}else {
+				out = tar = null;
+			}
+
+			if(GeographyMovement.APPLY_RANDOM_OFFSET) {
+				if(tar != null) {
+					double lat = tar.lat + random.nextDouble() * GeographyMovement.RANDOM_OFFSET;
+					double lon = tar.lon + random.nextDouble() * GeographyMovement.RANDOM_OFFSET;
+					out = new Pos(lat, lon);
+				}
+			}
+			
+			return out;
+		}
+
+		public static String formatCategories(ArrayList<String> categories) {
+			String s = "";
+			if(categories.size() > 0) {
+				for(String cat : categories) {
+					s += cat + " & ";
+				}
+			} else {
+				s += "None & ";
+			}
+			return s.substring(0, s.length() - 3);
+		}
+	}
+
+	protected static class GeoPerson {
+		public int networkId;
+		public String name;
+		public int debutYear, lastAppearance;
+		public boolean debutFromPrivate;
+		public String debutRegion;
+		public HashMap<Integer, GeoAppearance> appearances;
+
+		public GeoPerson(int networkId, String name, int debutYear, int lastAppearance, boolean debutFromPrivate, String debutRegion) {
+			this.networkId = networkId;
+			this.name = name;
+			this.debutYear = debutYear;
+			this.lastAppearance = lastAppearance;
+			this.debutFromPrivate = debutFromPrivate;
+			this.debutRegion = debutRegion;
+			this.appearances = new HashMap<Integer, GeoAppearance>();
+			for(int year=1949; year<1967; year++) {
+				this.appearances.put(year, new GeoAppearance());
+			}
+		}
+
+		@Override
+		public String toString() {
+			String out = "";
+			String base = this.networkId + "," + this.name + "," + this.debutYear + "," + this.lastAppearance + "," + this.debutFromPrivate + "," + this.debutRegion;
+			if(!GeographyMovement.APPLY_INERT) {
+				for (int year = 1949; year < 1967; year++) {
+					out += base + "," + year + "," + this.appearances.get(year).toString() + "\n";
+				}
+			} else {
+				ArrayList<String> prevLocs = new ArrayList<String>();
+				for (int year = 1949; year < 1967; year++) {
+					if(year < debutYear || year > lastAppearance) {
+						//out += base + "," + year + ",None,,\n";
+					}else if(year == debutYear) {
+						out += base + "," + year + "," + this.appearances.get(year).toString() + "\n";
+						String[] locs = this.appearances.get(year).getMainCategory();
+						for(String loc : locs) {
+							prevLocs.add(loc);
+						}
+					}else if(this.appearances.get(year).getMainCategory().length <= 0){
+						Pos pos = GeoAppearance.estimateGeographicalPosition(prevLocs.toArray(new String[prevLocs.size()]));
+						out += base + "," + year + ",Stay," + pos.toString() + "\n";
+					}else{
+						String[] newLocs = this.appearances.get(year).getMainCategory();
+						ArrayList<String> inertLocs = new ArrayList<String>();
+						for (String string : newLocs) {
+							if(prevLocs.contains(string)) {
+								inertLocs.add(string);
+							}
+						}
+
+						if(inertLocs.size() <= 0) {
+							String[] locs = this.appearances.get(year).getMainCategory();
+							for (String string : locs) {
+								inertLocs.add(string);
+							}
+						}
+
+						Pos pos = GeoAppearance.estimateGeographicalPosition(inertLocs.toArray(new String[inertLocs.size()]));
+						out += base + "," + year + "," + GeoAppearance.formatCategories(inertLocs) + "," + pos.toString()+ "\n";
+
+						prevLocs.clear();
+						for(String loc : inertLocs) {
+							prevLocs.add(loc);
+						}
+					}
+				}
+			}
+			return out;
+		}
+
+		public void addAffiliationCategory(String category, int year, int count) throws IOException {
+			String key = category;
+			if(!GeographyMovement.SPLIT_SHANGHAI_STUDIOS && category.contains("Shanghai")) {
+				key = "Shanghai (all)";
+			}
+			HashMap<String, Integer> app = this.appearances.get(year).affiliatedCategories;
+			if(app.containsKey(key)) {
+				app.put(key, app.get(key) + count);
+			} else {
+				app.put(key, count);
+			}
 		}
 	}
 		

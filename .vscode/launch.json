@@ -1,0 +1,161 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "java",
+			"name": "Current File",
+			"request": "launch",
+			"mainClass": "${file}"
+		},
+		{
+			"type": "java",
+			"name": "VideoCompletion",
+			"request": "launch",
+			"mainClass": "CV.JAVA.VideoCompletion",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "VideoFormatting",
+			"request": "launch",
+			"mainClass": "CV.JAVA.VideoFormatting",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "GeoCategoryFilmography",
+			"request": "launch",
+			"mainClass": "GIS.JAVA.GeoCategoryFilmography",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "GeographyMovement",
+			"request": "launch",
+			"mainClass": "GIS.JAVA.GeographyMovement",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "GetEdges",
+			"request": "launch",
+			"mainClass": "Network.JAVA.GetEdges",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "GetNodes",
+			"request": "launch",
+			"mainClass": "Network.JAVA.GetNodes",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "JSONConverter",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.JSONConverter",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "GetCVTargets",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.networking.GetCVTargets",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "PrivateFilter",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.networking.PrivateFilter",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "AnalyzeDescription",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.postprocessing.AnalyzeDescription",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "ChineseLiteracy",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.postprocessing.ChineseLiteracy",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "Descript",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.postprocessing.Descript",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "FilmTyping",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.postprocessing.FilmTyping",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "HyphenCheck",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.postprocessing.HyphenCheck",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "LanMapping",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.postprocessing.LanMapping",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "LineBreakCheck",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.postprocessing.LineBreakCheck",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "Production",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.postprocessing.Production",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "StaffCheck",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.postprocessing.StaffCheck",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "TextEx",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.postprocessing.TextEx",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "NameRoman",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.romanizing.src.NameRoman",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		},
+		{
+			"type": "java",
+			"name": "RomanizeMain",
+			"request": "launch",
+			"mainClass": "OCR.JAVA.romanizing.src.RomanizeMain",
+			"projectName": "ChineseFilmPreservation_b45444af"
+		}
+	]
+}

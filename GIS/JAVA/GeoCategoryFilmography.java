@@ -12,12 +12,13 @@ import java.util.HashMap;
 import OCR.JAVA.Film;
 
 public class GeoCategoryFilmography {
-	private static final String SOURCE_PATH = "GIS/source/studios_geo_src.csv",
+	private static final String SOURCE_PATH = "GIS/source/studios_geo_src.csv", SOURCE_PIX_PATH = "GIS/source/studios_pixel_src.csv",
 		TAR = "GIS/source/studios_geo.csv", TAR_SHANGHAI_SPLITED = "GIS/source/studios_geo_shanghai_splited.csv";
 	private static final double MAPBOX_SIZE_SCALE = 10; //The size of the circle in Mapbox is scaled by this number
 
-	private static boolean CLUSTER_SHANGHAI_SUBS = true,
+	private static boolean CLUSTER_SHANGHAI_SUBS = false,
 		ACCUMULATE = false; //enable ACCUMULATE to count the films shot before the selected year into the selected year
+	private static boolean USE_PIXEL_AS_AXIS = true; //Whether to use pixel data as the axis of the map
 
 	private static class GeoCategoryYearData {
 		public int colourFilmCount, bwFilmCount;
@@ -94,7 +95,7 @@ public class GeoCategoryFilmography {
 	}
 
 	private static void countAllCategoryFilmCountsByYear() throws IOException {
-		File srcFile = new File(SOURCE_PATH);
+		File srcFile = new File(USE_PIXEL_AS_AXIS ? SOURCE_PIX_PATH : SOURCE_PATH);
 		BufferedReader reader = new BufferedReader(new FileReader(srcFile));
 		String line = reader.readLine();
 		//Read all cities' data into an ArrayList
@@ -106,13 +107,20 @@ public class GeoCategoryFilmography {
 			double latitude = Double.parseDouble(lineSplit[2]);
 			double longitude = Double.parseDouble(lineSplit[3]);
 			int filmTotalCount = Integer.parseInt(lineSplit[4]);
-			counters.add(new GeoCategoryFilmCounter(city, region, latitude, longitude, filmTotalCount));
+			if(!USE_PIXEL_AS_AXIS)
+				counters.add(new GeoCategoryFilmCounter(city, region, latitude, longitude, filmTotalCount));
+			else
+				counters.add(new GeoCategoryFilmCounter(city, region, longitude, latitude, filmTotalCount));
 		}
 		reader.close();
 
 		if(CLUSTER_SHANGHAI_SUBS) {
 			//Cluster Shanghai's sub-groups into one city
-			GeoCategoryFilmCounter shanghai = new GeoCategoryFilmCounter("Shanghai", "Shanghai (all)", 31.2304,121.4737, 0);
+			GeoCategoryFilmCounter shanghai;
+			if(!USE_PIXEL_AS_AXIS)
+				shanghai = new GeoCategoryFilmCounter("Shanghai", "Shanghai (all)", 31.2304,121.4737, 0);
+			else
+				shanghai = new GeoCategoryFilmCounter("Shanghai", "Shanghai (all)", -708, 1610, 0);
 			for (int i=0; i<counters.size(); i++) {
 				GeoCategoryFilmCounter counter = counters.get(i);
 				if(counter.city.equals("Shanghai")) {
@@ -155,6 +163,7 @@ public class GeoCategoryFilmography {
 
 			//Write all the data to a CSV file
 			String path = (CLUSTER_SHANGHAI_SUBS ? TAR : TAR_SHANGHAI_SPLITED);
+			if(USE_PIXEL_AS_AXIS) path = path.substring(0, path.lastIndexOf(".")) + "(pixel)" + ".csv";
 			if(!ACCUMULATE) path = path.substring(0, path.lastIndexOf(".")) + "(year_isolated)" + ".csv";
 			BufferedWriter writer = new BufferedWriter(new FileWriter(path));
 			writer.write("city,geo_category,latitude,longitude,total_films,year,films_in_year,colour_film_ratio_in_year,suggested_plot_size");
