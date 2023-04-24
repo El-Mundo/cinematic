@@ -16,7 +16,7 @@ public class GeoCategoryFilmography {
 		TAR = "GIS/source/studios_geo.csv", TAR_SHANGHAI_SPLITED = "GIS/source/studios_geo_shanghai_splited.csv";
 	private static final double MAPBOX_SIZE_SCALE = 10; //The size of the circle in Mapbox is scaled by this number
 
-	private static boolean CLUSTER_SHANGHAI_SUBS = false,
+	private static boolean CLUSTER_SHANGHAI_SUBS = true,
 		ACCUMULATE = false; //enable ACCUMULATE to count the films shot before the selected year into the selected year
 	private static boolean USE_PIXEL_AS_AXIS = true; //Whether to use pixel data as the axis of the map
 

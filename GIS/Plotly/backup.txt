@@ -1,0 +1,37 @@
+#display the data in df2 in plotly express scatter plot
+figx = px.scatter(df2, y="latitude", x="longitude", size="films_in_year",
+					color="colour_film_ratio_in_year", color_continuous_scale="matter", range_color=[0, 1],
+                    size_max=75, text="city", hover_name="geo_category",
+                    animation_frame="year", animation_group="geo_category")
+
+#display the data in df on top of figx
+if (df2.empty == False):
+	figx.add_trace(go.Scatter(x=df["long"], y=df["lat"],
+						mode="markers",
+						marker=dict(size=10, color="black"),
+						hoverinfo="text",
+						text=df["name"])
+	)
+
+figx.update_layout(height = 800, width = 1280,
+				margin={"r": 0, "t": 0, "l": 0, "b": 0},
+				sliders = [sliders_dict])
+
+figx.add_layout_image(
+        dict(
+            source=world_map,
+            xref="x",
+            yref="y",
+            x=0,
+            y=0,
+            sizex=2410,
+            sizey=1169,
+            #sizing="stretch",
+            opacity=1,
+            layer="below")
+)
+figx.update_yaxes(
+    scaleanchor="x",
+    scaleratio=1,
+)
+figx.show()

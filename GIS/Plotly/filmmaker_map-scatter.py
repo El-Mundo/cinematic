@@ -1,5 +1,7 @@
 import plotly.express as px
+import plotly.graph_objects as go
 import pandas as pd
+from plotly.subplots import make_subplots
 
 from PIL import Image
 
@@ -9,6 +11,7 @@ image_filename = "GIS/Plotly/res/map.png"
 world_map = Image.open(image_filename)
 
 df = pd.read_csv("GIS/source/people_plots(pixel-axis).csv")
+df2 = pd.read_csv("GIS/source/studios_geo(pixel)(year_isolated).csv")
 
 years = ["1949", "1950", "1951", "1952", "1953", "1954", "1955", "1956", "1957", "1958",
          "1959", "1960", "1961", "1962", "1963", "1964", "1965", "1966"]
@@ -43,11 +46,11 @@ for year in years:
     sliders_dict["steps"].append(slider_step)
 
 if(GROUP_BY_WHETHER_DEBUT_FROM_PRIVATE_STUDIOS == False):
-	fig = px.scatter(df, y="lat", x="long",
+	fig = go.Figure(px.scatter(df, y="lat", x="long",
 						color_continuous_scale="matter",
 						color="dg",
 						color_discrete_map={
-							"Shanghai (state)": "#2596be",#green
+							"Shanghai (state)": "#68d162",#green
 							"Shanghai (private)" : "#404840",#green black
 							"Shanghai (roc)" : "#96fb96",#light green
 							"Shanghai (state) / Hong Kong" : "#2596be", #dark green
@@ -98,8 +101,9 @@ if(GROUP_BY_WHETHER_DEBUT_FROM_PRIVATE_STUDIOS == False):
 						},
 						hover_name="name", range_x=[1000,2000], range_y=[-900,-400],
 						animation_frame="yr", animation_group="id")
+	)
 else:
-	fig = px.scatter(df, y="lat", x="long",
+	fig = go.Figure(px.scatter(df, y="lat", x="long",
 						color_continuous_scale="matter",
 						color="pri",
 						color_discrete_map={
@@ -108,12 +112,44 @@ else:
 						},
 						hover_name="name", range_x=[1000,2000], range_y=[-900,-400],
 						animation_frame="yr", animation_group="id")
+	)
 
-fig.update_layout(height = 800, width = 1280,
+fig2 = go.Figure(px.scatter(df2, y="latitude", x="longitude", size="films_in_year",
+					#color="colour_film_ratio_in_year", color_continuous_scale="matter", range_color=[0, 1],
+                    size_max=75, text="city", hover_name="geo_category",
+                    animation_frame="year", animation_group="geo_category", range_x=[1000,2000], range_y=[-900,-400],opacity=0.2,
+		    		color="geo_category",
+					color_discrete_map = {
+						"Shanghai (all)": "#68d162",#green
+						"Beijing": "#D063fb",#hliotrope
+						"Northeast": "#72d2ed",#sky blue
+						"Xi'an": "#Fb9f68",#tan orange
+						"Canton": "#Fb94cc",#lavender pink
+						"Xinjiang": "#C83b3b",#dark red
+						"Sichuan" : "#2c6398",#tropaz blue
+						"Hubei": "#C1C4A6",#yellow grey
+						"Anhui": "#9DA1C2",#blue grey
+						"Shandong": "#B2BEAB",#green grey
+						"Tianjin": "#AFC8C3",#cyan grey
+						"Zhejiang": "#BFBAD0"})#purple grey
+		)
+
+frames = [
+    go.Frame(data=f.data + fig.frames[i].data, name=f.name)
+    for i, f in enumerate(fig2.frames)
+]
+
+updmenus = [{"args": [None, {"frame": {"duration": 2000}}],"label": "&#9654;","method": "animate",},
+            {'args': [[None], {'frame': {'duration': 0}, 'mode': 'immediate', 'fromcurrent': True, }],
+                  'label': '&#9724;', 'method': 'animate'} ]
+
+fig3 = go.Figure(data = fig2.data + fig.data, frames=frames, layout=fig.layout)
+
+fig3.update_layout(height = 800, width = 1280,
 				margin={"r": 0, "t": 0, "l": 0, "b": 0},
 				sliders = [sliders_dict])
-
-fig.add_layout_image(
+fig3.update(layout_coloraxis_showscale=False)
+fig3.add_layout_image(
         dict(
             source=world_map,
             xref="x",
@@ -126,8 +162,8 @@ fig.add_layout_image(
             opacity=1,
             layer="below")
 )
-fig.update_yaxes(
+fig3.update_yaxes(
     scaleanchor="x",
     scaleratio=1,
 )
-fig.show()
+fig3.show()

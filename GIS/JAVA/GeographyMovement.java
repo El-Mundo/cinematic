@@ -19,10 +19,10 @@ public class GeographyMovement {
 	/* If inert is applied, the plot will stay in the city of last
 	 * year if it is found to affiliate with multiple regions in the next year and these regions include its previous one
 	*/
-	protected static final boolean APPLY_INERT = true, SPLIT_SHANGHAI_STUDIOS = true;  //These two only work for "initAllPlotlyAnimatedMapPlots()"
+	protected static boolean APPLY_INERT = true, SPLIT_SHANGHAI_STUDIOS = true;  //These two only work for "initAllPlotlyAnimatedMapPlots()"
 	protected static final boolean APPLY_RANDOM_OFFSET = true;
-	protected static final double RANDOM_OFFSET = 0.5;
-	protected static final boolean USE_PIXEL_DATA_AS_SOURCE = false; //Whether to use latitude and longitude data or pixel data as the source of geographical positions
+	protected static final double RANDOM_OFFSET = 3.0;
+	protected static final boolean USE_PIXEL_DATA_AS_SOURCE = true; //Whether to use latitude and longitude data or pixel data as the source of geographical positions
 
 	protected static class Pos {
 		double lat, lon;
@@ -139,20 +139,24 @@ public class GeographyMovement {
 		reader.close();
 
 		int k = 0;
-		File target = new File(TAR);
+		String path = TAR;
+		if(USE_PIXEL_DATA_AS_SOURCE) path = path.substring(0, path.lastIndexOf(".")) + "(pixel-axis).csv";
+		else path = path.substring(0, path.lastIndexOf(".")) + "(geographical).csv";
+		File target = new File(path);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(target, false));
-		writer.write("id,name,debut,last,pri,dg,yr,cat,lat,long");
-		writer.newLine();
-		GeoPerson[] peopleArray = people.values().toArray(new GeoPerson[people.size()]);
-		System.out.println("Writing results...");
-		for (GeoPerson person : peopleArray) {
-			writer.append(person.toString());
-			System.out.println("Writing to file: " + k + "/" + people.size());
-			k++;
-		}
-		if(USE_PIXEL_DATA_AS_SOURCE)
-			writer.append(getAllColourFixPlots());
-		writer.close();
+
+			writer.write("id,name,debut,last,pri,dg,yr,cat,lat,long");
+			writer.newLine();
+			GeoPerson[] peopleArray = people.values().toArray(new GeoPerson[people.size()]);
+			System.out.println("Writing results...");
+			for (GeoPerson person : peopleArray) {
+				writer.append(person.toString());
+				System.out.println("Writing to file: " + k + "/" + people.size());
+				k++;
+			}
+			if(USE_PIXEL_DATA_AS_SOURCE)
+				writer.append(getAllColourFixPlots());
+			writer.close();
 
 		System.out.println("Done.");
 	}
@@ -237,8 +241,8 @@ public class GeographyMovement {
 		return lines;
 	}
 
-	private final static String PLOTLY_COLOUR_DEBUG_PREFIX = ",颜色刷新,1949,1949,false,Beijing,1949,";
-	private final static String PLOTLY_COLOUR_DEBUG_FIX = ",1000,-1000\n";
+	private final static String PLOTLY_COLOUR_DEBUG_PREFIX = ",颜色刷新,1949,1949,false,";
+	private final static String PLOTLY_COLOUR_DEBUG_FIX = ",1949,Beijing,1000,-1000\n";
 	private final static String[] UNLOADED_CATEGORIES = {
 		"Shanghai (state)","Shanghai (state) / Hong Kong","Beijing",
 		"Beijing / Hong Kong","Northeast","Xi'an","Canton","Hong Kong / Canton",

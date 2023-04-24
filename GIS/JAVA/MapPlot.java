@@ -196,8 +196,8 @@ public class MapPlot {
 
 			if(GeographyMovement.APPLY_RANDOM_OFFSET) {
 				if(tar != null) {
-					double lat = tar.lat + random.nextDouble() * GeographyMovement.RANDOM_OFFSET;
-					double lon = tar.lon + random.nextDouble() * GeographyMovement.RANDOM_OFFSET;
+					double lat = tar.lat + random.nextDouble() * GeographyMovement.RANDOM_OFFSET - GeographyMovement.RANDOM_OFFSET / 2;
+					double lon = tar.lon + random.nextDouble() * GeographyMovement.RANDOM_OFFSET - GeographyMovement.RANDOM_OFFSET / 2;
 					out = new Pos(lat, lon);
 				}
 			}
@@ -261,6 +261,8 @@ public class MapPlot {
 					}else if(this.appearances.get(year).getMainCategory().length <= 0){
 						Pos pos = GeoAppearance.estimateGeographicalPosition(prevLocs.toArray(new String[prevLocs.size()]));
 						out += base + "," + year + ",Stay," + pos.toString() + "\n";
+						System.out.println(out);
+						//out += base + "," + year + "," + GeoAppearance.formatCategories(prevLocs) + " ," + pos.toString() + "\n";
 					}else{
 						String[] newLocs = this.appearances.get(year).getMainCategory();
 						ArrayList<String> inertLocs = new ArrayList<String>();
