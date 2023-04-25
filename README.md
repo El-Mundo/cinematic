@@ -13,3 +13,7 @@ This project preserves the information about 702 Chinese films produced in the "
 Some [formatted csv files](Network/csv) that can be directly imported to **Gephi** for social network analysis (7038 nodes and 246658 edges)
 
 [OCR source data](OCR/source) scanned from *The Catalogue of Chinese Artistic Films* (the source data may contain some missing attributes, which have been fixed in [the main metadata file](metadata.csv))
+
+### Visualisation
+
+[A Plotly scatter map](GIS/Plotly/scatter_map.ipynb) of filmmakers/actors/actresses' geographical movement
