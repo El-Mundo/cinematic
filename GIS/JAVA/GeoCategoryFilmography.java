@@ -16,6 +16,12 @@ public class GeoCategoryFilmography {
 		TAR = "GIS/source/studios_geo.csv", TAR_SHANGHAI_SPLITED = "GIS/source/studios_geo_shanghai_splited.csv";
 	private static final double MAPBOX_SIZE_SCALE = 10; //The size of the circle in Mapbox is scaled by this number
 
+	/* To update all data used for visualzation,
+	run with "USE_PIXEL_AS_AXIS = false" and the other four 
+	in four combinations first, then run with 
+	"USE_PIXEL_AS_AXIS = true, ACCUMULATE = false, CLUSTER_SHANGHAI_SUBS =  true"
+	*/
+
 	private static boolean CLUSTER_SHANGHAI_SUBS = true,
 		ACCUMULATE = false; //enable ACCUMULATE to count the films shot before the selected year into the selected year
 	private static boolean USE_PIXEL_AS_AXIS = true; //Whether to use pixel data as the axis of the map
@@ -86,12 +92,32 @@ public class GeoCategoryFilmography {
 
 	public static void main(String[] args) {
 		try {
+			printAllCategoryFilmCount();
 			//initAllGeoCategories();
 			//countAllCategoryFilmCounts();
 			countAllCategoryFilmCountsByYear();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	private static void printAllCategoryFilmCount() throws IOException {
+		ArrayList<Film> films = Film.initAllFilms();
+		HashMap<String, Integer> filmCount = new HashMap<String, Integer>();
+		for (Film film : films) {
+			String[] locations = film.getCategory();
+			for (String location : locations) {
+				if(filmCount.containsKey(location))
+					filmCount.put(location, filmCount.get(location) + 1);
+				else
+					filmCount.put(location, 1);
+			}
+		}
+		for (String key : filmCount.keySet()) {
+			System.out.println(key + ": " + filmCount.get(key));
+		}
+		System.out.println("Read all GeoCategory film coutns. Proceed?");
+		System.in.read();
 	}
 
 	private static void countAllCategoryFilmCountsByYear() throws IOException {

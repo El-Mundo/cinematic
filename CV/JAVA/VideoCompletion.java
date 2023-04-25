@@ -14,8 +14,8 @@ public class VideoCompletion {
 	public static final String VIDEO_FILES = "../Temp";
 
 	public static void main(String[] args) throws IOException {
-		//checkCompletion();
-		checkMissingFile();
+		checkCompletion();
+		//checkMissingFile();
 	}
 
 	public static void checkMissingFile() throws IOException {

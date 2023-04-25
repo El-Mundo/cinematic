@@ -23,6 +23,7 @@ public class GeographyMovement {
 	protected static final boolean APPLY_RANDOM_OFFSET = true;
 	protected static final double RANDOM_OFFSET = 3.0;
 	protected static final boolean USE_PIXEL_DATA_AS_SOURCE = true; //Whether to use latitude and longitude data or pixel data as the source of geographical positions
+	private static final boolean UPDATE_BASE_MAP_PLOTS = false; //Run with this enabled once and then disabled once if metadata has been uddated
 
 	protected static class Pos {
 		double lat, lon;
@@ -57,9 +58,12 @@ public class GeographyMovement {
 
 	public static void main(String[] args) {
 		try {
-			initAllGeographicalPositions(USE_PIXEL_DATA_AS_SOURCE);
-			//initAllNodesAsMapPlots();
-			initAllPlotlyAnimatedMapPlots();
+			if(UPDATE_BASE_MAP_PLOTS)
+				initAllNodesAsMapPlots();
+			else {
+				initAllGeographicalPositions(USE_PIXEL_DATA_AS_SOURCE);
+				initAllPlotlyAnimatedMapPlots();
+			}
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
@@ -209,8 +213,6 @@ public class GeographyMovement {
 
 		int k = 0;
 		String path = SRC;
-		if(USE_PIXEL_DATA_AS_SOURCE) path = path.substring(0, path.lastIndexOf(".")) + "(pixel-axis).csv";
-		else path = path.substring(0, path.lastIndexOf(".")) + "(geographical).csv";
 		File target = new File(path);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(target, false));
 		writer.write("Network ID,Name,Debut Year,Last Appearance,Debut from Private Studio,Debut Region");

@@ -311,6 +311,33 @@ public class Film {
 		return films;
 	}
 
+	//Do not call this without calling initAllFilms first
+	public static ArrayList<Film> initAllFilmsInMainMetadata() throws IOException {
+		File mFile = new File(METADATA_PATH);
+		BufferedReader mReader = new BufferedReader(new FileReader(mFile));
+		String line = null;
+		ArrayList<Film> films = new ArrayList<Film>();
+		mReader.readLine();
+
+		while((line = mReader.readLine()) != null)
+			films.add(new Film(line, true));;
+		mReader.close();
+
+		if(studioCategoryMap == null) {
+			studioCategoryMap = new HashMap<String, String>();
+			File studioFile = new File(STUDIO_LIST_PATH);
+			BufferedReader sReader = new BufferedReader(new FileReader(studioFile));
+			sReader.readLine(); //Skip header
+			while((line = sReader.readLine()) != null) {
+				String[] lineArray = line.split(",");
+				studioCategoryMap.put(lineArray[0], lineArray[1]);
+			}
+			sReader.close();
+		}
+
+		return films;
+	}
+
 	//Use this function to check if a name signed in a certain role is an organisation or a person
 	public static boolean isOrganisation(String name) throws IOException {
 		if(name.length() <= 3) return false;
