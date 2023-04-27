@@ -1,4 +1,4 @@
-############### LEGACY (ABONDONED DUE TO POOR PERFORMANCE) ###############
+############### POOR PERFORMANCE WARNING ###############
 
 import plotly.express as px
 import pandas as pd
