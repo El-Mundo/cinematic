@@ -13,7 +13,7 @@ import OCR.JAVA.Film;
 
 public class GetEdges {
 	protected static final String EDGES_ROOT = "Network/csv/edges";
-	private static final boolean USE_WEIGHT = true, RUN_ALL_ONCE = true, RUN_YEAR_RANGE = true;
+	private static final boolean USE_WEIGHT = true, RUN_ALL_ONCE = false, RUN_YEAR_RANGE = true;
 
 	private static ArrayList<Film> films;
 

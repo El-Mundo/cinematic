@@ -312,6 +312,33 @@ public class Film {
 	}
 
 	//Do not call this without calling initAllFilms first
+	public static ArrayList<Film> initAllFilmsInExtraMetadata() throws IOException {
+		File eFile = new File(EXTRA_METADATA_PATH);
+		BufferedReader eReader = new BufferedReader(new FileReader(eFile));
+		String line = null;
+		ArrayList<Film> films = new ArrayList<Film>();
+		eReader.readLine();
+
+		while((line = eReader.readLine()) != null)
+			films.add(new Film(line, false));;
+		eReader.close();
+
+		if(studioCategoryMap == null) {
+			studioCategoryMap = new HashMap<String, String>();
+			File studioFile = new File(STUDIO_LIST_PATH);
+			BufferedReader sReader = new BufferedReader(new FileReader(studioFile));
+			sReader.readLine(); //Skip header
+			while((line = sReader.readLine()) != null) {
+				String[] lineArray = line.split(",");
+				studioCategoryMap.put(lineArray[0], lineArray[1]);
+			}
+			sReader.close();
+		}
+
+		return films;
+	}
+
+	//Do not call this without calling initAllFilms first
 	public static ArrayList<Film> initAllFilmsInMainMetadata() throws IOException {
 		File mFile = new File(METADATA_PATH);
 		BufferedReader mReader = new BufferedReader(new FileReader(mFile));

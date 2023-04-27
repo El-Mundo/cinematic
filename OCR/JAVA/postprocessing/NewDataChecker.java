@@ -11,6 +11,8 @@ import OCR.JAVA.Film;
 public class NewDataChecker {
 	private static final String SRC = "OCR/JAVA/postprocessing/dadian_entries.txt"; // Source path
 
+	private static boolean PRINT_DADIAN_MISSING = true;
+
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		//checkEntryCompletionAgainstDadian();
 		countDadianCompletion();
@@ -20,13 +22,17 @@ public class NewDataChecker {
 		File source = new File(SRC);
 		ArrayList<String> entriesNotInDadian = new ArrayList<String>();
 		ArrayList<String> missingEntries = new ArrayList<String>();
+		ArrayList<String> missingInBook = new ArrayList<String>();
 		ArrayList<Film> films = Film.initAllFilms();
 		ArrayList<Film> filmsInYear = new ArrayList<Film>();
+		ArrayList<Film> filmsInExtra = Film.initAllFilmsInExtraMetadata();
 		BufferedReader br = new BufferedReader(new FileReader(source));
 		String line = "";
 		int year = 0;
 		int count = 0, total = 0;
-		int privateCount = 0;
+		int privateCount = 0, dadianHongKong = 0;
+		ArrayList<String> extraFromDadian = new ArrayList<String>();
+
 		//Read all lines from the file
 		while ((line = br.readLine()) != null) {
 			if(line.isEmpty()) {
@@ -38,6 +44,9 @@ public class NewDataChecker {
 					//Print all films that were not found
 					for (Film film : filmsInYear) {
 						entriesNotInDadian.add(film.title);
+						if(PRINT_DADIAN_MISSING) {
+							missingInBook.add(film.title + ", " + film.year);
+						}
 					}
 				}
 
@@ -53,11 +62,30 @@ public class NewDataChecker {
 			}else{
 				//This is a film in Dadian
 				total++;
+				
 				String title = line;
+				if(title.contains("(Hong Kong)") || title.contains("(Taiwan)")) {
+					//This entry can be confirmed to be shot in Hong Kong or Taiwan
+					dadianHongKong++;
+					continue;
+				}
+
 				boolean found = false;
 				for (Film film : filmsInYear) {
 					if(film.title.equals(title)) {
 						//This entry can be found in both Dadian and the project data
+						for (Film f : filmsInExtra) {
+							if(f.title.equals(title) && f.year == year) {
+								//This entry is also in the extra metadata
+								extraFromDadian.add(title);
+								if(f.colour.isBlank()) {
+									System.out.println(f.title + " missing colour.");
+									System.in.read();
+								}
+								break;
+							}
+						}
+						
 						String[] cats = film.getCategory();
 						for (String s : cats) {
 							if(s.equals("Shanghai (private)")) {
@@ -112,10 +140,19 @@ public class NewDataChecker {
 		System.out.println("Entries not in Dadian: " + entriesNotInDadian.size());
 		System.out.println("Total entries in Dadian: " + total);
 		System.out.println("Private-studio entries in Dadian: " + privateCount);
+		System.out.println("Hong Kong/Taiwan entries shot in Dadian: " + dadianHongKong);
+		System.out.println("Extra-meta entries in Dadian: " + extraFromDadian.size());
 		System.out.println("Total entries in this porject: " + films.size());
 		System.out.println("Private-studio entries in this project: " + thisProjPrivateCount);
 		System.out.println("Total entries in bianmu: " + bianmuFilms.size());
 		System.out.println("Private-studio entries in bianmu: " + bianmuPrivateCount);
+
+		if(PRINT_DADIAN_MISSING) {
+			System.out.println("\nPrinting film missed in Dadian...");
+			for (String s : missingInBook) {
+				System.out.println(s);
+			}
+		}
 	}
 
 	@SuppressWarnings("unused")
@@ -156,6 +193,11 @@ public class NewDataChecker {
 				//System.in.read();
 			}else{
 				String title = line;
+				if(title.contains("(Hong Kong)") || title.contains("(Taiwan)")) {
+					//Skip films that were actually shot in Hong Kong or Taiwan
+					continue;
+				}
+
 				if(!duplicateInYear.contains(title))duplicateInYear.add(title);
 					else {System.out.println(title + " is a duplicate in year " + (year) + "."); System.in.read();}
 				//Iterate through filmsInYear to check if this title appears in that year

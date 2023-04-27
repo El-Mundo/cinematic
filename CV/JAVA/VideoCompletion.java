@@ -28,6 +28,7 @@ public class VideoCompletion {
 
 		File dir = new File(VIDEO_FILES);
 		File[] files = dir.listFiles();
+		int missing = 0;
 
 		int downloaded = 0;
 		
@@ -45,7 +46,7 @@ public class VideoCompletion {
 			title = title.replace("“", "");
 			title = title.replace("”", "");
 			String downloadable = values[4];
-			if(downloadable.equals("True") || downloadable.equals("False")) {
+			if(downloadable.equalsIgnoreCase("True") || downloadable.equalsIgnoreCase("False")) {
 				boolean found = false;
 				for (String string : titles) {
 					if(string.equals(title)) {
@@ -55,7 +56,10 @@ public class VideoCompletion {
 						break;
 					}
 				}
-				if(!found) System.out.println("Missing entry: " + title);
+				if(!found) {
+					System.out.println("Missing entry: " + title);
+					missing++;
+				}
 			}
 		}
 
@@ -64,7 +68,7 @@ public class VideoCompletion {
 		}
 
 		reader.close();
-		System.out.println("Downloaded " + downloaded + " out of " + (downloaded + titles.size()) + " files.");
+		System.out.println("Downloaded " + downloaded + " out of " + (downloaded + missing) + " files.");
 	}
 
 	public static void checkCompletion() throws IOException {
@@ -84,6 +88,7 @@ public class VideoCompletion {
 		int reelAvailibleDocumentary = 0, reelAvailibleFeature = 0;
 		
 		String line = null;
+		int video = 0, total = 0;
 		
 		//Read all lines from the file and get csv values
 		while((line = reader.readLine()) != null) {
@@ -92,6 +97,9 @@ public class VideoCompletion {
 
 			//if(!isFeatureFilm(key)) System.out.println(getFilmType(key));
 			//System.out.println(values[1] + " is Feature: " + isFeatureFilm(key) + ", is Private:" + isPrivateFilm(values[3]));
+			total++;
+			if(!values[4].isEmpty()) video++;
+
 			if(isFeatureFilm(key)) {
 				featureTotal++;
 				if(!values[4].isEmpty()) collectedFeature++;
@@ -140,9 +148,10 @@ public class VideoCompletion {
 		reader.close();
 
 		System.out.println();
+		System.out.println("Collected " + video + " out of " + total + " targets.");
 		System.out.println("Collected " + collectedPrivate + " out of " + privateTotal + " private films.");
 		System.out.println("Collected " + collectedFeature + " out of " + featureTotal + " feature films.");
-		System.out.println("Collected " + collectedState + " out of " + (stateTotal-2) + " state films (exclusive of 2 films produced by the Republic of China).");
+		System.out.println("Collected " + collectedState + " out of " + (stateTotal-4) + " state films (exclusive of 4 films produced by the Republic of China).");
 		System.out.println("Collected " + collectedStateFeature + " out of " + stateFeatureTotal + " state feature films.");
 		System.out.println("Collected " + collectedDocumentary + " out of " + documentaryTotal + " documentaries.");
 		System.out.println("Collected " + collectedPerformance + " out of " + performanceTotal + " performances.");

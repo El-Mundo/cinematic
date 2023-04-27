@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import GIS.JAVA.MapPlot.GeoPerson;
+import OCR.JAVA.Film;
 
 public class GeographyMovement {
 	private static final String ALL_NODES_LIST = "Network/csv/nodes/nodes-all.csv";
@@ -58,9 +59,10 @@ public class GeographyMovement {
 
 	public static void main(String[] args) {
 		try {
-			if(UPDATE_BASE_MAP_PLOTS)
+			if(UPDATE_BASE_MAP_PLOTS) {
+				Film.WriteAllFilmTypes();
 				initAllNodesAsMapPlots();
-			else {
+			} else {
 				initAllGeographicalPositions(USE_PIXEL_DATA_AS_SOURCE);
 				initAllPlotlyAnimatedMapPlots();
 			}
