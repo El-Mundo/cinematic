@@ -18,6 +18,6 @@ Some [formatted csv files](Network/csv) that can be directly imported to **Gephi
 
 ### Visualisation
 
-[A Plotly scatter map](GIS/Plotly/filmmaker_map-scatter2d.html) of filmmakers/actors/actresses' geographical movement
+[A Plotly scatter map](https://htmlpreview.github.io/?https://github.com/El-Mundo/cinematic/blob/master/GIS/Plotly/filmmaker_map-scatter2d.html) of filmmakers/actors/actresses' geographical movement
 
 [A Gephi file](Network/Gephi-all.gephi) of a social network generated based on the staff information of all 732 entries
