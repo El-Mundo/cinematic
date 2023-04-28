@@ -18,6 +18,8 @@ public class MapPlot {
 	String debutRegion;
 	//Use a String formatted as "YEAR-REGION" as the key to get the time of appearance of this person in this region in the year
 	HashMap<String, Integer> locations;
+
+	//private static ArrayList<String> tripleCityPlots = new ArrayList<String>();
 	
 	public MapPlot(int id, String name, int startYear, boolean debutAtPrivate, String debutRegion) {
 		this.id = id;
@@ -182,14 +184,57 @@ public class MapPlot {
 				tar = GeographyMovement.studioPos.get(cats[0]);
 				out = new Pos(tar.lat, tar.lon);
 			}else if(cats.length == 2) {
-				Pos a = GeographyMovement.studioPos.get(cats[0]);
-				Pos b = GeographyMovement.studioPos.get(cats[1]);
-				out = Pos.getMiddlePoint(a, b);
+				if((cats[0].equals("Shanghai (private)") && cats[1].equals("Northeast")) || (cats[1].equals("Shanghai (private)") && cats[0].equals("Northeast"))) {
+					//This midpoint is between Shanghai (private studio) and Northeast
+					//Draw it more to the west to avoid being too close to the territal sea of South Korea
+					if(GeographyMovement.USE_PIXEL_DATA_AS_SOURCE) {
+						out = new Pos(-622, 1618);
+					}else{
+						out = new Pos(37.2, 122.12);
+					}
+				}else if((cats[0].equals("Shanghai (state)") && cats[1].equals("Northeast")) || (cats[1].equals("Shanghai (state)") && cats[0].equals("Northeast"))) {
+					if(GeographyMovement.USE_PIXEL_DATA_AS_SOURCE) {
+						out = new Pos(-622, 1620);
+					}else{
+						out = new Pos(37.2, 122.2);
+					}
+				}else if(cats[0].equals("Western Europe") || cats[1].equals("Western Europe")) {
+					//This midpoint is between a city in China and Paris
+					//Draw it on the location of Paris to mark it as a special case
+					if(GeographyMovement.USE_PIXEL_DATA_AS_SOURCE) {
+						out = new Pos(-458, 273);
+					}else{
+						out = new Pos(48.8566, 2.3522);
+					}
+				}else if(cats[0].equals("Soviet Union") || cats[1].equals("Soviet Union")) {
+					//This midpoint is between a city in China and Moscow
+					//Draw it on the location of Moscow to mark it as a special case
+					if(GeographyMovement.USE_PIXEL_DATA_AS_SOURCE) {
+						out = new Pos(-382, 670);
+					}else{
+						out = new Pos(55.7558, 37.6173);
+					}
+				}else {
+					Pos a = GeographyMovement.studioPos.get(cats[0]);
+					Pos b = GeographyMovement.studioPos.get(cats[1]);
+					out = Pos.getMiddlePoint(a, b);
+				}
 			}else if(cats.length == 3) {
 				Pos a = GeographyMovement.studioPos.get(cats[0]);
 				Pos b = GeographyMovement.studioPos.get(cats[1]);
 				Pos c = GeographyMovement.studioPos.get(cats[2]);
 				out = Pos.getMiddlePoint(a, b, c);
+
+				/*String form = cats[0] + ", " + cats[1] + ", " + cats[2];
+				if(!tripleCityPlots.contains(form)) {
+					tripleCityPlots.add(form);
+					System.out.println("Triple city plot: " + form);
+					try {
+						System.in.read();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}*/
 			}else {
 				out = tar = null;
 			}

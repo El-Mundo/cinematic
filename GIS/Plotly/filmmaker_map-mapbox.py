@@ -9,7 +9,7 @@ import plotly
 plotly.__version__
 
 px.set_mapbox_access_token(open("GIS/Plotly/mapbox_token.txt").read())
-df = pd.read_csv("GIS/source/backups/people_plots(geographical)(compact).csv")
+df = pd.read_csv("GIS/source/people_plots(geographical).csv")
 
 if(GROUP_BY_WHETHER_DEBUT_FROM_PRIVATE_STUDIOS == False):
 	fig = px.scatter_mapbox(df, lat="lat", lon="long",
