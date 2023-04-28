@@ -148,6 +148,7 @@ public class GeographyMovement {
 		String path = TAR;
 		if(USE_PIXEL_DATA_AS_SOURCE) path = path.substring(0, path.lastIndexOf(".")) + "(pixel-axis).csv";
 		else path = path.substring(0, path.lastIndexOf(".")) + "(geographical).csv";
+		if(!APPLY_RANDOM_OFFSET) path = path.substring(0, path.lastIndexOf(".")) + "(overlapping).csv";
 		File target = new File(path);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(target, false));
 
