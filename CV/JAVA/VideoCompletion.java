@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class VideoCompletion {
 	public static final boolean COUNT_MUSICAL_AS_FEATURE = true;
@@ -84,6 +85,9 @@ public class VideoCompletion {
 		int collectedPerformance = 0, performanceTotal = 0;
 		int collectedOpera = 0, operaTotal = 0;
 
+		HashMap<String, Integer> catFilm = new HashMap<String, Integer>();
+		HashMap<String, Integer> catVideo = new HashMap<String, Integer>();
+
 		int documentaryAvgReel = 0, featureAvgReel = 0;
 		int reelAvailibleDocumentary = 0, reelAvailibleFeature = 0;
 		
@@ -94,11 +98,21 @@ public class VideoCompletion {
 		while((line = reader.readLine()) != null) {
 			String[] values = line.split(",", -1);
 			String key = values[0];
+			String category = values[3];
+			if(!catFilm.containsKey(category)) catFilm.put(category, 1);
+			else catFilm.put(category, catFilm.get(category) + 1);
+
+			//This category is now not considered a major production category and should be skipped
+			if(category.equals("Shanghai (roc)")) continue;
 
 			//if(!isFeatureFilm(key)) System.out.println(getFilmType(key));
 			//System.out.println(values[1] + " is Feature: " + isFeatureFilm(key) + ", is Private:" + isPrivateFilm(values[3]));
 			total++;
-			if(!values[4].isEmpty()) video++;
+			if(!values[4].isEmpty()) {
+				video++;
+				if(!catVideo.containsKey(category)) catVideo.put(category, 1);
+				else catVideo.put(category, catVideo.get(category) + 1);
+			}
 
 			if(isFeatureFilm(key)) {
 				featureTotal++;
@@ -146,6 +160,16 @@ public class VideoCompletion {
 		}
 		
 		reader.close();
+		
+		System.out.println();
+		for (String key : catFilm.keySet()) {
+			System.out.println(key + ": " + catFilm.get(key));
+		}
+
+		System.out.println("\nWith video:");
+		for (String key : catVideo.keySet()) {
+			System.out.println(key + ": " + catVideo.get(key));
+		}
 
 		System.out.println();
 		System.out.println("Collected " + video + " out of " + total + " targets.");

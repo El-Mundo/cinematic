@@ -48,4 +48,5 @@ else:
 
 fig.update_traces(cluster=dict(enabled=True))
 fig.update_layout(height = 800, width = 1280, margin={"r": 10, "t": 10, "l": 10, "b": 10})
+fig.write_html("GIS/Plotly/filmmaker_map-mapbox.html")
 fig.show()

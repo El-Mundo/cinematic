@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import OCR.JAVA.Film;
+import OCR.JAVA.Studio;
 
 public class NewDataChecker {
 	private static final String SRC = "OCR/JAVA/postprocessing/dadian_entries.txt"; // Source path
@@ -30,7 +31,7 @@ public class NewDataChecker {
 		String line = "";
 		int year = 0;
 		int count = 0, total = 0;
-		int privateCount = 0, dadianHongKong = 0;
+		int privateCount = 0, dadianHongKong = 0, nonMainlandStudio = 0;
 		ArrayList<String> extraFromDadian = new ArrayList<String>();
 
 		//Read all lines from the file
@@ -67,6 +68,8 @@ public class NewDataChecker {
 				if(title.contains("(Hong Kong)") || title.contains("(Taiwan)")) {
 					//This entry can be confirmed to be shot in Hong Kong or Taiwan
 					dadianHongKong++;
+					nonMainlandStudio++;
+					total--; //Do not count non-mainland entries in the count
 					continue;
 				}
 
@@ -94,6 +97,15 @@ public class NewDataChecker {
 								break;
 							}
 						}
+
+						Studio[] st = film.production;
+						for (Studio s : st) {
+							//Some Hong Kong-based companies that produce films in Shanghai were categorized in Shanghai
+							if(s.category.equals("Hong Kong") || s.name.contains("(Hong Kong)")) {
+								nonMainlandStudio++;
+							}
+						}
+
 						filmsInYear.remove(film);
 						found = true;
 						break;
@@ -140,7 +152,8 @@ public class NewDataChecker {
 		System.out.println("Entries not in Dadian: " + entriesNotInDadian.size());
 		System.out.println("Total entries in Dadian: " + total);
 		System.out.println("Private-studio entries in Dadian: " + privateCount);
-		System.out.println("Hong Kong/Taiwan entries shot in Dadian: " + dadianHongKong);
+		System.out.println("Hong Kong/Taiwan entries in Dadian: " + dadianHongKong);
+		System.out.println("Total non-mainland studio entries in Dadian (some of whom were shot in Shanghai): " + nonMainlandStudio);
 		System.out.println("Extra-meta entries in Dadian: " + extraFromDadian.size());
 		System.out.println("Total entries in this porject: " + films.size());
 		System.out.println("Private-studio entries in this project: " + thisProjPrivateCount);

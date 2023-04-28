@@ -1,8 +1,9 @@
 Missing entries from Dadian: 2
 Entries not in Dadian: 11
-Total entries in Dadian: 726
+Total entries in Dadian: 722
 Private-studio entries in Dadian: 85
-Hong Kong/Taiwan entries shot in Dadian: 4
+Hong Kong/Taiwan entries in Dadian: 4
+Total non-mainland studio entries in Dadian (some of whom were shot in Shanghai): 27
 Extra-meta entries in Dadian: 72
 Total entries in this porject: 732
 Private-studio entries in this project: 86
