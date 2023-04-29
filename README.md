@@ -22,4 +22,4 @@ Some [formatted csv files](Network/csv) that can be directly imported to **Gephi
 
 [A Gephi file](Network/Gephi-all.gephi) of a social network generated based on the staff information of all 732 entries
 
-[A general visualisation program in JavaScript](https://htmlpreview.github.io/?https://github.com/El-Mundo/cinematic/blob/master/Visualiser/main.html) for previewing the dataset
+[A general visualisation program in JavaScript](https://el-mundo.github.io/cinematic/Visualiser/main.html) for previewing the dataset
