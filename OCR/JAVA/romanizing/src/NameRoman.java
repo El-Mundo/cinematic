@@ -14,12 +14,119 @@ import OCR.JAVA.Film;
 public class NameRoman {
 	private final static String JOBS = "OCR/JAVA/romanizing/translated-jobs.csv";
 	private final static String NONHAN_NAMES = "OCR/JAVA/romanizing/roman-non-han_names.csv";
-	private final static String TAR = "OCR/translated-names.tsv";
+	private final static String ORGANIZATIONS = "OCR/JAVA/romanizing/translated-organizations.csv";
+	private final static String TAR = "OCR/translated-names.tsv", LIST_TAR = "OCR/names-full.csv";
 
 	private static HashMap<String, String> jobToEng = new HashMap<String, String>();
 	private static HashMap<String, String> nonHanNameToEng = new HashMap<String, String>();
+	private static HashMap<String, String> organizations = new HashMap<String, String>();
 
 	public static void main(String[] args) throws IOException {
+		translateAllNames();
+		writeAllNameAndTranslationList();
+	}
+
+	private static void writeAllNameAndTranslationList() throws IOException {
+		HashMap<String, String> nameToTranslated = new HashMap<String, String>();
+		if(nonHanNameToEng.isEmpty()) {
+			//Init non-Han names
+			File nonHanNames = new File(NONHAN_NAMES);
+			BufferedReader reader1 = new BufferedReader(new FileReader(nonHanNames));
+			String line = reader1.readLine();
+			while((line = reader1.readLine()) != null) {
+				String[] parts = line.split(",");
+				nonHanNameToEng.put(parts[0], parts[1]);
+			}
+			reader1.close();
+		}
+		if(organizations.isEmpty()) {
+			//Read all organization names and add to ArrayList
+			File orgs = new File(ORGANIZATIONS);
+			BufferedReader reader2 = new BufferedReader(new FileReader(orgs));
+			String line = "";
+			while((line = reader2.readLine()) != null) {
+				String[] aspects = line.split(",");
+				organizations.put(aspects[0], aspects[1]);
+			}
+			reader2.close();
+			System.out.println("Finished reading indexes");
+		}
+
+		int i = 0;
+
+		ArrayList<Film> films = Film.initAllFilms();
+		for (Film film : films) {
+			String[] acting = film.getActingNameArray();
+			String[] directing = film.getDirectorNameArray();
+			String[] writing = film.getScriptwriterNameArray();
+			HashMap<String, String> other = film.getOtherStaffNameArrayWithRole();
+
+			for (String name : acting) {
+				String roman = "";
+				if(!nameToTranslated.containsKey(name)) {
+					if(organizations.containsKey(name)) {
+						roman = organizations.get(name);
+					}else if(nonHanNameToEng.containsKey(name))
+						roman = nonHanNameToEng.get(name);
+					else
+						roman = RomanizeMain.romanizeStandardHanName(name);
+					nameToTranslated.put(name, roman);
+				}
+			}
+			for (String name : directing) {
+				String roman = "";
+				if(organizations.containsKey(name)) continue;
+				if(!nameToTranslated.containsKey(name)) {
+					if(organizations.containsKey(name)) {
+						roman = organizations.get(name);
+					}else if(nonHanNameToEng.containsKey(name))
+						roman = nonHanNameToEng.get(name);
+					else
+						roman = RomanizeMain.romanizeStandardHanName(name);
+					nameToTranslated.put(name, roman);
+				}
+			}
+			for (String name : writing) {
+				String roman = "";
+				if(!nameToTranslated.containsKey(name)) {
+					if(organizations.containsKey(name)) {
+						roman = organizations.get(name);
+					}else if(nonHanNameToEng.containsKey(name))
+						roman = nonHanNameToEng.get(name);
+					else
+						roman = RomanizeMain.romanizeStandardHanName(name);
+					nameToTranslated.put(name, roman);
+				}
+			}
+			for (String name : other.keySet()) {
+				String roman = "";
+				if(!nameToTranslated.containsKey(name)) {
+					if(organizations.containsKey(name)) {
+						roman = organizations.get(name);
+					}else if(nonHanNameToEng.containsKey(name))
+						roman = nonHanNameToEng.get(name);
+					else
+						roman = RomanizeMain.romanizeStandardHanName(name);
+					nameToTranslated.put(name, roman);
+				}
+			}
+			i++;
+			System.out.println("Translated " + i + "/" + films.size());
+		}
+		
+		BufferedWriter writer = new BufferedWriter(new FileWriter(LIST_TAR));
+		writer.append("key,full name");
+		i = 0;
+		for (String name : nameToTranslated.keySet()) {
+			writer.write(name + "," + name + "(" + nameToTranslated.get(name) + ")");
+			writer.newLine();
+			i++;
+			System.out.println("Wrote " + i + "/" + nameToTranslated.size());
+		}
+		writer.close();
+	}
+
+	private static void translateAllNames() throws IOException {
 		File nonHanNames = new File(NONHAN_NAMES);
 		File jobs = new File(JOBS);
 		BufferedReader reader1 = new BufferedReader(new FileReader(nonHanNames));
@@ -36,7 +143,14 @@ public class NameRoman {
 			jobToEng.put(parts[0], parts[1]);
 		}
 		reader2.close();
-
+		File orgs = new File(ORGANIZATIONS);
+		BufferedReader reader3 = new BufferedReader(new FileReader(orgs));
+		line = "";
+		while((line = reader3.readLine()) != null) {
+			String[] asp = line.split(",");
+			organizations.put(asp[0], asp[1]);
+		}
+		reader3.close();
 		System.out.println("Finished reading indexes");
 
 		int i = 0;
@@ -52,7 +166,9 @@ public class NameRoman {
 			String act = "", dir = "", script = "", otherStaff = "";
 			for (String name : acting) {
 				String roman = "";
-				if(nonHanNameToEng.containsKey(name))
+				if(organizations.containsKey(name))
+					roman = organizations.get(name);
+				else if(nonHanNameToEng.containsKey(name))
 				//Get specifically translated name (by Google Translate due to lack of appropriate method) if it is not applicable as a standard Han name
 					roman = nonHanNameToEng.get(name);
 				else
@@ -64,7 +180,9 @@ public class NameRoman {
 				act = act.substring(0, act.length() - 2);
 			for (String name : directing) {
 				String roman = "";
-				if(nonHanNameToEng.containsKey(name))
+				if(organizations.containsKey(name))
+					roman = organizations.get(name);
+				else if(nonHanNameToEng.containsKey(name))
 					roman = nonHanNameToEng.get(name);
 				else
 					roman = RomanizeMain.romanizeStandardHanName(name);
@@ -74,7 +192,9 @@ public class NameRoman {
 				dir = dir.substring(0, dir.length() - 2);
 			for (String name : writing) {
 				String roman = "";
-				if(nonHanNameToEng.containsKey(name))
+				if(organizations.containsKey(name))
+					roman = organizations.get(name);
+				else if(nonHanNameToEng.containsKey(name))
 					roman = nonHanNameToEng.get(name);
 				else
 					roman = RomanizeMain.romanizeStandardHanName(name);
@@ -86,7 +206,9 @@ public class NameRoman {
 				String title = other.get(name);
 				String roman = "";
 				
-				if(nonHanNameToEng.containsKey(name))
+				if(organizations.containsKey(name))
+					roman = organizations.get(name);
+				else if(nonHanNameToEng.containsKey(name))
 					roman = nonHanNameToEng.get(name);
 				else
 					roman = RomanizeMain.romanizeStandardHanName(name);

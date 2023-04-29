@@ -23,6 +23,7 @@ Network/csv/edges/edges-all-unweighted.csv
 baidu_key.txt
 #Do not include the non-Han name list
 roman-non-han_names.csv
+translated-organizations.csv
 
 ##################### PYTHON IGNORE ##########################
 # Byte-compiled / optimized / DLL files
