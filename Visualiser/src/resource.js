@@ -1,11 +1,11 @@
 //Fonts
 var font_chn, font_eng;
-const FONT_CHN_PATH = '/Visualiser/res/font/SourceHanSerifSC-Regular.otf';
-const FONT_ENG_PATH = '/Visualiser/res/font/SourceHanSerifSC-Regular.otf';
+const FONT_CHN_PATH = './res/font/SourceHanSerifSC-Regular.otf';
+const FONT_ENG_PATH = './res/font/SourceHanSerifSC-Regular.otf';
 //Data
 var films_json, names_csv;
-const FILMS_JSON_PATH = '/metadata-all.json';
-const NAMES_CSV_PATH = '/OCR/names-full.csv';
+const FILMS_JSON_PATH = '../metadata-all.json';
+const NAMES_CSV_PATH = '../OCR/names-full.csv';
 const RESOURCE_NUM = 4;
 var filmMap = new Map();
 //Count loaded resources
