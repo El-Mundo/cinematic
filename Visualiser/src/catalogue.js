@@ -125,6 +125,7 @@ function update_shown_films() {
 					if(compare_region.includes('Shanghai')) compare_region = 'Shanghai';
 					else if(compare_region === "Xi'an") compare_region = "Shaanxi";
 					else if(compare_region === "Northeast") compare_region = 'Jilin';
+					else if(compare_region === "Inner Mongolia") compare_region = 'Inner_Mongolia';
 					if(f.year >= min_year && f.year <= max_year && compare_region.includes(search_input)) {
 						add_shown_film(f, to_show);
 						to_show++;

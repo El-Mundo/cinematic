@@ -38,6 +38,7 @@ function draw_region_preview(regions) {
 		if(region.includes('Inner Mongolia')) region = 'Inner_Mongolia';
 		if(region.includes("Xi'an")) region = 'Shaanxi';
 		if(region.includes("Northeast")) region = 'Jilin';
+		if(region.includes("Innter Mongolia")) region = 'Inner_Mongolia';
 		if(!highlited_regions.includes(region)) highlited_regions.push(region);
 	}
 }

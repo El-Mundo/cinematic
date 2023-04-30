@@ -183,6 +183,7 @@ function update_map() {
 			if(region === 'Northeast') region = 'Jilin';
 			else if(region === "Xi'an") region = 'Shaanxi';
 			else if(region.includes("Shanghai")) region = 'Shanghai';
+			else if(region.includes("Inner Mongolia")) region = 'Inner_Mongolia';
 
 			if(region_film_count_map.has(region)) {
 				let count = region_film_count_map.get(region);

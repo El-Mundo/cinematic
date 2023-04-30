@@ -61,7 +61,10 @@ function attempt_to_search_catalogue() {
 }
 
 function draw() {
-	background(0);
+	background(bkg_img);
+	fill(0, 254-64);
+	rect(0, 0, width, height);
+	noTint();
 	push();
 		scale(frame_scale * frame_margin_ratio);
 		if(state == 1 || state == 5 || state == 3 || state == 4) {

@@ -24,7 +24,7 @@ const FILM_TYPES_CHN = new Map([['Musical', '音乐剧'], ['Feature', '故事片
 //Images
 const REGIONS_MAP_DIR = './res/regions/';
 var map_regions_map = new Map();
-var map_img, wide_map_img;
+var map_img, wide_map_img, bkg_img;
 //Map of studios
 class Studio {
 	constructor(name, region, chn, eng) {
@@ -37,7 +37,7 @@ class Studio {
 }
 var studios = new Map();
 //Count loaded resources
-const RESOURCE_NUM = 24;
+const RESOURCE_NUM = 25;
 var loaded_resource = 0;
 
 function loadFonts() {
@@ -61,6 +61,7 @@ function loadData() {
 function loadImages() {
 	map_img = loadImage('./res/map.png', add_loaded_source, resource_error);
 	wide_map_img = loadImage('./res/map-wide.png', add_loaded_source, resource_error);
+	bkg_img = loadImage('./res/bkg.jpg', add_loaded_source, resource_error);
 	for (let i = 0; i < REGIONS.length; i++) {
 		let region = REGIONS[i];
 		let img = loadImage(REGIONS_MAP_DIR + region + '.png', add_loaded_source, resource_error);

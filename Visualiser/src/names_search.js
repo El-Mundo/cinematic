@@ -127,7 +127,7 @@ function add_shown_name(p, row) {
 
 function preview_filmmaker(rowObj) {
 	preview_filmmaker_name = rowObj.get(1);
-	preview_filmmaker_region = rowObj.get(2).replaceAll('Northeast', 'Jilin').replaceAll("Xi'an", 'Shaanxi');
+	preview_filmmaker_region = rowObj.get(2).replaceAll('Northeast', 'Jilin').replaceAll("Xi'an", 'Shaanxi').replaceAll("Inner Mongolia", "Inner_Mongolia");
 	let regions = preview_filmmaker_region.split(' / ');
 	for(let i = 0; i < regions.length; i++) {
 		let r = regions[i];
