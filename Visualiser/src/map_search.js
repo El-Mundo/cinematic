@@ -14,6 +14,8 @@ var map_to_map_button, map_to_name_button, map_to_studio_button;
 let hover_hint = '', hover_hint_chn = '';
 
 function draw_search_map() {
+	frame_offset_y = 0;
+
 	fill(255);
 	map_x = 0;
 	map_y = 0;

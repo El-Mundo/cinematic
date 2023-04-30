@@ -14,7 +14,7 @@ var DEFAULT_GEOCAT_COLOUR;
 const REGIONS = ['Anhui', 'Beijing', 'Canton', 'Gansu', 'Hubei', 'Hunan', 'Inner_Mongolia',
 	'Jiangsu', 'Jilin', 'Qinghai', 'Shandong', 'Shanghai', 'Sichuan', 'Tianjin', 'Shaanxi', 'Xinjiang', 'Zhejiang', 'Heilongjiang'];
 const REGIONS_CHN = new Map([['Anhui','安徽'], ['Beijing','北京'], ['Canton','广东'],
-	['Gansu','甘肃'], ['Hubei','湖北'], ['Hunan','湖北'], ['Inner_Mongolia', '内蒙古'],
+	['Gansu','甘肃'], ['Hubei','湖北'], ['Hunan','湖南'], ['Inner_Mongolia', '内蒙古'],
 	['Jiangsu','江苏'], ['Jilin','吉林'], ['Qinghai','青海'], ['Shandong','山东'],
 	['Shanghai','上海'], ['Sichuan','四川'], ['Tianjin','天津'], ["Shaanxi",'陕西'], ['Hong Kong','香港'],
 	['Xinjiang','新疆'], ['Zhejiang','浙江'], ['Western Europe','巴黎'], ['Soviet Union','莫斯科'], ['Heilongjiang', '黑龙江']]);
@@ -74,11 +74,12 @@ function init_film_map() {
 		filmMap.set(film.key, film);
 	}
 	init_studio_list();
-	loaded_resource++;
+	add_loaded_source();
 }
 
 function add_loaded_source() {
 	loaded_resource++;
+	print("Loaded " + loaded_resource + " of " + RESOURCE_NUM + " resources.");
 }
 
 function resource_error() {
