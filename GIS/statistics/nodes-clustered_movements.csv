@@ -1,45 +1,45 @@
-Id,Name
-2,
-40,Beijing & Shanghai (state) & Anhui & Northeast
-33,Xi'an & Northeast
-36,Shanghai (private) & Northeast
-5,Shanghai (private)
-9,Anhui
-25,Shanghai (state) & Northeast
-38,Shanghai (state) & Hunan
-30,Beijing & Western Europe
-0,Shanghai (state) & Anhui
-18,Xinjiang
-26,Tianjin
-32,Beijing & Tianjin
-10,Sichuan
-1,Shanghai (state)
-35,Beijing & Shanghai (private)
-7,Hubei
-19,Zhejiang
-12,Hong Kong & Canton
-11,Shanghai (state) & Hong Kong
-42,Shanghai (state) & Hubei
-13,Beijing & Hong Kong
-15,Soviet Union & Northeast
-21,Beijing & Xi'an
-31,Beijing & Hubei & Anhui
-37,Beijing & Hubei
-39,Shanghai (state) & Xinjiang
-17,Beijing & Anhui
-29,Beijing & Northeast
-23,Xi'an & Qinghai
-28,Shanghai (state) & Canton
-20,Shandong
-8,Xi'an
-16,Hong Kong & Northeast
-6,Beijing
-22,Shanghai (state) & Jiangsu
-27,Shanghai (state) & Shandong
-43,Beijing & Xinjiang
-34,Sichuan & Northeast
-24,Inner Mongolia & Northeast
-3,Canton
-14,Beijing & Shanghai (state)
-4,Northeast
-41,Shanghai (state) & Shanghai (private)
+Id,Label,lat,lon
+36,Gansu & Northeast,39.9387,114.5789
+15,Shanghai (roc),31.048,121.7493
+29,Shanghai (roc) & Shanghai (private),31.0402,121.4879
+34,Xi'an & Northeast,39.0409,117.13884999999999
+7,Anhui,31.8206,117.229
+8,Shanghai (private),31.0324,121.2265
+27,Shanghai (state) & Northeast,37.5232,123.39865
+40,Beijing & Shanghai (state) & Anhui,34.318400000000004,118.37003333333332
+37,Beijing & Western Europe,44.3804,59.379799999999996
+3,Shanghai (state) & Anhui,31.5255,119.35135
+16,Xinjiang,43.8266,87.6169
+22,Tianjin,39.0851,117.1994
+35,Beijing & Tianjin,39.49465,116.8034
+19,Sichuan,30.5723,104.0665
+0,Shanghai (state),31.2304,121.4737
+10,Hubei,30.5928,114.3052
+24,Zhejiang,30.2741,120.1552
+12,Hong Kong & Canton,22.7215,113.7169
+13,Shanghai (state) & Hong Kong,26.77215,117.82155
+18,Shanghai (state) & Hubei,30.9116,117.88945
+20,Beijing & Xi'an,37.085,112.68074999999999
+26,Beijing & Hong Kong,31.109050000000003,115.2884
+30,Soviet Union & Northeast,49.7859,81.47045
+39,Beijing & Sichuan,35.23825,110.23695000000001
+43,Beijing & Hubei,35.2485,115.3563
+21,Shanghai (state) & Xinjiang,37.5285,104.5453
+6,Beijing & Anhui,35.8624,116.81819999999999
+5,Beijing & Northeast,41.8601,120.8655
+14,Xi'an & Qinghai,35.44155,105.36595
+31,Shanghai (state) & Canton,27.17975,117.36904999999999
+23,Shandong,36.6518,117.1201
+11,Xi'an,34.2658,108.9541
+33,Hong Kong & Northeast,33.06495,119.7465
+41,Beijing & Shanghai (private) & Northeast,38.25086666666667,120.98583333333333
+4,Beijing,39.9042,116.4074
+17,Shanghai (state) & Jiangsu,31.644399999999997,120.1351
+32,Shanghai (state) & Shandong,33.9411,119.2969
+25,Beijing & Xinjiang,41.8654,102.01214999999999
+42,Sichuan & Northeast,37.19415,114.69505000000001
+28,Inner Mongolia & Northeast,42.32875,118.5378
+9,Canton,23.1291,113.2644
+38,Beijing & Shanghai (state),35.5673,118.94055
+1,Northeast,43.816,125.3236
+2,Shanghai (state) & Shanghai (private),31.1314,121.3501
