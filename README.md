@@ -10,7 +10,7 @@ This project preserves the information about 732 Chinese films produced in the "
 
 [The staff information and plot summary](metadata-staff_plot.csv) of the 656 entries, separated from the main file due to the large file sizes
 
-[An extra collection](metadata-extra.csv) of 77 entries not included by the book
+[An extra collection](metadata-extra.csv) of 76 entries not included by the book
 
 Some [formatted csv files](Network/csv) that can be directly imported to **Gephi** for social network analysis (7293 nodes and 259622 edges)
 

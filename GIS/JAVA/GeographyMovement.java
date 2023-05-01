@@ -12,7 +12,7 @@ import GIS.JAVA.MapPlot.GeoPerson;
 import OCR.JAVA.Film;
 
 public class GeographyMovement {
-	private static final String ALL_NODES_LIST = "Network/csv/nodes/nodes-all.csv";
+	protected static final String ALL_NODES_LIST = "Network/csv/nodes/nodes-all.csv";
 	private static final String NODES_DIRECTORY = "Network/csv/nodes/";
 	private static final String TAR = "GIS/source/people_plots.csv", SRC = "GIS/source/map_plots.csv", GEO_SRC = "GIS/source/studios_geo_src.csv";
 	private static final String PIX_SRC = "GIS/source/studios_pixel_src.csv";
@@ -152,18 +152,19 @@ public class GeographyMovement {
 		File target = new File(path);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(target, false));
 
-			writer.write("id,name,debut,last,pri,dg,yr,cat,lat,long");
-			writer.newLine();
-			GeoPerson[] peopleArray = people.values().toArray(new GeoPerson[people.size()]);
-			System.out.println("Writing results...");
-			for (GeoPerson person : peopleArray) {
-				writer.append(person.toString());
-				System.out.println("Writing to file: " + k + "/" + people.size());
-				k++;
-			}
-			if(USE_PIXEL_DATA_AS_SOURCE)
-				writer.append(getAllColourFixPlots());
-			writer.close();
+		writer.write("id,name,debut,last,pri,dg,yr,cat,lat,long");
+		writer.newLine();
+		GeoPerson[] peopleArray = people.values().toArray(new GeoPerson[people.size()]);
+		System.out.println("Writing results...");
+		
+		for (GeoPerson person : peopleArray) {
+			writer.append(person.toString());
+			System.out.println("Writing to file: " + k + "/" + people.size());
+			k++;
+		}
+		if(USE_PIXEL_DATA_AS_SOURCE)
+			writer.append(getAllColourFixPlots());
+		writer.close();
 
 		System.out.println("Done.");
 	}
@@ -238,7 +239,7 @@ public class GeographyMovement {
 		System.out.println("Done.");
 	}
 
-	private static int getFileLineNumber(File file) throws IOException {
+	protected static int getFileLineNumber(File file) throws IOException {
 		BufferedReader reader = new BufferedReader(new FileReader(file));
 		int lines = 0;
 		while (reader.readLine() != null) lines++;
