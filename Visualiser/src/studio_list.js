@@ -44,6 +44,7 @@ function draw_studio_scroll() {
 	rect(width-CATALOGUE_SCROLLER_WIDTH, -64, CATALOGUE_SCROLLER_WIDTH, height+64);
 
 	if(lan==='chn') textFont(font_chn);
+	else textFont('Arial');
 	fill(200);
 	if(mouseX > width-CATALOGUE_SCROLLER_WIDTH && mouseY > 0 && mouseY < height) {
 		if(clicked) {
@@ -139,6 +140,7 @@ function draw_studio_preview() {
 	
 	let str;
 	if(useChn) textFont(font_chn);
+	else textFont('Arial');
 	let src = useChn ? previewed_studio.chn : previewed_studio.eng;
 	str = src;
 	let y = cenHei;

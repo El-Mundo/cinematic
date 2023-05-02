@@ -9,7 +9,8 @@ function draw_map_preview() {
 	map_h = MAP_PREVIEW_WIDTH;
 	image(map_img, map_x, map_y, map_w, map_h);
 	let tag_map = '';
-	if((lan === 'chn')) textFont(font_chn);
+	if((lan === 'chn')) {textFont(font_chn);}
+	else textFont('Arial');
 	for(let i = 0; i < highlited_regions.length; i++) {
 		if(map_regions_map.has(highlited_regions[i])) {
 			image(map_regions_map.get(highlited_regions[i]), map_x, map_y, map_w, map_h);

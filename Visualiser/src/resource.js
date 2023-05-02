@@ -1,7 +1,7 @@
 //Fonts
 var font_chn, font_eng;
 const FONT_CHN_PATH = './res/font/SourceHanSerifSC-Regular.otf';
-const FONT_ENG_PATH = './res/font/SourceHanSerifSC-Regular.otf';
+const FONT_ENG_PATH = './res/font/SourceSans3-Regular.otf';
 //Data
 var films_json, names_csv;
 const FILMS_JSON_PATH = '../metadata-all.json';

@@ -65,6 +65,7 @@ function draw() {
 	fill(0, 254-64);
 	rect(0, 0, width, height);
 	noTint();
+	if(lan == 'chn') {textFont(font_chn);} else {textFont('Arial');}
 	push();
 		scale(frame_scale * frame_margin_ratio);
 		if(state == 1 || state == 5 || state == 3 || state == 4) {

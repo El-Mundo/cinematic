@@ -50,6 +50,7 @@ function draw_catalogue_scroll() {
 	rect(width-CATALOGUE_SCROLLER_WIDTH, -64, CATALOGUE_SCROLLER_WIDTH, height+64);
 
 	if(lan==='chn') textFont(font_chn);
+	else textFont('Arial');
 
 	fill(200);
 	if(mouseX > width-CATALOGUE_SCROLLER_WIDTH && mouseY > 0 && mouseY < height) {
