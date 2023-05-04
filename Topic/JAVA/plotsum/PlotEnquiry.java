@@ -1,4 +1,4 @@
-package OCR.JAVA.plotsum;
+package Topic.JAVA.plotsum;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -32,7 +32,7 @@ public class PlotEnquiry {
 	static String APP_ID = "App ID";
 	static String API_KEY = "Api Key";
 	static String SECRET_KEY = "Secret Key";
-	private static final String TAR = "OCR/plot_keywords.csv";
+	private static final String TAR = "Topic/JAVA/plot_keywords.csv";
 	private static String token;
 
 	static final OkHttpClient HTTP_CLIENT = new OkHttpClient().newBuilder().build();
@@ -130,7 +130,7 @@ public class PlotEnquiry {
 	@SuppressWarnings("unused")
 	@Deprecated
 	private static AipNlp startBaiduAPI() throws IOException {
-		BufferedReader reader = new BufferedReader(new FileReader(new File("OCR/JAVA/plotsum/baidu_key.txt")));
+		BufferedReader reader = new BufferedReader(new FileReader(new File("Topic/JAVA/plotsum/baidu_key.txt")));
 		APP_ID = reader.readLine();
 		API_KEY = reader.readLine();
 		SECRET_KEY = reader.readLine();
@@ -153,7 +153,7 @@ public class PlotEnquiry {
      */
 	@SuppressWarnings("deprecation")
     static String getAccessToken() throws IOException {
-		BufferedReader reader = new BufferedReader(new FileReader(new File("OCR/JAVA/plotsum/baidu_key.txt")));
+		BufferedReader reader = new BufferedReader(new FileReader(new File("Topic/JAVA/plotsum/baidu_key.txt")));
 		APP_ID = reader.readLine();
 		API_KEY = reader.readLine();
 		SECRET_KEY = reader.readLine();
