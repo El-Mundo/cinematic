@@ -18,10 +18,12 @@ Some [formatted csv files](Network/csv) that can be directly imported to **Gephi
 
 ### Visualisation
 
+[A filmography visualiser in JavaScript](https://el-mundo.github.io/cinematic/Visualiser/main.html) for previewing the dataset
+
 [A Plotly scatter map](https://htmlpreview.github.io/?https://github.com/El-Mundo/cinematic/blob/master/GIS/Plotly/filmmaker_map-scatter2d.html) of filmmakers/actors/actresses' geographical movement
 
-[A simplified 2d graph](https://colab.research.google.com/drive/1b_-976J_37duFKahJvevNPuxODw_EX6a) of film counts by year and region
+[A simplified 2d graph Jupyter Notebook](https://colab.research.google.com/drive/1b_-976J_37duFKahJvevNPuxODw_EX6a) of film counts by year and region
 
 [A Gephi file](Network/Gephi-all.gephi) of a social network generated based on the staff information of all 732 entries
 
-[A filmography visualiser in JavaScript](https://el-mundo.github.io/cinematic/Visualiser/main.html) for previewing the dataset
+[A Jupyer Notebook of topic modelling restuls for plot summaries](https://colab.research.google.com/drive/1V6w3MbhJ_EOJBYc66GL-N812yZtpEn1q?usp=sharing) with PyLDAvis graph
