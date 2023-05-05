@@ -26,4 +26,4 @@ Some [formatted csv files](Network/csv) that can be directly imported to **Gephi
 
 [A Gephi file](Network/Gephi-all.gephi) of a social network generated based on the staff information of all 732 entries
 
-[A Jupyer Notebook of topic modelling restuls for plot summaries](https://colab.research.google.com/drive/1V6w3MbhJ_EOJBYc66GL-N812yZtpEn1q?usp=sharing) with PyLDAvis graph
+[A Jupyer Notebook of topic modelling restuls for plot summaries](https://colab.research.google.com/drive/1kcM3bt-m_UX2wd59r-H6gbRlHBp6OFfJ?usp=sharing) with PyLDAvis graph
