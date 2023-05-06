@@ -16,6 +16,8 @@ Some [formatted csv files](Network/csv) that can be directly imported to **Gephi
 
 [OCR source data](OCR/source) scanned from *The Catalogue of Chinese Artistic Films* (the source data may contain some missing attributes, which have been fixed in [the main metadata file](metadata.csv))
 
+[Results of Topic Modelling](Topic/results_decoded.csv) generated with a Gensim model trained with 9312 stopwords (including 7150 names of fictional characters from the OCR results) and 16 topics
+
 ### Visualisation
 
 [A filmography visualiser in JavaScript](https://el-mundo.github.io/cinematic/Visualiser/main.html) for previewing the dataset
