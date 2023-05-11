@@ -11,20 +11,21 @@ import OCR.JAVA.Film;
 
 @SuppressWarnings("unused")
 public class ResultDecoding {
-	private static final String SRC = "Topic/results.txt";
-	private static final String TAR = "Topic/results_decoded.csv";
+	private static final String SRC = "Topic/results(main_only).txt";
+	private static final String TAR = "Topic/results_decoded(main_only).csv",
+			TAR_DELUXE = "Topic/results_full(main_only).csv";
 	private static final String FILM_KEY_FLAG = "|||FILM:", TOPIC_CODE_FLAG = "|||TOPICS:[", TEXT_FLAG = "]|||TEXT:";
 
 	public static void main(String[] args) {
 		//decodeRetuls();
 		//rankMostFrequentTopicsInRegion();
-		//writeDecodedResultsDeluxe();
-		rankMostFrequentTopicsInRegion("Shanghai (private)");
-		rankMostFrequentTopicsInRegion("Shanghai (state)");
-		rankMostFrequentTopicsInRegion("Northeast");
-		rankMostFrequentTopicsInRegion("Beijing");
-		rankMostFrequentTopicsInRegion("Xi'an");
-		rankMostFrequentTopicsInRegion("Canton");
+		writeDecodedResultsDeluxe();
+		//rankMostFrequentTopicsInRegion("Shanghai (private)");
+		//rankMostFrequentTopicsInRegion("Shanghai (state)");
+		//rankMostFrequentTopicsInRegion("Northeast");
+		//rankMostFrequentTopicsInRegion("Beijing");
+		//rankMostFrequentTopicsInRegion("Xi'an");
+		//rankMostFrequentTopicsInRegion("Canton");
 	}
 
 	private static void decodeRetuls() {
@@ -102,7 +103,16 @@ public class ResultDecoding {
 			}
 			br.close();
 
-			ArrayList<Film> films = Film.initAllFilms();
+			ArrayList<Film> films;
+
+			if(TAR.contains("(main_only)")) {
+				films = Film.initAllFilmsInMainMetadata();
+			}else if(TAR.contains("(extra_only)")) {
+				films = Film.initAllFilmsInExtraMetadata();
+			}else{
+				films = Film.initAllFilms();
+			}
+			
 			ArrayList<String> output = new ArrayList<String>();
 			for (Film film : films) {
 				if(!filmTopicMap.containsKey(film.key)) {
@@ -119,7 +129,7 @@ public class ResultDecoding {
 			}
 
 			//Write to file
-			BufferedWriter bw = new BufferedWriter(new java.io.FileWriter("Topic/results_full.csv"));
+			BufferedWriter bw = new BufferedWriter(new java.io.FileWriter(TAR_DELUXE));
 			bw.write("Key,Film Title,Year,Production,Type,Topic,Plot Summary\n");
 			for (String s : output) {
 				bw.write(s);
