@@ -24,6 +24,8 @@ baidu_key.txt
 #Do not include the non-Han name list
 roman-non-han_names.csv
 translated-organizations.csv
+#Ignore the assets and results of PixPlot as they are too large
+CV/PixPlot/Temp/
 
 ##################### PYTHON IGNORE ##########################
 # Byte-compiled / optimized / DLL files
