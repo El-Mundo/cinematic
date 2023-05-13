@@ -26,6 +26,8 @@ roman-non-han_names.csv
 translated-organizations.csv
 #Ignore the assets and results of PixPlot as they are too large
 CV/PixPlot/Temp/
+CV/Temp/
+CV/thumbnails/cache/
 
 ##################### PYTHON IGNORE ##########################
 # Byte-compiled / optimized / DLL files
@@ -210,6 +212,7 @@ cython_debug/
 *.nar
 *.ear
 *.zip
+!CV/thumbnails/*.zip
 *.tar.gz
 *.rar
 
