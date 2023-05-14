@@ -28,6 +28,9 @@ translated-organizations.csv
 CV/PixPlot/Temp/
 CV/Temp/
 CV/thumbnails/cache/
+#Ignore the CV models as they are too large
+*.onnx
+CV/models/
 
 ##################### PYTHON IGNORE ##########################
 # Byte-compiled / optimized / DLL files
@@ -212,7 +215,6 @@ cython_debug/
 *.nar
 *.ear
 *.zip
-!CV/thumbnails/*.zip
 *.tar.gz
 *.rar
 
