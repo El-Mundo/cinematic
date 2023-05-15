@@ -31,6 +31,8 @@ CV/thumbnails/cache/
 #Ignore the CV models as they are too large
 *.onnx
 CV/models/
+#Ignore all CV boxes
+CV/crowd/boxes.csv
 
 ##################### PYTHON IGNORE ##########################
 # Byte-compiled / optimized / DLL files

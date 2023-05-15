@@ -1,0 +1,364 @@
+film,frame,pos,num_people,num_heads,geo_category,production,year,type,n_heads
+第三次试验,41,0.12166172106824925,11,26,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.4406779661016949
+第三次试验,42,0.12462908011869436,11,27,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.4576271186440678
+第三次试验,83,0.24629080118694363,10,12,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.2033898305084746
+第三次试验,84,0.24925816023738873,10,17,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.288135593220339
+第三次试验,144,0.42729970326409494,11,11,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.1864406779661017
+第三次试验,145,0.43026706231454004,11,10,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.1694915254237288
+第三次试验,193,0.5727002967359051,12,15,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.2542372881355932
+第三次试验,196,0.5816023738872403,10,9,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.15254237288135594
+第三次试验,250,0.7418397626112759,14,19,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.3220338983050847
+第三次试验,251,0.744807121661721,16,21,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.3559322033898305
+第三次试验,265,0.7863501483679525,12,34,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.576271186440678
+第三次试验,266,0.7893175074183977,12,38,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.6440677966101694
+第三次试验,267,0.7922848664688428,10,32,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.5423728813559322
+第三次试验,272,0.8071216617210683,11,50,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.847457627118644
+第三次试验,273,0.8100890207715133,12,59,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,1.0
+第三次试验,299,0.887240356083086,15,24,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.4067796610169492
+第三次试验,300,0.8902077151335311,14,22,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.3728813559322034
+第三次试验,301,0.8931750741839762,14,21,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.3559322033898305
+第三次试验,302,0.8961424332344213,10,10,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.1694915254237288
+第三次试验,303,0.8991097922848664,10,9,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.15254237288135594
+第三次试验,306,0.9080118694362018,11,11,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.1864406779661017
+第三次试验,307,0.9109792284866469,10,14,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.23728813559322035
+第三次试验,321,0.9525222551928784,10,19,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.3220338983050847
+第三次试验,322,0.9554896142433235,10,11,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.1864406779661017
+第三次试验,323,0.9584569732937686,12,17,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,0.288135593220339
+一天一夜,188,0.21123595505617979,12,17,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.3333333333333333
+一天一夜,189,0.21235955056179776,11,37,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.7254901960784313
+一天一夜,190,0.21348314606741572,12,15,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.29411764705882354
+一天一夜,209,0.2348314606741573,11,9,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.17647058823529413
+一天一夜,212,0.23820224719101124,10,13,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.2549019607843137
+一天一夜,213,0.2393258426966292,11,12,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.23529411764705882
+一天一夜,215,0.24157303370786518,13,43,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.8431372549019608
+一天一夜,216,0.24269662921348314,10,15,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.29411764705882354
+一天一夜,376,0.42247191011235957,11,21,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.4117647058823529
+一天一夜,384,0.4314606741573034,10,24,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.47058823529411764
+一天一夜,405,0.4550561797752809,11,28,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.5490196078431373
+一天一夜,407,0.45730337078651684,10,18,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.35294117647058826
+一天一夜,408,0.4584269662921348,10,19,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.37254901960784315
+一天一夜,420,0.47191011235955055,10,31,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.6078431372549019
+一天一夜,422,0.47415730337078654,10,9,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.17647058823529413
+一天一夜,426,0.4786516853932584,14,29,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.5686274509803921
+一天一夜,427,0.4797752808988764,11,33,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.6470588235294118
+一天一夜,428,0.48089887640449436,12,26,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.5098039215686274
+一天一夜,429,0.4820224719101124,10,14,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.27450980392156865
+一天一夜,440,0.4943820224719101,11,19,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.37254901960784315
+一天一夜,442,0.4966292134831461,10,14,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.27450980392156865
+一天一夜,443,0.49775280898876406,10,17,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.3333333333333333
+一天一夜,447,0.5022471910112359,13,14,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.27450980392156865
+一天一夜,448,0.503370786516854,11,13,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.2549019607843137
+一天一夜,471,0.5292134831460674,11,12,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.23529411764705882
+一天一夜,472,0.5303370786516854,10,11,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.21568627450980393
+一天一夜,483,0.5426966292134832,10,51,Beijing,Beijing Film Studio,1958,Artistic Documentary,1.0
+一天一夜,484,0.5438202247191011,11,26,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.5098039215686274
+一天一夜,536,0.6022471910112359,10,8,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.1568627450980392
+一天一夜,537,0.6033707865168539,10,10,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.19607843137254902
+一天一夜,538,0.604494382022472,10,11,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.21568627450980393
+一天一夜,539,0.6056179775280899,11,11,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.21568627450980393
+一天一夜,542,0.6089887640449438,11,10,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.19607843137254902
+一天一夜,546,0.6134831460674157,17,15,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.29411764705882354
+一天一夜,547,0.6146067415730337,16,18,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.35294117647058826
+一天一夜,548,0.6157303370786517,15,16,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.3137254901960784
+一天一夜,549,0.6168539325842697,10,10,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.19607843137254902
+一天一夜,700,0.7865168539325843,10,10,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.19607843137254902
+一天一夜,716,0.8044943820224719,12,38,Beijing,Beijing Film Studio,1958,Artistic Documentary,0.7450980392156863
+白手起家,104,0.15781487101669195,11,19,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.2714285714285714
+白手起家,114,0.17298937784522003,14,21,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.3
+白手起家,115,0.17450682852807284,16,25,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.35714285714285715
+白手起家,116,0.17602427921092564,16,28,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.4
+白手起家,117,0.17754172989377845,15,22,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.3142857142857143
+白手起家,211,0.3201820940819423,11,16,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.22857142857142856
+白手起家,212,0.3216995447647951,10,23,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.32857142857142857
+白手起家,227,0.34446130500758726,12,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.17142857142857143
+白手起家,228,0.34597875569044007,10,15,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.21428571428571427
+白手起家,229,0.34749620637329287,10,10,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.14285714285714285
+白手起家,249,0.37784522003034904,10,11,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.15714285714285714
+白手起家,250,0.37936267071320184,10,16,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.22857142857142856
+白手起家,256,0.3884673748103187,10,16,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.22857142857142856
+白手起家,258,0.3915022761760243,12,17,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.24285714285714285
+白手起家,339,0.5144157814871017,10,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.17142857142857143
+白手起家,346,0.5250379362670713,10,10,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.14285714285714285
+白手起家,385,0.5842185128983308,10,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.17142857142857143
+白手起家,386,0.5857359635811836,10,11,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.15714285714285714
+白手起家,389,0.590288315629742,11,9,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.12857142857142856
+白手起家,391,0.5933232169954477,10,9,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.12857142857142856
+白手起家,392,0.5948406676783005,10,9,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.12857142857142856
+白手起家,394,0.5978755690440061,10,9,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.12857142857142856
+白手起家,397,0.6024279210925645,13,13,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.18571428571428572
+白手起家,399,0.6054628224582701,11,10,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.14285714285714285
+白手起家,400,0.6069802731411229,10,13,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.18571428571428572
+白手起家,401,0.6084977238239757,10,10,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.14285714285714285
+白手起家,423,0.6418816388467374,10,7,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1
+白手起家,488,0.7405159332321699,10,11,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.15714285714285714
+白手起家,498,0.7556904400606981,10,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.17142857142857143
+白手起家,502,0.7617602427921093,11,40,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.5714285714285714
+白手起家,506,0.7678300455235205,10,17,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.24285714285714285
+白手起家,511,0.7754172989377845,10,19,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.2714285714285714
+白手起家,512,0.7769347496206374,10,21,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.3
+白手起家,516,0.7830045523520486,11,29,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.4142857142857143
+白手起家,574,0.8710166919575114,11,70,Northeast,Changchun Film Studio,1958,Artistic Documentary,1.0
+白手起家,577,0.8755690440060698,10,34,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.4857142857142857
+白手起家,578,0.8770864946889226,13,24,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.34285714285714286
+白手起家,579,0.8786039453717754,10,16,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.22857142857142856
+白手起家,592,0.8983308042488619,13,49,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.7
+白手起家,603,0.9150227617602428,13,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.17142857142857143
+白手起家,604,0.9165402124430956,11,11,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.15714285714285714
+白手起家,605,0.9180576631259484,13,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.17142857142857143
+白手起家,611,0.9271623672230652,13,26,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.37142857142857144
+白手起家,654,0.992412746585736,10,54,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.7714285714285715
+大风浪里的小故事,275,0.291932059447983,11,12,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.14457831325301204
+大风浪里的小故事,560,0.5944798301486199,11,12,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.14457831325301204
+大风浪里的小故事,563,0.5976645435244161,10,14,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1686746987951807
+大风浪里的小故事,564,0.5987261146496815,10,12,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.14457831325301204
+大风浪里的小故事,575,0.6104033970276008,13,83,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,1.0
+大风浪里的小故事,576,0.6114649681528662,16,39,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.46987951807228917
+大风浪里的小故事,577,0.6125265392781316,10,12,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.14457831325301204
+大风浪里的小故事,579,0.6146496815286624,10,15,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.18072289156626506
+大风浪里的小故事,582,0.6178343949044586,10,20,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.24096385542168675
+大风浪里的小故事,587,0.6231422505307855,10,8,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.0963855421686747
+大风浪里的小故事,589,0.6252653927813163,10,14,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1686746987951807
+大风浪里的小故事,590,0.6263269639065817,12,15,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.18072289156626506
+大风浪里的小故事,591,0.6273885350318471,11,10,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.12048192771084337
+大风浪里的小故事,592,0.6284501061571125,10,16,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1927710843373494
+大风浪里的小故事,594,0.6305732484076433,11,15,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.18072289156626506
+大风浪里的小故事,595,0.6316348195329087,12,12,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.14457831325301204
+大风浪里的小故事,597,0.6337579617834395,15,13,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1566265060240964
+大风浪里的小故事,598,0.6348195329087049,12,13,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1566265060240964
+大风浪里的小故事,599,0.6358811040339702,12,15,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.18072289156626506
+大风浪里的小故事,600,0.6369426751592356,11,16,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1927710843373494
+大风浪里的小故事,602,0.6390658174097664,13,13,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1566265060240964
+大风浪里的小故事,603,0.6401273885350318,14,15,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.18072289156626506
+大风浪里的小故事,605,0.6422505307855626,11,15,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.18072289156626506
+大风浪里的小故事,606,0.643312101910828,12,12,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.14457831325301204
+大风浪里的小故事,607,0.6443736730360934,12,11,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.13253012048192772
+大风浪里的小故事,610,0.6475583864118896,10,14,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1686746987951807
+大风浪里的小故事,611,0.648619957537155,10,13,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1566265060240964
+大风浪里的小故事,612,0.6496815286624203,11,14,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1686746987951807
+大风浪里的小故事,614,0.6518046709129511,10,13,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1566265060240964
+大风浪里的小故事,615,0.6528662420382165,13,13,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1566265060240964
+大风浪里的小故事,616,0.6539278131634819,10,13,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1566265060240964
+大风浪里的小故事,618,0.6560509554140127,10,26,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.3132530120481928
+大风浪里的小故事,619,0.6571125265392781,12,28,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.3373493975903614
+大风浪里的小故事,623,0.6613588110403397,10,11,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.13253012048192772
+大风浪里的小故事,624,0.6624203821656051,12,18,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.21686746987951808
+大风浪里的小故事,625,0.6634819532908705,12,16,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1927710843373494
+大风浪里的小故事,626,0.6645435244161358,11,19,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.2289156626506024
+大风浪里的小故事,627,0.6656050955414012,13,17,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.20481927710843373
+大风浪里的小故事,630,0.6687898089171974,10,11,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.13253012048192772
+大风浪里的小故事,631,0.6698513800424628,12,10,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.12048192771084337
+大风浪里的小故事,641,0.6804670912951167,13,10,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.12048192771084337
+大风浪里的小故事,642,0.6815286624203821,12,9,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.10843373493975904
+大风浪里的小故事,643,0.6825902335456475,11,10,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.12048192771084337
+大风浪里的小故事,644,0.6836518046709129,12,10,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.12048192771084337
+大风浪里的小故事,645,0.6847133757961783,10,8,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.0963855421686747
+大风浪里的小故事,650,0.6900212314225053,11,9,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.10843373493975904
+大风浪里的小故事,654,0.6942675159235668,10,9,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.10843373493975904
+大风浪里的小故事,655,0.6953290870488322,11,10,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.12048192771084337
+大风浪里的小故事,657,0.697452229299363,10,9,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.10843373493975904
+大风浪里的小故事,658,0.6985138004246284,12,10,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.12048192771084337
+大风浪里的小故事,659,0.6995753715498938,12,11,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.13253012048192772
+大风浪里的小故事,661,0.7016985138004246,12,14,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1686746987951807
+大风浪里的小故事,662,0.70276008492569,13,13,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1566265060240964
+大风浪里的小故事,663,0.7038216560509554,13,13,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1566265060240964
+大风浪里的小故事,664,0.7048832271762208,10,11,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.13253012048192772
+大风浪里的小故事,667,0.7080679405520169,11,12,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.14457831325301204
+大风浪里的小故事,670,0.7112526539278131,14,13,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1566265060240964
+大风浪里的小故事,671,0.7123142250530785,14,16,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1927710843373494
+大风浪里的小故事,672,0.7133757961783439,10,9,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.10843373493975904
+大风浪里的小故事,840,0.89171974522293,11,28,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.3373493975903614
+大风浪里的小故事,841,0.8927813163481954,14,27,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.3253012048192771
+大风浪里的小故事,848,0.9002123142250531,11,26,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.3132530120481928
+大风浪里的小故事,850,0.9023354564755839,14,24,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.2891566265060241
+大风浪里的小故事,851,0.9033970276008493,15,25,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.30120481927710846
+大风浪里的小故事,852,0.9044585987261147,15,23,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.27710843373493976
+大风浪里的小故事,855,0.9076433121019108,11,11,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.13253012048192772
+大风浪里的小故事,856,0.9087048832271762,12,14,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1686746987951807
+大风浪里的小故事,857,0.9097664543524416,15,19,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.2289156626506024
+大风浪里的小故事,858,0.910828025477707,14,17,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.20481927710843373
+大风浪里的小故事,870,0.9235668789808917,15,23,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.27710843373493976
+大风浪里的小故事,871,0.9246284501061571,11,23,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.27710843373493976
+大风浪里的小故事,873,0.9267515923566879,11,22,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.26506024096385544
+大风浪里的小故事,874,0.9278131634819533,10,17,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.20481927710843373
+大风浪里的小故事,880,0.9341825902335457,12,82,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.9879518072289156
+大风浪里的小故事,885,0.9394904458598726,11,12,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.14457831325301204
+大风浪里的小故事,906,0.9617834394904459,12,18,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.21686746987951808
+大风浪里的小故事,907,0.9628450106157113,13,14,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.1686746987951807
+大风浪里的小故事,923,0.9798301486199575,12,10,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.12048192771084337
+大风浪里的小故事,931,0.9883227176220807,12,15,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.18072289156626506
+大风浪里的小故事,938,0.9957537154989384,10,10,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.12048192771084337
+大风浪里的小故事,939,0.9968152866242038,10,12,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,0.14457831325301204
+宝山之歌,137,0.3577023498694517,11,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.35294117647058826
+宝山之歌,299,0.7806788511749347,11,34,Northeast,Changchun Film Studio,1958,Artistic Documentary,1.0
+第一列快车,26,0.04340567612687813,11,41,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,1.0
+第一列快车,27,0.045075125208681135,12,38,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.926829268292683
+第一列快车,40,0.0667779632721202,11,38,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.926829268292683
+第一列快车,41,0.06844741235392321,11,33,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.8048780487804879
+第一列快车,53,0.08848080133555926,11,9,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.21951219512195122
+第一列快车,78,0.1302170283806344,13,14,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.34146341463414637
+第一列快车,79,0.1318864774624374,11,13,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.3170731707317073
+第一列快车,80,0.1335559265442404,13,15,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.36585365853658536
+第一列快车,88,0.14691151919866444,11,15,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.36585365853658536
+第一列快车,89,0.14858096828046743,11,18,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.43902439024390244
+第一列快车,90,0.15025041736227046,13,18,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.43902439024390244
+第一列快车,138,0.2303839732888147,12,13,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.3170731707317073
+第一列快车,139,0.23205342237061768,12,14,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.34146341463414637
+第一列快车,171,0.2854757929883139,11,10,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.24390243902439024
+第一列快车,173,0.2888146911519199,11,9,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.21951219512195122
+第一列快车,174,0.2904841402337229,11,9,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.21951219512195122
+第一列快车,184,0.3071786310517529,11,8,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.1951219512195122
+第一列快车,235,0.39232053422370616,11,11,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.2682926829268293
+第一列快车,305,0.5091819699499165,14,14,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.34146341463414637
+第一列快车,323,0.5392320534223706,11,14,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.34146341463414637
+第一列快车,358,0.5976627712854758,13,25,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.6097560975609756
+第一列快车,359,0.5993322203672788,13,23,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.5609756097560976
+第一列快车,360,0.6010016694490818,13,22,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.5365853658536586
+第一列快车,361,0.6026711185308848,15,25,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.6097560975609756
+第一列快车,375,0.6260434056761269,11,15,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.36585365853658536
+第一列快车,377,0.6293823038397329,11,9,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.21951219512195122
+第一列快车,385,0.6427378964941569,11,8,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.1951219512195122
+第一列快车,405,0.676126878130217,11,21,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.5121951219512195
+第一列快车,408,0.6811352253756261,11,34,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.8292682926829268
+第一列快车,547,0.9131886477462438,11,15,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.36585365853658536
+第一列快车,589,0.9833055091819699,12,29,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.7073170731707317
+红领巾的故事,5,0.006112469437652812,11,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1348314606741573
+红领巾的故事,58,0.07090464547677261,11,22,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.24719101123595505
+红领巾的故事,59,0.07212713936430318,11,27,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.30337078651685395
+红领巾的故事,60,0.07334963325183375,15,24,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.2696629213483146
+红领巾的故事,78,0.09535452322738386,12,24,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.2696629213483146
+红领巾的故事,79,0.09657701711491443,11,15,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.16853932584269662
+红领巾的故事,89,0.10880195599022005,13,27,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.30337078651685395
+红领巾的故事,90,0.1100244498777506,13,31,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.34831460674157305
+红领巾的故事,97,0.11858190709046455,11,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1348314606741573
+红领巾的故事,115,0.14058679706601468,12,46,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.5168539325842697
+红领巾的故事,154,0.1882640586797066,11,24,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.2696629213483146
+红领巾的故事,155,0.18948655256723718,12,25,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.2808988764044944
+红领巾的故事,160,0.19559902200489,13,25,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.2808988764044944
+红领巾的故事,161,0.19682151589242053,18,23,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.25842696629213485
+红领巾的故事,162,0.1980440097799511,13,28,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.3146067415730337
+红领巾的故事,163,0.19926650366748166,11,27,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.30337078651685395
+红领巾的故事,164,0.20048899755501223,15,29,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.3258426966292135
+红领巾的故事,259,0.31662591687041564,11,9,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.10112359550561797
+红领巾的故事,261,0.31907090464547677,12,15,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.16853932584269662
+红领巾的故事,262,0.3202933985330073,12,11,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.12359550561797752
+红领巾的故事,269,0.32885085574572126,11,16,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1797752808988764
+红领巾的故事,429,0.5244498777506112,11,13,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.14606741573033707
+红领巾的故事,433,0.5293398533007335,13,11,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.12359550561797752
+红领巾的故事,434,0.530562347188264,11,13,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.14606741573033707
+红领巾的故事,435,0.5317848410757946,13,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1348314606741573
+红领巾的故事,436,0.5330073349633252,11,13,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.14606741573033707
+红领巾的故事,444,0.5427872860635696,11,13,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.14606741573033707
+红领巾的故事,445,0.5440097799511002,11,13,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.14606741573033707
+红领巾的故事,524,0.6405867970660146,11,9,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.10112359550561797
+红领巾的故事,571,0.6980440097799511,11,18,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.20224719101123595
+红领巾的故事,641,0.7836185819070904,11,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1348314606741573
+红领巾的故事,642,0.784841075794621,12,13,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.14606741573033707
+红领巾的故事,643,0.7860635696821516,11,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1348314606741573
+红领巾的故事,645,0.7885085574572127,11,14,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.15730337078651685
+红领巾的故事,646,0.7897310513447433,13,21,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.23595505617977527
+红领巾的故事,647,0.7909535452322738,13,20,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.2247191011235955
+红领巾的故事,648,0.7921760391198044,12,24,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.2696629213483146
+红领巾的故事,649,0.793398533007335,12,19,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.21348314606741572
+红领巾的故事,659,0.8056234718826406,12,17,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.19101123595505617
+红领巾的故事,663,0.8105134474327629,12,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1348314606741573
+红领巾的故事,664,0.8117359413202934,13,37,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.4157303370786517
+红领巾的故事,665,0.812958435207824,11,34,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.38202247191011235
+红领巾的故事,687,0.8398533007334963,15,44,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.4943820224719101
+红领巾的故事,688,0.8410757946210269,11,34,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.38202247191011235
+红领巾的故事,697,0.8520782396088019,11,21,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.23595505617977527
+红领巾的故事,706,0.863080684596577,11,11,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.12359550561797752
+红领巾的故事,724,0.8850855745721271,11,9,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.10112359550561797
+红领巾的故事,755,0.9229828850855746,11,19,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.21348314606741572
+红领巾的故事,756,0.9242053789731052,11,15,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.16853932584269662
+红领巾的故事,766,0.9364303178484108,12,22,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.24719101123595505
+红领巾的故事,775,0.9474327628361858,11,36,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.4044943820224719
+红领巾的故事,786,0.960880195599022,12,11,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.12359550561797752
+红领巾的故事,788,0.9633251833740831,12,85,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.9550561797752809
+红领巾的故事,789,0.9645476772616137,14,89,Northeast,Changchun Film Studio,1958,Artistic Documentary,1.0
+红领巾的故事,790,0.9657701711491442,14,16,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1797752808988764
+红领巾的故事,791,0.9669926650366748,12,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1348314606741573
+红领巾的故事,792,0.9682151589242054,11,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1348314606741573
+红领巾的故事,794,0.9706601466992665,12,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1348314606741573
+红领巾的故事,802,0.980440097799511,11,39,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.43820224719101125
+红领巾的故事,808,0.9877750611246944,11,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1348314606741573
+红领巾的故事,809,0.988997555012225,11,11,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.12359550561797752
+红领巾的故事,811,0.991442542787286,11,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1348314606741573
+红领巾的故事,815,0.9963325183374083,12,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.1348314606741573
+服务员,62,0.08985507246376812,16,40,Northeast,Changchun Film Studio,1958,Artistic Documentary,1.0
+服务员,74,0.1072463768115942,11,30,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.75
+服务员,80,0.11594202898550725,11,12,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.3
+服务员,81,0.11739130434782609,13,13,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.325
+服务员,336,0.48695652173913045,11,15,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.375
+服务员,382,0.553623188405797,12,14,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.35
+服务员,387,0.5608695652173913,17,18,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.45
+服务员,517,0.7492753623188406,12,18,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.45
+服务员,518,0.7507246376811594,11,26,Northeast,Changchun Film Studio,1958,Artistic Documentary,0.65
+爱厂如家,24,0.02696629213483146,14,58,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.32954545454545453
+爱厂如家,33,0.03707865168539326,12,16,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.09090909090909091
+爱厂如家,80,0.0898876404494382,11,14,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.07954545454545454
+爱厂如家,103,0.11573033707865168,12,15,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.08522727272727272
+爱厂如家,104,0.11685393258426967,11,16,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.09090909090909091
+爱厂如家,106,0.11910112359550562,13,18,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.10227272727272728
+爱厂如家,110,0.12359550561797752,11,17,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.09659090909090909
+爱厂如家,180,0.20224719101123595,11,13,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.07386363636363637
+爱厂如家,181,0.20337078651685395,11,14,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.07954545454545454
+爱厂如家,183,0.20561797752808988,11,14,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.07954545454545454
+爱厂如家,185,0.20786516853932585,11,16,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.09090909090909091
+爱厂如家,352,0.3955056179775281,11,18,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.10227272727272728
+爱厂如家,357,0.401123595505618,11,23,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.13068181818181818
+爱厂如家,360,0.4044943820224719,11,17,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.09659090909090909
+爱厂如家,379,0.4258426966292135,12,17,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.09659090909090909
+爱厂如家,380,0.42696629213483145,11,13,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.07386363636363637
+爱厂如家,409,0.45955056179775283,13,21,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.11931818181818182
+爱厂如家,410,0.4606741573033708,13,23,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.13068181818181818
+爱厂如家,411,0.46179775280898877,13,21,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.11931818181818182
+爱厂如家,440,0.4943820224719101,18,24,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.13636363636363635
+爱厂如家,447,0.5022471910112359,16,23,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.13068181818181818
+爱厂如家,448,0.503370786516854,12,21,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.11931818181818182
+爱厂如家,449,0.5044943820224719,15,22,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.125
+爱厂如家,450,0.5056179775280899,15,23,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.13068181818181818
+爱厂如家,472,0.5303370786516854,15,22,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.125
+爱厂如家,473,0.5314606741573034,15,19,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.10795454545454546
+爱厂如家,654,0.7348314606741573,13,21,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.11931818181818182
+爱厂如家,691,0.7764044943820225,12,15,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.08522727272727272
+爱厂如家,695,0.7808988764044944,13,23,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.13068181818181818
+爱厂如家,697,0.7831460674157303,14,19,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.10795454545454546
+爱厂如家,701,0.7876404494382022,12,19,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.10795454545454546
+爱厂如家,705,0.7921348314606742,12,12,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.06818181818181818
+爱厂如家,707,0.7943820224719101,11,11,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.0625
+爱厂如家,708,0.7955056179775281,12,14,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.07954545454545454
+爱厂如家,709,0.7966292134831461,12,14,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.07954545454545454
+爱厂如家,710,0.797752808988764,12,15,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.08522727272727272
+爱厂如家,726,0.8157303370786517,13,15,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.08522727272727272
+爱厂如家,727,0.8168539325842696,13,20,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.11363636363636363
+爱厂如家,747,0.8393258426966292,11,15,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.08522727272727272
+爱厂如家,748,0.8404494382022472,11,16,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.09090909090909091
+爱厂如家,750,0.8426966292134831,11,12,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.06818181818181818
+爱厂如家,765,0.8595505617977528,12,20,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.11363636363636363
+爱厂如家,767,0.8617977528089887,12,16,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.09090909090909091
+爱厂如家,771,0.8662921348314607,11,12,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.06818181818181818
+爱厂如家,772,0.8674157303370786,14,16,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.09090909090909091
+爱厂如家,773,0.8685393258426967,13,15,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.08522727272727272
+爱厂如家,774,0.8696629213483146,11,16,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.09090909090909091
+爱厂如家,775,0.8707865168539326,11,17,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.09659090909090909
+爱厂如家,795,0.8932584269662921,13,20,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.11363636363636363
+爱厂如家,796,0.8943820224719101,12,18,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.10227272727272728
+爱厂如家,799,0.8977528089887641,12,20,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.11363636363636363
+爱厂如家,800,0.898876404494382,14,15,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.08522727272727272
+爱厂如家,806,0.9056179775280899,14,69,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.39204545454545453
+爱厂如家,807,0.9067415730337078,11,34,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.19318181818181818
+爱厂如家,808,0.9078651685393259,12,31,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.17613636363636365
+爱厂如家,814,0.9146067415730337,11,176,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,1.0
+爱厂如家,825,0.9269662921348315,13,170,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.9659090909090909
+爱厂如家,826,0.9280898876404494,12,108,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.6136363636363636
+爱厂如家,832,0.9348314606741573,11,10,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.056818181818181816
+爱厂如家,837,0.9404494382022472,13,96,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.5454545454545454
+爱厂如家,849,0.9539325842696629,13,100,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.5681818181818182
+爱厂如家,850,0.9550561797752809,13,115,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.6534090909090909
+爱厂如家,855,0.9606741573033708,11,82,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.4659090909090909
+爱厂如家,859,0.9651685393258427,14,89,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.5056818181818182
+爱厂如家,863,0.9696629213483146,12,18,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.10227272727272728
+爱厂如家,864,0.9707865168539326,13,18,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.10227272727272728
+爱厂如家,881,0.9898876404494382,12,14,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.07954545454545454
+爱厂如家,884,0.9932584269662922,12,13,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.07386363636363637
+爱厂如家,887,0.996629213483146,11,21,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,0.11931818181818182

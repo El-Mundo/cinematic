@@ -1,0 +1,999 @@
+film,frame,pos,num_people,num_heads,geo_category,production,year,type,n_heads
+红花遍地开,39,0.042483660130718956,11,117,Beijing,Beijing Film Studio,1960,Performance,0.6573033707865169
+红花遍地开,40,0.04357298474945534,10,116,Beijing,Beijing Film Studio,1960,Performance,0.651685393258427
+红花遍地开,42,0.0457516339869281,13,164,Beijing,Beijing Film Studio,1960,Performance,0.9213483146067416
+红花遍地开,43,0.046840958605664486,12,166,Beijing,Beijing Film Studio,1960,Performance,0.9325842696629213
+红花遍地开,44,0.04793028322440087,10,172,Beijing,Beijing Film Studio,1960,Performance,0.9662921348314607
+红花遍地开,45,0.049019607843137254,10,168,Beijing,Beijing Film Studio,1960,Performance,0.9438202247191011
+红花遍地开,46,0.05010893246187364,15,19,Beijing,Beijing Film Studio,1960,Performance,0.10674157303370786
+红花遍地开,47,0.05119825708061002,12,37,Beijing,Beijing Film Studio,1960,Performance,0.20786516853932585
+红花遍地开,50,0.054466230936819175,11,38,Beijing,Beijing Film Studio,1960,Performance,0.21348314606741572
+红花遍地开,51,0.05555555555555555,19,22,Beijing,Beijing Film Studio,1960,Performance,0.12359550561797752
+红花遍地开,57,0.06209150326797386,11,127,Beijing,Beijing Film Studio,1960,Performance,0.7134831460674157
+红花遍地开,59,0.06427015250544663,12,176,Beijing,Beijing Film Studio,1960,Performance,0.9887640449438202
+红花遍地开,60,0.06535947712418301,10,128,Beijing,Beijing Film Studio,1960,Performance,0.7191011235955056
+红花遍地开,75,0.08169934640522876,14,51,Beijing,Beijing Film Studio,1960,Performance,0.28651685393258425
+红花遍地开,86,0.09368191721132897,13,37,Beijing,Beijing Film Studio,1960,Performance,0.20786516853932585
+红花遍地开,90,0.09803921568627451,11,14,Beijing,Beijing Film Studio,1960,Performance,0.07865168539325842
+红花遍地开,93,0.10130718954248366,10,15,Beijing,Beijing Film Studio,1960,Performance,0.08426966292134831
+红花遍地开,94,0.10239651416122005,10,11,Beijing,Beijing Film Studio,1960,Performance,0.06179775280898876
+红花遍地开,95,0.10348583877995643,11,11,Beijing,Beijing Film Studio,1960,Performance,0.06179775280898876
+红花遍地开,102,0.1111111111111111,12,10,Beijing,Beijing Film Studio,1960,Performance,0.056179775280898875
+红花遍地开,108,0.11764705882352941,10,11,Beijing,Beijing Film Studio,1960,Performance,0.06179775280898876
+红花遍地开,110,0.11982570806100218,10,12,Beijing,Beijing Film Studio,1960,Performance,0.06741573033707865
+红花遍地开,111,0.12091503267973856,10,11,Beijing,Beijing Film Studio,1960,Performance,0.06179775280898876
+红花遍地开,121,0.1318082788671024,10,7,Beijing,Beijing Film Studio,1960,Performance,0.03932584269662921
+红花遍地开,123,0.13398692810457516,10,10,Beijing,Beijing Film Studio,1960,Performance,0.056179775280898875
+红花遍地开,125,0.13616557734204793,11,18,Beijing,Beijing Film Studio,1960,Performance,0.10112359550561797
+红花遍地开,126,0.13725490196078433,10,11,Beijing,Beijing Film Studio,1960,Performance,0.06179775280898876
+红花遍地开,128,0.1394335511982571,10,19,Beijing,Beijing Film Studio,1960,Performance,0.10674157303370786
+红花遍地开,131,0.14270152505446623,10,14,Beijing,Beijing Film Studio,1960,Performance,0.07865168539325842
+红花遍地开,137,0.14923747276688454,10,12,Beijing,Beijing Film Studio,1960,Performance,0.06741573033707865
+红花遍地开,138,0.1503267973856209,10,12,Beijing,Beijing Film Studio,1960,Performance,0.06741573033707865
+红花遍地开,141,0.15359477124183007,10,33,Beijing,Beijing Film Studio,1960,Performance,0.1853932584269663
+红花遍地开,147,0.16013071895424835,10,16,Beijing,Beijing Film Studio,1960,Performance,0.0898876404494382
+红花遍地开,150,0.16339869281045752,12,15,Beijing,Beijing Film Studio,1960,Performance,0.08426966292134831
+红花遍地开,230,0.25054466230936817,12,14,Beijing,Beijing Film Studio,1960,Performance,0.07865168539325842
+红花遍地开,235,0.2559912854030501,10,11,Beijing,Beijing Film Studio,1960,Performance,0.06179775280898876
+红花遍地开,238,0.25925925925925924,10,10,Beijing,Beijing Film Studio,1960,Performance,0.056179775280898875
+红花遍地开,245,0.2668845315904139,10,10,Beijing,Beijing Film Studio,1960,Performance,0.056179775280898875
+红花遍地开,246,0.2679738562091503,10,10,Beijing,Beijing Film Studio,1960,Performance,0.056179775280898875
+红花遍地开,249,0.27124183006535946,10,16,Beijing,Beijing Film Studio,1960,Performance,0.0898876404494382
+红花遍地开,251,0.27342047930283225,10,11,Beijing,Beijing Film Studio,1960,Performance,0.06179775280898876
+红花遍地开,253,0.275599128540305,10,10,Beijing,Beijing Film Studio,1960,Performance,0.056179775280898875
+红花遍地开,254,0.2766884531590414,10,13,Beijing,Beijing Film Studio,1960,Performance,0.07303370786516854
+红花遍地开,255,0.2777777777777778,11,10,Beijing,Beijing Film Studio,1960,Performance,0.056179775280898875
+红花遍地开,260,0.28322440087145967,10,9,Beijing,Beijing Film Studio,1960,Performance,0.05056179775280899
+红花遍地开,278,0.3028322440087146,10,8,Beijing,Beijing Film Studio,1960,Performance,0.0449438202247191
+红花遍地开,289,0.3148148148148148,12,30,Beijing,Beijing Film Studio,1960,Performance,0.16853932584269662
+红花遍地开,295,0.3213507625272331,13,35,Beijing,Beijing Film Studio,1960,Performance,0.19662921348314608
+红花遍地开,309,0.3366013071895425,11,19,Beijing,Beijing Film Studio,1960,Performance,0.10674157303370786
+红花遍地开,320,0.3485838779956427,10,14,Beijing,Beijing Film Studio,1960,Performance,0.07865168539325842
+红花遍地开,330,0.35947712418300654,14,53,Beijing,Beijing Film Studio,1960,Performance,0.29775280898876405
+红花遍地开,332,0.3616557734204793,10,39,Beijing,Beijing Film Studio,1960,Performance,0.21910112359550563
+红花遍地开,336,0.3660130718954248,13,24,Beijing,Beijing Film Studio,1960,Performance,0.1348314606741573
+红花遍地开,344,0.3747276688453159,10,7,Beijing,Beijing Film Studio,1960,Performance,0.03932584269662921
+红花遍地开,421,0.45860566448801743,11,28,Beijing,Beijing Film Studio,1960,Performance,0.15730337078651685
+红花遍地开,423,0.46078431372549017,15,25,Beijing,Beijing Film Studio,1960,Performance,0.1404494382022472
+红花遍地开,424,0.46187363834422657,13,29,Beijing,Beijing Film Studio,1960,Performance,0.16292134831460675
+红花遍地开,425,0.46296296296296297,15,20,Beijing,Beijing Film Studio,1960,Performance,0.11235955056179775
+红花遍地开,428,0.4662309368191721,12,11,Beijing,Beijing Film Studio,1960,Performance,0.06179775280898876
+红花遍地开,429,0.4673202614379085,12,8,Beijing,Beijing Film Studio,1960,Performance,0.0449438202247191
+红花遍地开,432,0.47058823529411764,10,19,Beijing,Beijing Film Studio,1960,Performance,0.10674157303370786
+红花遍地开,433,0.47167755991285404,13,22,Beijing,Beijing Film Studio,1960,Performance,0.12359550561797752
+红花遍地开,434,0.47276688453159044,14,19,Beijing,Beijing Film Studio,1960,Performance,0.10674157303370786
+红花遍地开,435,0.4738562091503268,11,17,Beijing,Beijing Film Studio,1960,Performance,0.09550561797752809
+红花遍地开,436,0.4749455337690632,13,19,Beijing,Beijing Film Studio,1960,Performance,0.10674157303370786
+红花遍地开,437,0.4760348583877996,10,19,Beijing,Beijing Film Studio,1960,Performance,0.10674157303370786
+红花遍地开,443,0.48257080610021785,14,20,Beijing,Beijing Film Studio,1960,Performance,0.11235955056179775
+红花遍地开,447,0.4869281045751634,10,13,Beijing,Beijing Film Studio,1960,Performance,0.07303370786516854
+红花遍地开,483,0.5261437908496732,10,8,Beijing,Beijing Film Studio,1960,Performance,0.0449438202247191
+红花遍地开,547,0.5958605664488017,14,19,Beijing,Beijing Film Studio,1960,Performance,0.10674157303370786
+红花遍地开,548,0.5969498910675382,12,18,Beijing,Beijing Film Studio,1960,Performance,0.10112359550561797
+红花遍地开,549,0.5980392156862745,10,20,Beijing,Beijing Film Studio,1960,Performance,0.11235955056179775
+红花遍地开,550,0.599128540305011,13,19,Beijing,Beijing Film Studio,1960,Performance,0.10674157303370786
+红花遍地开,551,0.6002178649237473,13,19,Beijing,Beijing Film Studio,1960,Performance,0.10674157303370786
+红花遍地开,553,0.6023965141612201,11,12,Beijing,Beijing Film Studio,1960,Performance,0.06741573033707865
+红花遍地开,558,0.6078431372549019,10,11,Beijing,Beijing Film Studio,1960,Performance,0.06179775280898876
+红花遍地开,559,0.6089324618736384,12,13,Beijing,Beijing Film Studio,1960,Performance,0.07303370786516854
+红花遍地开,560,0.6100217864923747,11,11,Beijing,Beijing Film Studio,1960,Performance,0.06179775280898876
+红花遍地开,561,0.6111111111111112,13,19,Beijing,Beijing Film Studio,1960,Performance,0.10674157303370786
+红花遍地开,562,0.6122004357298475,12,24,Beijing,Beijing Film Studio,1960,Performance,0.1348314606741573
+红花遍地开,563,0.6132897603485838,13,25,Beijing,Beijing Film Studio,1960,Performance,0.1404494382022472
+红花遍地开,564,0.6143790849673203,13,26,Beijing,Beijing Film Studio,1960,Performance,0.14606741573033707
+红花遍地开,565,0.6154684095860566,10,23,Beijing,Beijing Film Studio,1960,Performance,0.12921348314606743
+红花遍地开,566,0.616557734204793,12,20,Beijing,Beijing Film Studio,1960,Performance,0.11235955056179775
+红花遍地开,569,0.6198257080610022,11,14,Beijing,Beijing Film Studio,1960,Performance,0.07865168539325842
+红花遍地开,575,0.6263616557734205,10,10,Beijing,Beijing Film Studio,1960,Performance,0.056179775280898875
+红花遍地开,581,0.6328976034858388,10,14,Beijing,Beijing Film Studio,1960,Performance,0.07865168539325842
+红花遍地开,582,0.6339869281045751,10,13,Beijing,Beijing Film Studio,1960,Performance,0.07303370786516854
+红花遍地开,585,0.6372549019607843,12,19,Beijing,Beijing Film Studio,1960,Performance,0.10674157303370786
+红花遍地开,602,0.6557734204793029,10,14,Beijing,Beijing Film Studio,1960,Performance,0.07865168539325842
+红花遍地开,608,0.6623093681917211,15,27,Beijing,Beijing Film Studio,1960,Performance,0.15168539325842698
+红花遍地开,609,0.6633986928104575,19,22,Beijing,Beijing Film Studio,1960,Performance,0.12359550561797752
+红花遍地开,613,0.6677559912854031,12,18,Beijing,Beijing Film Studio,1960,Performance,0.10112359550561797
+红花遍地开,614,0.6688453159041394,17,21,Beijing,Beijing Film Studio,1960,Performance,0.11797752808988764
+红花遍地开,615,0.6699346405228758,16,23,Beijing,Beijing Film Studio,1960,Performance,0.12921348314606743
+红花遍地开,616,0.6710239651416122,17,23,Beijing,Beijing Film Studio,1960,Performance,0.12921348314606743
+红花遍地开,618,0.673202614379085,15,25,Beijing,Beijing Film Studio,1960,Performance,0.1404494382022472
+红花遍地开,622,0.6775599128540305,10,9,Beijing,Beijing Film Studio,1960,Performance,0.05056179775280899
+红花遍地开,629,0.6851851851851852,19,24,Beijing,Beijing Film Studio,1960,Performance,0.1348314606741573
+红花遍地开,635,0.6917211328976035,15,20,Beijing,Beijing Film Studio,1960,Performance,0.11235955056179775
+红花遍地开,636,0.6928104575163399,13,20,Beijing,Beijing Film Studio,1960,Performance,0.11235955056179775
+红花遍地开,637,0.6938997821350763,13,15,Beijing,Beijing Film Studio,1960,Performance,0.08426966292134831
+红花遍地开,643,0.7004357298474946,11,10,Beijing,Beijing Film Studio,1960,Performance,0.056179775280898875
+红花遍地开,654,0.7124183006535948,13,18,Beijing,Beijing Film Studio,1960,Performance,0.10112359550561797
+红花遍地开,664,0.7233115468409586,12,58,Beijing,Beijing Film Studio,1960,Performance,0.3258426966292135
+红花遍地开,665,0.724400871459695,13,66,Beijing,Beijing Film Studio,1960,Performance,0.3707865168539326
+红花遍地开,666,0.7254901960784313,13,68,Beijing,Beijing Film Studio,1960,Performance,0.38202247191011235
+红花遍地开,667,0.7265795206971678,13,71,Beijing,Beijing Film Studio,1960,Performance,0.398876404494382
+红花遍地开,668,0.7276688453159041,13,66,Beijing,Beijing Film Studio,1960,Performance,0.3707865168539326
+红花遍地开,669,0.7287581699346405,13,72,Beijing,Beijing Film Studio,1960,Performance,0.4044943820224719
+红花遍地开,671,0.7309368191721133,11,11,Beijing,Beijing Film Studio,1960,Performance,0.06179775280898876
+红花遍地开,673,0.7331154684095861,10,47,Beijing,Beijing Film Studio,1960,Performance,0.2640449438202247
+红花遍地开,674,0.7342047930283224,11,46,Beijing,Beijing Film Studio,1960,Performance,0.25842696629213485
+红花遍地开,676,0.7363834422657952,10,41,Beijing,Beijing Film Studio,1960,Performance,0.2303370786516854
+红花遍地开,677,0.7374727668845316,12,61,Beijing,Beijing Film Studio,1960,Performance,0.34269662921348315
+红花遍地开,678,0.738562091503268,12,48,Beijing,Beijing Film Studio,1960,Performance,0.2696629213483146
+红花遍地开,681,0.7418300653594772,12,71,Beijing,Beijing Film Studio,1960,Performance,0.398876404494382
+红花遍地开,682,0.7429193899782135,12,68,Beijing,Beijing Film Studio,1960,Performance,0.38202247191011235
+红花遍地开,683,0.7440087145969498,12,68,Beijing,Beijing Film Studio,1960,Performance,0.38202247191011235
+红花遍地开,684,0.7450980392156863,13,67,Beijing,Beijing Film Studio,1960,Performance,0.37640449438202245
+红花遍地开,685,0.7461873638344226,12,65,Beijing,Beijing Film Studio,1960,Performance,0.3651685393258427
+红花遍地开,686,0.7472766884531591,12,65,Beijing,Beijing Film Studio,1960,Performance,0.3651685393258427
+红花遍地开,687,0.7483660130718954,11,68,Beijing,Beijing Film Studio,1960,Performance,0.38202247191011235
+红花遍地开,688,0.7494553376906318,13,35,Beijing,Beijing Film Studio,1960,Performance,0.19662921348314608
+红花遍地开,689,0.7505446623093682,17,40,Beijing,Beijing Film Studio,1960,Performance,0.2247191011235955
+红花遍地开,691,0.7527233115468409,11,58,Beijing,Beijing Film Studio,1960,Performance,0.3258426966292135
+红花遍地开,692,0.7538126361655774,13,64,Beijing,Beijing Film Studio,1960,Performance,0.3595505617977528
+红花遍地开,693,0.7549019607843137,13,63,Beijing,Beijing Film Studio,1960,Performance,0.3539325842696629
+红花遍地开,694,0.7559912854030502,13,63,Beijing,Beijing Film Studio,1960,Performance,0.3539325842696629
+红花遍地开,695,0.7570806100217865,13,61,Beijing,Beijing Film Studio,1960,Performance,0.34269662921348315
+红花遍地开,696,0.7581699346405228,11,66,Beijing,Beijing Film Studio,1960,Performance,0.3707865168539326
+红花遍地开,753,0.8202614379084967,10,10,Beijing,Beijing Film Studio,1960,Performance,0.056179775280898875
+红花遍地开,778,0.8474945533769063,10,11,Beijing,Beijing Film Studio,1960,Performance,0.06179775280898876
+红花遍地开,832,0.906318082788671,10,165,Beijing,Beijing Film Studio,1960,Performance,0.9269662921348315
+红花遍地开,833,0.9074074074074074,12,164,Beijing,Beijing Film Studio,1960,Performance,0.9213483146067416
+红花遍地开,836,0.9106753812636166,13,164,Beijing,Beijing Film Studio,1960,Performance,0.9213483146067416
+红花遍地开,837,0.9117647058823529,19,24,Beijing,Beijing Film Studio,1960,Performance,0.1348314606741573
+红花遍地开,838,0.9128540305010894,18,22,Beijing,Beijing Film Studio,1960,Performance,0.12359550561797752
+红花遍地开,839,0.9139433551198257,17,38,Beijing,Beijing Film Studio,1960,Performance,0.21348314606741572
+红花遍地开,842,0.9172113289760349,10,161,Beijing,Beijing Film Studio,1960,Performance,0.9044943820224719
+红花遍地开,844,0.9193899782135077,15,78,Beijing,Beijing Film Studio,1960,Performance,0.43820224719101125
+红花遍地开,845,0.920479302832244,14,66,Beijing,Beijing Film Studio,1960,Performance,0.3707865168539326
+红花遍地开,846,0.9215686274509803,10,68,Beijing,Beijing Film Studio,1960,Performance,0.38202247191011235
+红花遍地开,847,0.9226579520697168,15,87,Beijing,Beijing Film Studio,1960,Performance,0.4887640449438202
+红花遍地开,850,0.9259259259259259,13,13,Beijing,Beijing Film Studio,1960,Performance,0.07303370786516854
+红花遍地开,851,0.9270152505446623,13,12,Beijing,Beijing Film Studio,1960,Performance,0.06741573033707865
+红花遍地开,852,0.9281045751633987,14,13,Beijing,Beijing Film Studio,1960,Performance,0.07303370786516854
+红花遍地开,853,0.9291938997821351,10,56,Beijing,Beijing Film Studio,1960,Performance,0.3146067415730337
+红花遍地开,859,0.9357298474945533,10,164,Beijing,Beijing Film Studio,1960,Performance,0.9213483146067416
+红花遍地开,860,0.9368191721132898,12,166,Beijing,Beijing Film Studio,1960,Performance,0.9325842696629213
+红花遍地开,861,0.9379084967320261,12,164,Beijing,Beijing Film Studio,1960,Performance,0.9213483146067416
+红花遍地开,871,0.94880174291939,10,50,Beijing,Beijing Film Studio,1960,Performance,0.2808988764044944
+红花遍地开,874,0.9520697167755992,10,178,Beijing,Beijing Film Studio,1960,Performance,1.0
+红花遍地开,884,0.9629629629629629,13,88,Beijing,Beijing Film Studio,1960,Performance,0.4943820224719101
+红花遍地开,901,0.9814814814814815,12,109,Beijing,Beijing Film Studio,1960,Performance,0.6123595505617978
+红花遍地开,909,0.9901960784313726,11,40,Beijing,Beijing Film Studio,1960,Performance,0.2247191011235955
+红花遍地开,911,0.9923747276688453,11,89,Beijing,Beijing Film Studio,1960,Performance,0.5
+广场杂技表演,14,0.031818181818181815,10,125,Shanghai (state),Shanghai Film Studio,1955,Performance,1.0
+广场杂技表演,114,0.2590909090909091,10,20,Shanghai (state),Shanghai Film Studio,1955,Performance,0.16
+广场杂技表演,130,0.29545454545454547,10,15,Shanghai (state),Shanghai Film Studio,1955,Performance,0.12
+广场杂技表演,240,0.5454545454545454,10,12,Shanghai (state),Shanghai Film Studio,1955,Performance,0.096
+广场杂技表演,310,0.7045454545454546,12,16,Shanghai (state),Shanghai Film Studio,1955,Performance,0.128
+广场杂技表演,410,0.9318181818181818,11,12,Shanghai (state),Shanghai Film Studio,1955,Performance,0.096
+广场杂技表演,430,0.9772727272727273,11,19,Shanghai (state),Shanghai Film Studio,1955,Performance,0.152
+广场杂技表演,431,0.9795454545454545,16,37,Shanghai (state),Shanghai Film Studio,1955,Performance,0.296
+广场杂技表演,432,0.9818181818181818,14,14,Shanghai (state),Shanghai Film Studio,1955,Performance,0.112
+上海之春,35,0.032377428307123035,14,12,Shanghai (state),Tianma Film Studio,1965,Performance,0.06779661016949153
+上海之春,37,0.034227567067530065,13,15,Shanghai (state),Tianma Film Studio,1965,Performance,0.0847457627118644
+上海之春,40,0.03700277520814061,14,23,Shanghai (state),Tianma Film Studio,1965,Performance,0.12994350282485875
+上海之春,41,0.037927844588344126,11,27,Shanghai (state),Tianma Film Studio,1965,Performance,0.15254237288135594
+上海之春,42,0.03885291396854764,11,16,Shanghai (state),Tianma Film Studio,1965,Performance,0.0903954802259887
+上海之春,43,0.039777983348751156,11,17,Shanghai (state),Tianma Film Studio,1965,Performance,0.096045197740113
+上海之春,44,0.04070305272895467,11,18,Shanghai (state),Tianma Film Studio,1965,Performance,0.1016949152542373
+上海之春,49,0.045328399629972246,11,52,Shanghai (state),Tianma Film Studio,1965,Performance,0.2937853107344633
+上海之春,50,0.04625346901017576,14,18,Shanghai (state),Tianma Film Studio,1965,Performance,0.1016949152542373
+上海之春,51,0.04717853839037928,16,20,Shanghai (state),Tianma Film Studio,1965,Performance,0.11299435028248588
+上海之春,61,0.056429232192414434,11,13,Shanghai (state),Tianma Film Studio,1965,Performance,0.07344632768361582
+上海之春,68,0.06290471785383904,11,34,Shanghai (state),Tianma Film Studio,1965,Performance,0.192090395480226
+上海之春,129,0.11933395004625347,11,13,Shanghai (state),Tianma Film Studio,1965,Performance,0.07344632768361582
+上海之春,133,0.12303422756706753,11,36,Shanghai (state),Tianma Film Studio,1965,Performance,0.2033898305084746
+上海之春,134,0.12395929694727105,12,12,Shanghai (state),Tianma Film Studio,1965,Performance,0.06779661016949153
+上海之春,135,0.12488436632747456,13,89,Shanghai (state),Tianma Film Studio,1965,Performance,0.5028248587570622
+上海之春,136,0.12580943570767808,16,86,Shanghai (state),Tianma Film Studio,1965,Performance,0.4858757062146893
+上海之春,137,0.1267345050878816,14,88,Shanghai (state),Tianma Film Studio,1965,Performance,0.4971751412429379
+上海之春,138,0.1276595744680851,14,88,Shanghai (state),Tianma Film Studio,1965,Performance,0.4971751412429379
+上海之春,141,0.13043478260869565,15,86,Shanghai (state),Tianma Film Studio,1965,Performance,0.4858757062146893
+上海之春,142,0.13135985198889916,14,86,Shanghai (state),Tianma Film Studio,1965,Performance,0.4858757062146893
+上海之春,143,0.1322849213691027,11,15,Shanghai (state),Tianma Film Studio,1965,Performance,0.0847457627118644
+上海之春,144,0.1332099907493062,13,13,Shanghai (state),Tianma Film Studio,1965,Performance,0.07344632768361582
+上海之春,307,0.2839962997224792,19,166,Shanghai (state),Tianma Film Studio,1965,Performance,0.9378531073446328
+上海之春,308,0.2849213691026827,19,166,Shanghai (state),Tianma Film Studio,1965,Performance,0.9378531073446328
+上海之春,309,0.2858464384828862,17,173,Shanghai (state),Tianma Film Studio,1965,Performance,0.9774011299435028
+上海之春,317,0.29324699352451433,12,54,Shanghai (state),Tianma Film Studio,1965,Performance,0.3050847457627119
+上海之春,318,0.29417206290471787,14,177,Shanghai (state),Tianma Film Studio,1965,Performance,1.0
+上海之春,319,0.29509713228492135,19,171,Shanghai (state),Tianma Film Studio,1965,Performance,0.9661016949152542
+上海之春,320,0.2960222016651249,19,172,Shanghai (state),Tianma Film Studio,1965,Performance,0.9717514124293786
+上海之春,323,0.29879740980573544,11,15,Shanghai (state),Tianma Film Studio,1965,Performance,0.0847457627118644
+上海之春,325,0.30064754856614245,11,14,Shanghai (state),Tianma Film Studio,1965,Performance,0.07909604519774012
+上海之春,333,0.3080481036077706,11,10,Shanghai (state),Tianma Film Studio,1965,Performance,0.05649717514124294
+上海之春,336,0.3108233117483811,12,22,Shanghai (state),Tianma Film Studio,1965,Performance,0.12429378531073447
+上海之春,340,0.3145235892691952,12,18,Shanghai (state),Tianma Film Studio,1965,Performance,0.1016949152542373
+上海之春,344,0.31822386679000925,11,17,Shanghai (state),Tianma Film Studio,1965,Performance,0.096045197740113
+上海之春,345,0.3191489361702128,12,10,Shanghai (state),Tianma Film Studio,1965,Performance,0.05649717514124294
+上海之春,349,0.3228492136910268,13,16,Shanghai (state),Tianma Film Studio,1965,Performance,0.0903954802259887
+上海之春,350,0.32377428307123035,13,39,Shanghai (state),Tianma Film Studio,1965,Performance,0.22033898305084745
+上海之春,351,0.32469935245143383,12,39,Shanghai (state),Tianma Film Studio,1965,Performance,0.22033898305084745
+上海之春,353,0.3265494912118409,14,26,Shanghai (state),Tianma Film Studio,1965,Performance,0.14689265536723164
+上海之春,354,0.3274745605920444,12,14,Shanghai (state),Tianma Film Studio,1965,Performance,0.07909604519774012
+上海之春,355,0.3283996299722479,13,11,Shanghai (state),Tianma Film Studio,1965,Performance,0.062146892655367235
+上海之春,356,0.32932469935245146,12,13,Shanghai (state),Tianma Film Studio,1965,Performance,0.07344632768361582
+上海之春,357,0.33024976873265494,13,16,Shanghai (state),Tianma Film Studio,1965,Performance,0.0903954802259887
+上海之春,359,0.33209990749306195,11,43,Shanghai (state),Tianma Film Studio,1965,Performance,0.24293785310734464
+上海之春,360,0.3330249768732655,15,28,Shanghai (state),Tianma Film Studio,1965,Performance,0.15819209039548024
+上海之春,361,0.333950046253469,12,39,Shanghai (state),Tianma Film Studio,1965,Performance,0.22033898305084745
+上海之春,364,0.3367252543940796,11,19,Shanghai (state),Tianma Film Studio,1965,Performance,0.10734463276836158
+上海之春,365,0.33765032377428306,13,20,Shanghai (state),Tianma Film Studio,1965,Performance,0.11299435028248588
+上海之春,367,0.33950046253469013,11,8,Shanghai (state),Tianma Film Studio,1965,Performance,0.04519774011299435
+上海之春,519,0.4801110083256244,13,91,Shanghai (state),Tianma Film Studio,1965,Performance,0.5141242937853108
+上海之春,520,0.48103607770582796,12,83,Shanghai (state),Tianma Film Studio,1965,Performance,0.4689265536723164
+上海之春,522,0.482886216466235,11,30,Shanghai (state),Tianma Film Studio,1965,Performance,0.1694915254237288
+上海之春,524,0.484736355226642,13,38,Shanghai (state),Tianma Film Studio,1965,Performance,0.21468926553672316
+上海之春,525,0.4856614246068455,14,42,Shanghai (state),Tianma Film Studio,1965,Performance,0.23728813559322035
+上海之春,526,0.486586493987049,13,44,Shanghai (state),Tianma Film Studio,1965,Performance,0.24858757062146894
+上海之春,527,0.48751156336725254,12,43,Shanghai (state),Tianma Film Studio,1965,Performance,0.24293785310734464
+上海之春,528,0.4884366327474561,12,47,Shanghai (state),Tianma Film Studio,1965,Performance,0.2655367231638418
+上海之春,529,0.48936170212765956,14,33,Shanghai (state),Tianma Film Studio,1965,Performance,0.1864406779661017
+上海之春,533,0.49306197964847365,14,19,Shanghai (state),Tianma Film Studio,1965,Performance,0.10734463276836158
+上海之春,534,0.4939870490286771,12,21,Shanghai (state),Tianma Film Studio,1965,Performance,0.11864406779661017
+上海之春,535,0.49491211840888066,13,26,Shanghai (state),Tianma Film Studio,1965,Performance,0.14689265536723164
+上海之春,538,0.4976873265494912,11,10,Shanghai (state),Tianma Film Studio,1965,Performance,0.05649717514124294
+上海之春,539,0.49861239592969475,12,92,Shanghai (state),Tianma Film Studio,1965,Performance,0.519774011299435
+上海之春,555,0.513413506012951,11,13,Shanghai (state),Tianma Film Studio,1965,Performance,0.07344632768361582
+上海之春,576,0.5328399629972248,12,11,Shanghai (state),Tianma Film Studio,1965,Performance,0.062146892655367235
+上海之春,580,0.5365402405180388,11,12,Shanghai (state),Tianma Film Studio,1965,Performance,0.06779661016949153
+上海之春,586,0.5420906567992599,11,12,Shanghai (state),Tianma Film Studio,1965,Performance,0.06779661016949153
+上海之春,592,0.547641073080481,12,84,Shanghai (state),Tianma Film Studio,1965,Performance,0.4745762711864407
+上海之春,597,0.5522664199814986,13,80,Shanghai (state),Tianma Film Studio,1965,Performance,0.4519774011299435
+上海之春,601,0.5559666975023126,14,172,Shanghai (state),Tianma Film Studio,1965,Performance,0.9717514124293786
+上海之春,605,0.5596669750231268,12,174,Shanghai (state),Tianma Film Studio,1965,Performance,0.9830508474576272
+上海之春,608,0.5624421831637373,14,70,Shanghai (state),Tianma Film Studio,1965,Performance,0.3954802259887006
+上海之春,609,0.5633672525439408,13,113,Shanghai (state),Tianma Film Studio,1965,Performance,0.6384180790960452
+上海之春,610,0.5642923219241444,11,91,Shanghai (state),Tianma Film Studio,1965,Performance,0.5141242937853108
+上海之春,611,0.5652173913043478,13,119,Shanghai (state),Tianma Film Studio,1965,Performance,0.672316384180791
+上海之春,612,0.5661424606845513,15,113,Shanghai (state),Tianma Film Studio,1965,Performance,0.6384180790960452
+上海之春,615,0.5689176688251619,11,169,Shanghai (state),Tianma Film Studio,1965,Performance,0.9548022598870056
+上海之春,620,0.5735430157261795,12,62,Shanghai (state),Tianma Film Studio,1965,Performance,0.3502824858757062
+上海之春,625,0.5781683626271971,11,17,Shanghai (state),Tianma Film Studio,1965,Performance,0.096045197740113
+上海之春,626,0.5790934320074006,11,14,Shanghai (state),Tianma Film Studio,1965,Performance,0.07909604519774012
+上海之春,629,0.5818686401480111,11,16,Shanghai (state),Tianma Film Studio,1965,Performance,0.0903954802259887
+上海之春,633,0.5855689176688251,11,20,Shanghai (state),Tianma Film Studio,1965,Performance,0.11299435028248588
+上海之春,646,0.5975948196114709,11,12,Shanghai (state),Tianma Film Studio,1965,Performance,0.06779661016949153
+上海之春,647,0.5985198889916744,11,16,Shanghai (state),Tianma Film Studio,1965,Performance,0.0903954802259887
+上海之春,648,0.599444958371878,12,17,Shanghai (state),Tianma Film Studio,1965,Performance,0.096045197740113
+上海之春,653,0.6040703052728955,11,16,Shanghai (state),Tianma Film Studio,1965,Performance,0.0903954802259887
+上海之春,654,0.6049953746530989,13,15,Shanghai (state),Tianma Film Studio,1965,Performance,0.0847457627118644
+上海之春,657,0.6077705827937095,11,13,Shanghai (state),Tianma Film Studio,1965,Performance,0.07344632768361582
+上海之春,663,0.6133209990749307,11,13,Shanghai (state),Tianma Film Studio,1965,Performance,0.07344632768361582
+上海之春,789,0.7298797409805735,11,14,Shanghai (state),Tianma Film Studio,1965,Performance,0.07909604519774012
+上海之春,790,0.730804810360777,12,8,Shanghai (state),Tianma Film Studio,1965,Performance,0.04519774011299435
+上海之春,1020,0.9435707678075855,16,86,Shanghai (state),Tianma Film Studio,1965,Performance,0.4858757062146893
+上海之春,1021,0.9444958371877891,13,87,Shanghai (state),Tianma Film Studio,1965,Performance,0.4915254237288136
+上海之春,1025,0.9481961147086031,13,73,Shanghai (state),Tianma Film Studio,1965,Performance,0.4124293785310734
+上海之春,1026,0.9491211840888066,13,70,Shanghai (state),Tianma Film Studio,1965,Performance,0.3954802259887006
+上海之春,1028,0.9509713228492137,15,100,Shanghai (state),Tianma Film Studio,1965,Performance,0.5649717514124294
+上海之春,1029,0.9518963922294172,17,99,Shanghai (state),Tianma Film Studio,1965,Performance,0.559322033898305
+上海之春,1030,0.9528214616096207,17,99,Shanghai (state),Tianma Film Studio,1965,Performance,0.559322033898305
+上海之春,1037,0.9592969472710453,12,92,Shanghai (state),Tianma Film Studio,1965,Performance,0.519774011299435
+上海之春,1039,0.9611470860314524,14,60,Shanghai (state),Tianma Film Studio,1965,Performance,0.3389830508474576
+上海之春,1040,0.9620721554116559,13,56,Shanghai (state),Tianma Film Studio,1965,Performance,0.3163841807909605
+上海之春,1042,0.9639222941720629,17,99,Shanghai (state),Tianma Film Studio,1965,Performance,0.559322033898305
+上海之春,1043,0.9648473635522664,17,102,Shanghai (state),Tianma Film Studio,1965,Performance,0.576271186440678
+上海之春,1048,0.969472710453284,12,24,Shanghai (state),Tianma Film Studio,1965,Performance,0.13559322033898305
+上海之春,1049,0.9703977798334875,11,25,Shanghai (state),Tianma Film Studio,1965,Performance,0.14124293785310735
+上海之春,1050,0.971322849213691,16,18,Shanghai (state),Tianma Film Studio,1965,Performance,0.1016949152542373
+上海之春,1051,0.9722479185938946,17,17,Shanghai (state),Tianma Film Studio,1965,Performance,0.096045197740113
+上海之春,1053,0.9740980573543015,11,89,Shanghai (state),Tianma Film Studio,1965,Performance,0.5028248587570622
+上海之春,1058,0.9787234042553191,11,42,Shanghai (state),Tianma Film Studio,1965,Performance,0.23728813559322035
+上海之春,1060,0.9805735430157262,13,49,Shanghai (state),Tianma Film Studio,1965,Performance,0.2768361581920904
+上海之春,1061,0.9814986123959297,16,49,Shanghai (state),Tianma Film Studio,1965,Performance,0.2768361581920904
+上海之春,1062,0.9824236817761333,13,53,Shanghai (state),Tianma Film Studio,1965,Performance,0.2994350282485876
+上海之春,1063,0.9833487511563367,12,47,Shanghai (state),Tianma Film Studio,1965,Performance,0.2655367231638418
+上海之春,1069,0.9888991674375578,11,26,Shanghai (state),Tianma Film Studio,1965,Performance,0.14689265536723164
+春燕展翅,279,0.3089700996677741,13,20,Beijing,Beijing Film Studio,1963,Performance,0.8
+春燕展翅,522,0.5780730897009967,12,10,Beijing,Beijing Film Studio,1963,Performance,0.4
+春燕展翅,609,0.6744186046511628,12,17,Beijing,Beijing Film Studio,1963,Performance,0.68
+春燕展翅,610,0.6755260243632336,11,11,Beijing,Beijing Film Studio,1963,Performance,0.44
+春燕展翅,817,0.9047619047619048,14,21,Beijing,Beijing Film Studio,1963,Performance,0.84
+春燕展翅,818,0.9058693244739756,16,25,Beijing,Beijing Film Studio,1963,Performance,1.0
+春燕展翅,819,0.9069767441860465,17,18,Beijing,Beijing Film Studio,1963,Performance,0.72
+春燕展翅,820,0.9080841638981174,15,14,Beijing,Beijing Film Studio,1963,Performance,0.56
+春燕展翅,821,0.9091915836101883,13,16,Beijing,Beijing Film Studio,1963,Performance,0.64
+春燕展翅,822,0.9102990033222591,12,13,Beijing,Beijing Film Studio,1963,Performance,0.52
+春燕展翅,823,0.9114064230343301,12,17,Beijing,Beijing Film Studio,1963,Performance,0.68
+春燕展翅,836,0.9258028792912514,11,13,Beijing,Beijing Film Studio,1963,Performance,0.52
+春燕展翅,837,0.9269102990033222,12,18,Beijing,Beijing Film Studio,1963,Performance,0.72
+春燕展翅,859,0.9512735326688815,13,12,Beijing,Beijing Film Studio,1963,Performance,0.48
+革命历史歌曲表演唱,107,0.09280138768430182,11,25,Beijing,August First Film Studio,1963,Performance,0.373134328358209
+革命历史歌曲表演唱,108,0.09366869037294015,11,14,Beijing,August First Film Studio,1963,Performance,0.208955223880597
+革命历史歌曲表演唱,110,0.09540329575021683,11,36,Beijing,August First Film Studio,1963,Performance,0.5373134328358209
+革命历史歌曲表演唱,111,0.09627059843885516,13,29,Beijing,August First Film Studio,1963,Performance,0.43283582089552236
+革命历史歌曲表演唱,123,0.10667823070251518,11,11,Beijing,August First Film Studio,1963,Performance,0.16417910447761194
+革命历史歌曲表演唱,125,0.10841283607979185,11,9,Beijing,August First Film Studio,1963,Performance,0.13432835820895522
+革命历史歌曲表演唱,188,0.16305290546400694,12,67,Beijing,August First Film Studio,1963,Performance,1.0
+革命历史歌曲表演唱,194,0.16825672159583693,12,26,Beijing,August First Film Studio,1963,Performance,0.3880597014925373
+革命历史歌曲表演唱,195,0.1691240242844753,11,24,Beijing,August First Film Studio,1963,Performance,0.3582089552238806
+革命历史歌曲表演唱,199,0.17259323503902863,13,46,Beijing,August First Film Studio,1963,Performance,0.6865671641791045
+革命历史歌曲表演唱,224,0.194275802254987,12,25,Beijing,August First Film Studio,1963,Performance,0.373134328358209
+革命历史歌曲表演唱,238,0.20641803989592367,15,18,Beijing,August First Film Studio,1963,Performance,0.26865671641791045
+革命历史歌曲表演唱,239,0.20728534258456202,14,15,Beijing,August First Film Studio,1963,Performance,0.22388059701492538
+革命历史歌曲表演唱,240,0.20815264527320035,12,35,Beijing,August First Film Studio,1963,Performance,0.5223880597014925
+革命历史歌曲表演唱,241,0.20901994796183868,14,26,Beijing,August First Film Studio,1963,Performance,0.3880597014925373
+革命历史歌曲表演唱,243,0.21075455333911536,14,17,Beijing,August First Film Studio,1963,Performance,0.2537313432835821
+革命历史歌曲表演唱,246,0.21335646140503037,12,44,Beijing,August First Film Studio,1963,Performance,0.6567164179104478
+革命历史歌曲表演唱,255,0.22116218560277537,14,51,Beijing,August First Film Studio,1963,Performance,0.7611940298507462
+革命历史歌曲表演唱,256,0.2220294882914137,11,47,Beijing,August First Film Studio,1963,Performance,0.7014925373134329
+革命历史歌曲表演唱,258,0.22376409366869038,11,55,Beijing,August First Film Studio,1963,Performance,0.8208955223880597
+革命历史歌曲表演唱,259,0.2246313963573287,11,37,Beijing,August First Film Studio,1963,Performance,0.5522388059701493
+革命历史歌曲表演唱,267,0.23156981786643538,12,59,Beijing,August First Film Studio,1963,Performance,0.8805970149253731
+革命历史歌曲表演唱,269,0.23330442324371206,18,64,Beijing,August First Film Studio,1963,Performance,0.9552238805970149
+革命历史歌曲表演唱,270,0.2341717259323504,12,35,Beijing,August First Film Studio,1963,Performance,0.5223880597014925
+革命历史歌曲表演唱,277,0.24024284475281873,13,29,Beijing,August First Film Studio,1963,Performance,0.43283582089552236
+革命历史歌曲表演唱,283,0.24544666088464875,11,16,Beijing,August First Film Studio,1963,Performance,0.23880597014925373
+革命历史歌曲表演唱,284,0.24631396357328708,12,11,Beijing,August First Film Studio,1963,Performance,0.16417910447761194
+革命历史歌曲表演唱,285,0.2471812662619254,14,15,Beijing,August First Film Studio,1963,Performance,0.22388059701492538
+革命历史歌曲表演唱,286,0.24804856895056374,11,13,Beijing,August First Film Studio,1963,Performance,0.19402985074626866
+革命历史歌曲表演唱,287,0.2489158716392021,11,13,Beijing,August First Film Studio,1963,Performance,0.19402985074626866
+革命历史歌曲表演唱,288,0.24978317432784042,11,15,Beijing,August First Film Studio,1963,Performance,0.22388059701492538
+革命历史歌曲表演唱,289,0.25065047701647875,11,15,Beijing,August First Film Studio,1963,Performance,0.22388059701492538
+革命历史歌曲表演唱,290,0.2515177797051171,11,10,Beijing,August First Film Studio,1963,Performance,0.14925373134328357
+革命历史歌曲表演唱,292,0.2532523850823938,11,8,Beijing,August First Film Studio,1963,Performance,0.11940298507462686
+革命历史歌曲表演唱,296,0.2567215958369471,12,25,Beijing,August First Film Studio,1963,Performance,0.373134328358209
+革命历史歌曲表演唱,297,0.2575888985255854,14,26,Beijing,August First Film Studio,1963,Performance,0.3880597014925373
+革命历史歌曲表演唱,299,0.2593235039028621,14,34,Beijing,August First Film Studio,1963,Performance,0.5074626865671642
+革命历史歌曲表演唱,300,0.26019080659150046,12,38,Beijing,August First Film Studio,1963,Performance,0.5671641791044776
+革命历史歌曲表演唱,303,0.26279271465741544,11,15,Beijing,August First Film Studio,1963,Performance,0.22388059701492538
+革命历史歌曲表演唱,362,0.3139635732870772,11,26,Beijing,August First Film Studio,1963,Performance,0.3880597014925373
+革命历史歌曲表演唱,365,0.3165654813529922,11,37,Beijing,August First Film Studio,1963,Performance,0.5522388059701493
+革命历史歌曲表演唱,368,0.3191673894189072,13,19,Beijing,August First Film Studio,1963,Performance,0.2835820895522388
+革命历史歌曲表演唱,369,0.32003469210754554,11,29,Beijing,August First Film Studio,1963,Performance,0.43283582089552236
+革命历史歌曲表演唱,383,0.33217692974848223,11,23,Beijing,August First Film Studio,1963,Performance,0.34328358208955223
+革命历史歌曲表演唱,385,0.3339115351257589,13,19,Beijing,August First Film Studio,1963,Performance,0.2835820895522388
+革命历史歌曲表演唱,386,0.3347788378143972,14,25,Beijing,August First Film Studio,1963,Performance,0.373134328358209
+革命历史歌曲表演唱,390,0.3382480485689506,12,13,Beijing,August First Film Studio,1963,Performance,0.19402985074626866
+革命历史歌曲表演唱,393,0.34084995663486556,11,17,Beijing,August First Film Studio,1963,Performance,0.2537313432835821
+革命历史歌曲表演唱,405,0.3512575888985256,11,23,Beijing,August First Film Studio,1963,Performance,0.34328358208955223
+革命历史歌曲表演唱,406,0.3521248915871639,12,22,Beijing,August First Film Studio,1963,Performance,0.3283582089552239
+革命历史歌曲表演唱,410,0.35559410234171723,11,12,Beijing,August First Film Studio,1963,Performance,0.1791044776119403
+革命历史歌曲表演唱,411,0.3564614050303556,12,12,Beijing,August First Film Studio,1963,Performance,0.1791044776119403
+革命历史歌曲表演唱,412,0.35732870771899394,13,15,Beijing,August First Film Studio,1963,Performance,0.22388059701492538
+革命历史歌曲表演唱,413,0.35819601040763227,14,24,Beijing,August First Film Studio,1963,Performance,0.3582089552238806
+革命历史歌曲表演唱,427,0.37033824804856896,13,14,Beijing,August First Film Studio,1963,Performance,0.208955223880597
+革命历史歌曲表演唱,464,0.40242844752818735,11,19,Beijing,August First Film Studio,1963,Performance,0.2835820895522388
+革命历史歌曲表演唱,467,0.40503035559410233,11,22,Beijing,August First Film Studio,1963,Performance,0.3283582089552239
+革命历史歌曲表演唱,468,0.40589765828274066,12,26,Beijing,August First Film Studio,1963,Performance,0.3880597014925373
+革命历史歌曲表演唱,511,0.44319167389418906,11,28,Beijing,August First Film Studio,1963,Performance,0.417910447761194
+革命历史歌曲表演唱,518,0.4492627927146574,12,20,Beijing,August First Film Studio,1963,Performance,0.29850746268656714
+革命历史歌曲表演唱,627,0.5437987857762359,11,12,Beijing,August First Film Studio,1963,Performance,0.1791044776119403
+革命历史歌曲表演唱,657,0.5698178664353859,14,15,Beijing,August First Film Studio,1963,Performance,0.22388059701492538
+革命历史歌曲表演唱,681,0.590633130962706,12,17,Beijing,August First Film Studio,1963,Performance,0.2537313432835821
+革命历史歌曲表演唱,682,0.5915004336513443,12,19,Beijing,August First Film Studio,1963,Performance,0.2835820895522388
+革命历史歌曲表演唱,683,0.5923677363399826,13,30,Beijing,August First Film Studio,1963,Performance,0.44776119402985076
+革命历史歌曲表演唱,684,0.593235039028621,15,27,Beijing,August First Film Studio,1963,Performance,0.40298507462686567
+革命历史歌曲表演唱,685,0.5941023417172593,16,30,Beijing,August First Film Studio,1963,Performance,0.44776119402985076
+革命历史歌曲表演唱,686,0.5949696444058976,15,32,Beijing,August First Film Studio,1963,Performance,0.47761194029850745
+革命历史歌曲表演唱,687,0.5958369470945359,13,43,Beijing,August First Film Studio,1963,Performance,0.6417910447761194
+革命历史歌曲表演唱,688,0.5967042497831744,12,27,Beijing,August First Film Studio,1963,Performance,0.40298507462686567
+革命历史歌曲表演唱,689,0.5975715524718127,12,28,Beijing,August First Film Studio,1963,Performance,0.417910447761194
+革命历史歌曲表演唱,690,0.598438855160451,14,30,Beijing,August First Film Studio,1963,Performance,0.44776119402985076
+革命历史歌曲表演唱,691,0.5993061578490894,13,27,Beijing,August First Film Studio,1963,Performance,0.40298507462686567
+革命历史歌曲表演唱,692,0.6001734605377277,12,18,Beijing,August First Film Studio,1963,Performance,0.26865671641791045
+革命历史歌曲表演唱,734,0.6366001734605378,17,40,Beijing,August First Film Studio,1963,Performance,0.5970149253731343
+革命历史歌曲表演唱,735,0.6374674761491761,11,36,Beijing,August First Film Studio,1963,Performance,0.5373134328358209
+革命历史歌曲表演唱,760,0.6591500433651344,11,15,Beijing,August First Film Studio,1963,Performance,0.22388059701492538
+革命历史歌曲表演唱,769,0.6669557675628794,11,10,Beijing,August First Film Studio,1963,Performance,0.14925373134328357
+革命历史歌曲表演唱,771,0.6686903729401561,12,12,Beijing,August First Film Studio,1963,Performance,0.1791044776119403
+革命历史歌曲表演唱,772,0.6695576756287944,12,13,Beijing,August First Film Studio,1963,Performance,0.19402985074626866
+革命历史歌曲表演唱,774,0.6712922810060711,11,13,Beijing,August First Film Studio,1963,Performance,0.19402985074626866
+革命历史歌曲表演唱,795,0.6895056374674762,18,12,Beijing,August First Film Studio,1963,Performance,0.1791044776119403
+革命历史歌曲表演唱,796,0.6903729401561145,13,14,Beijing,August First Film Studio,1963,Performance,0.208955223880597
+革命历史歌曲表演唱,799,0.6929748482220295,12,14,Beijing,August First Film Studio,1963,Performance,0.208955223880597
+革命历史歌曲表演唱,800,0.6938421509106678,11,17,Beijing,August First Film Studio,1963,Performance,0.2537313432835821
+革命历史歌曲表演唱,804,0.6973113616652211,11,24,Beijing,August First Film Studio,1963,Performance,0.3582089552238806
+革命历史歌曲表演唱,807,0.6999132697311362,11,13,Beijing,August First Film Studio,1963,Performance,0.19402985074626866
+革命历史歌曲表演唱,813,0.7051170858629662,11,25,Beijing,August First Film Studio,1963,Performance,0.373134328358209
+革命历史歌曲表演唱,818,0.7094535993061578,13,36,Beijing,August First Film Studio,1963,Performance,0.5373134328358209
+革命历史歌曲表演唱,823,0.7137901127493496,11,21,Beijing,August First Film Studio,1963,Performance,0.31343283582089554
+革命历史歌曲表演唱,827,0.7172593235039029,11,10,Beijing,August First Film Studio,1963,Performance,0.14925373134328357
+革命历史歌曲表演唱,829,0.7189939288811795,11,47,Beijing,August First Film Studio,1963,Performance,0.7014925373134329
+革命历史歌曲表演唱,847,0.7346053772766695,14,25,Beijing,August First Film Studio,1963,Performance,0.373134328358209
+革命历史歌曲表演唱,894,0.7753686036426712,12,12,Beijing,August First Film Studio,1963,Performance,0.1791044776119403
+革命历史歌曲表演唱,895,0.7762359063313097,11,15,Beijing,August First Film Studio,1963,Performance,0.22388059701492538
+革命历史歌曲表演唱,900,0.7805724197745013,11,52,Beijing,August First Film Studio,1963,Performance,0.7761194029850746
+革命历史歌曲表演唱,901,0.7814397224631396,11,49,Beijing,August First Film Studio,1963,Performance,0.7313432835820896
+革命历史歌曲表演唱,937,0.8126626192541196,11,16,Beijing,August First Film Studio,1963,Performance,0.23880597014925373
+革命历史歌曲表演唱,946,0.8204683434518647,11,9,Beijing,August First Film Studio,1963,Performance,0.13432835820895522
+革命历史歌曲表演唱,1009,0.8751084128360798,13,17,Beijing,August First Film Studio,1963,Performance,0.2537313432835821
+革命历史歌曲表演唱,1020,0.8846487424111015,13,23,Beijing,August First Film Studio,1963,Performance,0.34328358208955223
+革命历史歌曲表演唱,1021,0.8855160450997398,11,28,Beijing,August First Film Studio,1963,Performance,0.417910447761194
+革命历史歌曲表演唱,1047,0.9080659150043365,16,36,Beijing,August First Film Studio,1963,Performance,0.5373134328358209
+革命历史歌曲表演唱,1048,0.9089332176929749,12,25,Beijing,August First Film Studio,1963,Performance,0.373134328358209
+革命历史歌曲表演唱,1049,0.9098005203816132,13,29,Beijing,August First Film Studio,1963,Performance,0.43283582089552236
+革命历史歌曲表演唱,1050,0.9106678230702515,12,24,Beijing,August First Film Studio,1963,Performance,0.3582089552238806
+革命历史歌曲表演唱,1051,0.9115351257588898,11,36,Beijing,August First Film Studio,1963,Performance,0.5373134328358209
+革命历史歌曲表演唱,1052,0.9124024284475282,11,32,Beijing,August First Film Studio,1963,Performance,0.47761194029850745
+革命历史歌曲表演唱,1053,0.9132697311361665,14,39,Beijing,August First Film Studio,1963,Performance,0.582089552238806
+革命历史歌曲表演唱,1079,0.9358196010407632,13,45,Beijing,August First Film Studio,1963,Performance,0.6716417910447762
+革命历史歌曲表演唱,1080,0.9366869037294016,11,38,Beijing,August First Film Studio,1963,Performance,0.5671641791044776
+革命历史歌曲表演唱,1081,0.9375542064180399,12,34,Beijing,August First Film Studio,1963,Performance,0.5074626865671642
+革命历史歌曲表演唱,1084,0.9401561144839549,15,34,Beijing,August First Film Studio,1963,Performance,0.5074626865671642
+革命历史歌曲表演唱,1085,0.9410234171725932,11,26,Beijing,August First Film Studio,1963,Performance,0.3880597014925373
+革命历史歌曲表演唱,1087,0.94275802254987,12,15,Beijing,August First Film Studio,1963,Performance,0.22388059701492538
+革命历史歌曲表演唱,1092,0.9470945359930616,13,47,Beijing,August First Film Studio,1963,Performance,0.7014925373134329
+革命历史歌曲表演唱,1098,0.9522983521248916,11,31,Beijing,August First Film Studio,1963,Performance,0.4626865671641791
+革命历史歌曲表演唱,1104,0.9575021682567216,14,36,Beijing,August First Film Studio,1963,Performance,0.5373134328358209
+革命历史歌曲表演唱,1106,0.9592367736339983,14,42,Beijing,August First Film Studio,1963,Performance,0.6268656716417911
+革命历史歌曲表演唱,1107,0.9601040763226366,15,35,Beijing,August First Film Studio,1963,Performance,0.5223880597014925
+革命历史歌曲表演唱,1109,0.9618386816999133,13,12,Beijing,August First Film Studio,1963,Performance,0.1791044776119403
+革命历史歌曲表演唱,1114,0.9661751951431049,11,32,Beijing,August First Film Studio,1963,Performance,0.47761194029850745
+革命历史歌曲表演唱,1134,0.9835212489158717,11,17,Beijing,August First Film Studio,1963,Performance,0.2537313432835821
+百凤朝阳,32,0.045454545454545456,11,18,Beijing,Beijing Film Studio,1959,Performance,0.75
+百凤朝阳,74,0.10511363636363637,11,24,Beijing,Beijing Film Studio,1959,Performance,1.0
+百凤朝阳,582,0.8267045454545454,11,11,Beijing,Beijing Film Studio,1959,Performance,0.4583333333333333
+百凤朝阳,583,0.828125,12,16,Beijing,Beijing Film Studio,1959,Performance,0.6666666666666666
+百凤朝阳,584,0.8295454545454546,11,14,Beijing,Beijing Film Studio,1959,Performance,0.5833333333333334
+百凤朝阳,593,0.8423295454545454,11,20,Beijing,Beijing Film Studio,1959,Performance,0.8333333333333334
+百凤朝阳,598,0.8494318181818182,12,14,Beijing,Beijing Film Studio,1959,Performance,0.5833333333333334
+百凤朝阳,606,0.8607954545454546,14,15,Beijing,Beijing Film Studio,1959,Performance,0.625
+百凤朝阳,608,0.8636363636363636,11,14,Beijing,Beijing Film Studio,1959,Performance,0.5833333333333334
+百凤朝阳,618,0.8778409090909091,13,24,Beijing,Beijing Film Studio,1959,Performance,1.0
+百凤朝阳,621,0.8821022727272727,11,19,Beijing,Beijing Film Studio,1959,Performance,0.7916666666666666
+百凤朝阳,622,0.8835227272727273,13,21,Beijing,Beijing Film Studio,1959,Performance,0.875
+百凤朝阳,624,0.8863636363636364,16,21,Beijing,Beijing Film Studio,1959,Performance,0.875
+百凤朝阳,638,0.90625,11,15,Beijing,Beijing Film Studio,1959,Performance,0.625
+百凤朝阳,653,0.9275568181818182,11,15,Beijing,Beijing Film Studio,1959,Performance,0.625
+百凤朝阳,654,0.9289772727272727,11,10,Beijing,Beijing Film Studio,1959,Performance,0.4166666666666667
+百凤朝阳,655,0.9303977272727273,12,11,Beijing,Beijing Film Studio,1959,Performance,0.4583333333333333
+百凤朝阳,656,0.9318181818181818,12,13,Beijing,Beijing Film Studio,1959,Performance,0.5416666666666666
+百凤朝阳,658,0.9346590909090909,12,15,Beijing,Beijing Film Studio,1959,Performance,0.625
+彩蝶纷飞,36,0.06217616580310881,11,18,Beijing,Beijing Film Studio,1964,Performance,0.2903225806451613
+彩蝶纷飞,46,0.07944732297063903,11,10,Beijing,Beijing Film Studio,1964,Performance,0.16129032258064516
+彩蝶纷飞,48,0.08290155440414508,11,14,Beijing,Beijing Film Studio,1964,Performance,0.22580645161290322
+彩蝶纷飞,56,0.09671848013816926,11,26,Beijing,Beijing Film Studio,1964,Performance,0.41935483870967744
+彩蝶纷飞,60,0.10362694300518134,13,31,Beijing,Beijing Film Studio,1964,Performance,0.5
+彩蝶纷飞,61,0.10535405872193437,15,44,Beijing,Beijing Film Studio,1964,Performance,0.7096774193548387
+彩蝶纷飞,62,0.1070811744386874,13,41,Beijing,Beijing Film Studio,1964,Performance,0.6612903225806451
+彩蝶纷飞,63,0.10880829015544041,11,32,Beijing,Beijing Film Studio,1964,Performance,0.5161290322580645
+彩蝶纷飞,65,0.11226252158894647,14,36,Beijing,Beijing Film Studio,1964,Performance,0.5806451612903226
+彩蝶纷飞,68,0.11744386873920552,16,25,Beijing,Beijing Film Studio,1964,Performance,0.4032258064516129
+彩蝶纷飞,69,0.11917098445595854,13,29,Beijing,Beijing Film Studio,1964,Performance,0.46774193548387094
+彩蝶纷飞,70,0.12089810017271158,12,25,Beijing,Beijing Film Studio,1964,Performance,0.4032258064516129
+彩蝶纷飞,71,0.1226252158894646,11,32,Beijing,Beijing Film Studio,1964,Performance,0.5161290322580645
+彩蝶纷飞,72,0.12435233160621761,11,43,Beijing,Beijing Film Studio,1964,Performance,0.6935483870967742
+彩蝶纷飞,75,0.12953367875647667,11,62,Beijing,Beijing Film Studio,1964,Performance,1.0
+彩蝶纷飞,76,0.13126079447322972,14,49,Beijing,Beijing Film Studio,1964,Performance,0.7903225806451613
+彩蝶纷飞,77,0.13298791018998274,12,42,Beijing,Beijing Film Studio,1964,Performance,0.6774193548387096
+彩蝶纷飞,79,0.13644214162348878,16,36,Beijing,Beijing Film Studio,1964,Performance,0.5806451612903226
+彩蝶纷飞,135,0.23316062176165803,12,20,Beijing,Beijing Film Studio,1964,Performance,0.3225806451612903
+彩蝶纷飞,137,0.23661485319516407,11,21,Beijing,Beijing Film Studio,1964,Performance,0.3387096774193548
+彩蝶纷飞,140,0.24179620034542315,13,13,Beijing,Beijing Film Studio,1964,Performance,0.20967741935483872
+彩蝶纷飞,236,0.4075993091537133,11,8,Beijing,Beijing Film Studio,1964,Performance,0.12903225806451613
+彩蝶纷飞,285,0.49222797927461137,11,17,Beijing,Beijing Film Studio,1964,Performance,0.27419354838709675
+彩蝶纷飞,290,0.5008635578583766,11,12,Beijing,Beijing Film Studio,1964,Performance,0.1935483870967742
+彩蝶纷飞,298,0.5146804835924007,11,14,Beijing,Beijing Film Studio,1964,Performance,0.22580645161290322
+彩蝶纷飞,299,0.5164075993091537,11,20,Beijing,Beijing Film Studio,1964,Performance,0.3225806451612903
+彩蝶纷飞,460,0.7944732297063903,12,18,Beijing,Beijing Film Studio,1964,Performance,0.2903225806451613
+彩蝶纷飞,462,0.7979274611398963,11,19,Beijing,Beijing Film Studio,1964,Performance,0.3064516129032258
+彩蝶纷飞,502,0.8670120898100173,14,28,Beijing,Beijing Film Studio,1964,Performance,0.45161290322580644
+彩蝶纷飞,503,0.8687392055267703,16,19,Beijing,Beijing Film Studio,1964,Performance,0.3064516129032258
+彩蝶纷飞,504,0.8704663212435233,13,15,Beijing,Beijing Film Studio,1964,Performance,0.24193548387096775
+彩蝶纷飞,538,0.9291882556131261,11,9,Beijing,Beijing Film Studio,1964,Performance,0.14516129032258066
+彩蝶纷飞,539,0.9309153713298791,14,13,Beijing,Beijing Film Studio,1964,Performance,0.20967741935483872
+彩蝶纷飞,540,0.9326424870466321,15,14,Beijing,Beijing Film Studio,1964,Performance,0.22580645161290322
+彩蝶纷飞,544,0.9395509499136442,11,14,Beijing,Beijing Film Studio,1964,Performance,0.22580645161290322
+彩蝶纷飞,546,0.9430051813471503,14,14,Beijing,Beijing Film Studio,1964,Performance,0.22580645161290322
+缅甸文化代表团访华演出,17,0.031835205992509365,13,40,Shanghai (state),Haiyan Film Studio,1960,Performance,0.2898550724637681
+缅甸文化代表团访华演出,18,0.033707865168539325,16,40,Shanghai (state),Haiyan Film Studio,1960,Performance,0.2898550724637681
+缅甸文化代表团访华演出,19,0.035580524344569285,14,36,Shanghai (state),Haiyan Film Studio,1960,Performance,0.2608695652173913
+缅甸文化代表团访华演出,20,0.03745318352059925,20,35,Shanghai (state),Haiyan Film Studio,1960,Performance,0.2536231884057971
+缅甸文化代表团访华演出,21,0.03932584269662921,15,28,Shanghai (state),Haiyan Film Studio,1960,Performance,0.2028985507246377
+缅甸文化代表团访华演出,22,0.04119850187265917,15,19,Shanghai (state),Haiyan Film Studio,1960,Performance,0.13768115942028986
+缅甸文化代表团访华演出,23,0.04307116104868914,14,24,Shanghai (state),Haiyan Film Studio,1960,Performance,0.17391304347826086
+缅甸文化代表团访华演出,24,0.0449438202247191,12,20,Shanghai (state),Haiyan Film Studio,1960,Performance,0.14492753623188406
+缅甸文化代表团访华演出,25,0.04681647940074907,13,18,Shanghai (state),Haiyan Film Studio,1960,Performance,0.13043478260869565
+缅甸文化代表团访华演出,26,0.04868913857677903,12,35,Shanghai (state),Haiyan Film Studio,1960,Performance,0.2536231884057971
+缅甸文化代表团访华演出,28,0.052434456928838954,16,28,Shanghai (state),Haiyan Film Studio,1960,Performance,0.2028985507246377
+缅甸文化代表团访华演出,29,0.054307116104868915,13,18,Shanghai (state),Haiyan Film Studio,1960,Performance,0.13043478260869565
+缅甸文化代表团访华演出,30,0.056179775280898875,13,18,Shanghai (state),Haiyan Film Studio,1960,Performance,0.13043478260869565
+缅甸文化代表团访华演出,31,0.05805243445692884,14,16,Shanghai (state),Haiyan Film Studio,1960,Performance,0.11594202898550725
+缅甸文化代表团访华演出,32,0.0599250936329588,14,28,Shanghai (state),Haiyan Film Studio,1960,Performance,0.2028985507246377
+缅甸文化代表团访华演出,33,0.06179775280898876,13,32,Shanghai (state),Haiyan Film Studio,1960,Performance,0.2318840579710145
+缅甸文化代表团访华演出,34,0.06367041198501873,11,32,Shanghai (state),Haiyan Film Studio,1960,Performance,0.2318840579710145
+缅甸文化代表团访华演出,37,0.06928838951310862,18,27,Shanghai (state),Haiyan Film Studio,1960,Performance,0.1956521739130435
+缅甸文化代表团访华演出,38,0.07116104868913857,15,19,Shanghai (state),Haiyan Film Studio,1960,Performance,0.13768115942028986
+缅甸文化代表团访华演出,39,0.07303370786516854,14,19,Shanghai (state),Haiyan Film Studio,1960,Performance,0.13768115942028986
+缅甸文化代表团访华演出,40,0.0749063670411985,14,18,Shanghai (state),Haiyan Film Studio,1960,Performance,0.13043478260869565
+缅甸文化代表团访华演出,41,0.07677902621722846,17,19,Shanghai (state),Haiyan Film Studio,1960,Performance,0.13768115942028986
+缅甸文化代表团访华演出,42,0.07865168539325842,15,29,Shanghai (state),Haiyan Film Studio,1960,Performance,0.21014492753623187
+缅甸文化代表团访华演出,43,0.08052434456928839,18,36,Shanghai (state),Haiyan Film Studio,1960,Performance,0.2608695652173913
+缅甸文化代表团访华演出,44,0.08239700374531835,24,42,Shanghai (state),Haiyan Film Studio,1960,Performance,0.30434782608695654
+缅甸文化代表团访华演出,45,0.08426966292134831,21,47,Shanghai (state),Haiyan Film Studio,1960,Performance,0.34057971014492755
+缅甸文化代表团访华演出,48,0.0898876404494382,12,13,Shanghai (state),Haiyan Film Studio,1960,Performance,0.09420289855072464
+缅甸文化代表团访华演出,73,0.13670411985018727,11,30,Shanghai (state),Haiyan Film Studio,1960,Performance,0.21739130434782608
+缅甸文化代表团访华演出,197,0.36891385767790263,11,21,Shanghai (state),Haiyan Film Studio,1960,Performance,0.15217391304347827
+缅甸文化代表团访华演出,240,0.449438202247191,15,17,Shanghai (state),Haiyan Film Studio,1960,Performance,0.12318840579710146
+缅甸文化代表团访华演出,241,0.45131086142322097,13,19,Shanghai (state),Haiyan Film Studio,1960,Performance,0.13768115942028986
+缅甸文化代表团访华演出,242,0.45318352059925093,15,18,Shanghai (state),Haiyan Film Studio,1960,Performance,0.13043478260869565
+缅甸文化代表团访华演出,244,0.45692883895131087,12,12,Shanghai (state),Haiyan Film Studio,1960,Performance,0.08695652173913043
+缅甸文化代表团访华演出,248,0.46441947565543074,11,11,Shanghai (state),Haiyan Film Studio,1960,Performance,0.07971014492753623
+缅甸文化代表团访华演出,249,0.46629213483146065,12,20,Shanghai (state),Haiyan Film Studio,1960,Performance,0.14492753623188406
+缅甸文化代表团访华演出,250,0.4681647940074906,13,30,Shanghai (state),Haiyan Film Studio,1960,Performance,0.21739130434782608
+缅甸文化代表团访华演出,256,0.4794007490636704,13,18,Shanghai (state),Haiyan Film Studio,1960,Performance,0.13043478260869565
+缅甸文化代表团访华演出,257,0.4812734082397004,11,26,Shanghai (state),Haiyan Film Studio,1960,Performance,0.18840579710144928
+缅甸文化代表团访华演出,258,0.48314606741573035,15,16,Shanghai (state),Haiyan Film Studio,1960,Performance,0.11594202898550725
+缅甸文化代表团访华演出,259,0.4850187265917603,15,22,Shanghai (state),Haiyan Film Studio,1960,Performance,0.15942028985507245
+缅甸文化代表团访华演出,288,0.5393258426966292,12,11,Shanghai (state),Haiyan Film Studio,1960,Performance,0.07971014492753623
+缅甸文化代表团访华演出,302,0.5655430711610487,11,13,Shanghai (state),Haiyan Film Studio,1960,Performance,0.09420289855072464
+缅甸文化代表团访华演出,310,0.5805243445692884,11,16,Shanghai (state),Haiyan Film Studio,1960,Performance,0.11594202898550725
+缅甸文化代表团访华演出,328,0.6142322097378277,11,17,Shanghai (state),Haiyan Film Studio,1960,Performance,0.12318840579710146
+缅甸文化代表团访华演出,341,0.6385767790262172,11,12,Shanghai (state),Haiyan Film Studio,1960,Performance,0.08695652173913043
+缅甸文化代表团访华演出,356,0.6666666666666666,11,10,Shanghai (state),Haiyan Film Studio,1960,Performance,0.07246376811594203
+缅甸文化代表团访华演出,509,0.9531835205992509,20,130,Shanghai (state),Haiyan Film Studio,1960,Performance,0.9420289855072463
+缅甸文化代表团访华演出,510,0.9550561797752809,20,132,Shanghai (state),Haiyan Film Studio,1960,Performance,0.9565217391304348
+缅甸文化代表团访华演出,511,0.9569288389513109,20,128,Shanghai (state),Haiyan Film Studio,1960,Performance,0.927536231884058
+缅甸文化代表团访华演出,512,0.9588014981273408,11,106,Shanghai (state),Haiyan Film Studio,1960,Performance,0.7681159420289855
+缅甸文化代表团访华演出,517,0.9681647940074907,11,56,Shanghai (state),Haiyan Film Studio,1960,Performance,0.4057971014492754
+缅甸文化代表团访华演出,520,0.9737827715355806,13,33,Shanghai (state),Haiyan Film Studio,1960,Performance,0.2391304347826087
+缅甸文化代表团访华演出,521,0.9756554307116105,16,26,Shanghai (state),Haiyan Film Studio,1960,Performance,0.18840579710144928
+缅甸文化代表团访华演出,522,0.9775280898876404,19,24,Shanghai (state),Haiyan Film Studio,1960,Performance,0.17391304347826086
+缅甸文化代表团访华演出,527,0.9868913857677902,11,14,Shanghai (state),Haiyan Film Studio,1960,Performance,0.10144927536231885
+缅甸文化代表团访华演出,529,0.9906367041198502,13,70,Shanghai (state),Haiyan Film Studio,1960,Performance,0.5072463768115942
+缅甸文化代表团访华演出,530,0.9925093632958801,15,104,Shanghai (state),Haiyan Film Studio,1960,Performance,0.7536231884057971
+缅甸文化代表团访华演出,531,0.9943820224719101,19,138,Shanghai (state),Haiyan Film Studio,1960,Performance,1.0
+缅甸文化代表团访华演出,532,0.9962546816479401,19,135,Shanghai (state),Haiyan Film Studio,1960,Performance,0.9782608695652174
+东方红,3,0.0020833333333333333,11,29,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14948453608247422
+东方红,13,0.009027777777777777,15,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,47,0.03263888888888889,11,85,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4381443298969072
+东方红,48,0.03333333333333333,18,52,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.26804123711340205
+东方红,49,0.034027777777777775,16,46,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23711340206185566
+东方红,70,0.04861111111111111,13,74,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.38144329896907214
+东方红,72,0.05,13,63,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3247422680412371
+东方红,73,0.050694444444444445,11,72,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3711340206185567
+东方红,98,0.06805555555555555,11,11,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.05670103092783505
+东方红,101,0.07013888888888889,11,19,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.0979381443298969
+东方红,106,0.07361111111111111,12,13,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.06701030927835051
+东方红,107,0.07430555555555556,12,20,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10309278350515463
+东方红,108,0.075,12,23,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.11855670103092783
+东方红,109,0.07569444444444444,13,26,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13402061855670103
+东方红,110,0.0763888888888889,11,16,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08247422680412371
+东方红,118,0.08194444444444444,11,12,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.061855670103092786
+东方红,132,0.09166666666666666,11,13,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.06701030927835051
+东方红,137,0.09513888888888888,13,39,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20103092783505155
+东方红,138,0.09583333333333334,13,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,139,0.09652777777777778,11,11,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.05670103092783505
+东方红,141,0.09791666666666667,13,12,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.061855670103092786
+东方红,142,0.09861111111111111,16,32,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.16494845360824742
+东方红,144,0.1,12,39,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20103092783505155
+东方红,145,0.10069444444444445,15,27,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13917525773195877
+东方红,147,0.10208333333333333,14,49,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.25257731958762886
+东方红,148,0.10277777777777777,14,48,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.24742268041237114
+东方红,149,0.10347222222222222,16,41,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.211340206185567
+东方红,150,0.10416666666666667,12,21,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10824742268041238
+东方红,151,0.10486111111111111,15,27,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13917525773195877
+东方红,152,0.10555555555555556,13,30,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15463917525773196
+东方红,153,0.10625,13,65,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.33505154639175255
+东方红,154,0.10694444444444444,17,45,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23195876288659795
+东方红,155,0.1076388888888889,11,37,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.19072164948453607
+东方红,156,0.10833333333333334,16,43,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.22164948453608246
+东方红,157,0.10902777777777778,16,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,159,0.11041666666666666,14,21,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10824742268041238
+东方红,164,0.11388888888888889,14,38,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1958762886597938
+东方红,165,0.11458333333333333,14,31,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15979381443298968
+东方红,166,0.11527777777777778,14,30,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15463917525773196
+东方红,167,0.11597222222222223,13,34,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17525773195876287
+东方红,173,0.12013888888888889,18,20,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10309278350515463
+东方红,174,0.12083333333333333,13,42,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.21649484536082475
+东方红,175,0.12152777777777778,18,46,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23711340206185566
+东方红,177,0.12291666666666666,13,16,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08247422680412371
+东方红,179,0.12430555555555556,12,65,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.33505154639175255
+东方红,180,0.125,22,48,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.24742268041237114
+东方红,181,0.12569444444444444,18,57,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.29381443298969073
+东方红,183,0.12708333333333333,12,18,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.09278350515463918
+东方红,187,0.12986111111111112,13,36,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.18556701030927836
+东方红,188,0.13055555555555556,14,47,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.2422680412371134
+东方红,192,0.13333333333333333,13,32,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.16494845360824742
+东方红,193,0.13402777777777777,14,25,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12886597938144329
+东方红,194,0.13472222222222222,12,20,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10309278350515463
+东方红,195,0.13541666666666666,14,40,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20618556701030927
+东方红,196,0.1361111111111111,14,44,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.2268041237113402
+东方红,197,0.13680555555555557,16,54,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.27835051546391754
+东方红,198,0.1375,12,29,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14948453608247422
+东方红,199,0.13819444444444445,13,31,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15979381443298968
+东方红,201,0.13958333333333334,11,24,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12371134020618557
+东方红,202,0.14027777777777778,11,27,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13917525773195877
+东方红,203,0.14097222222222222,11,30,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15463917525773196
+东方红,204,0.14166666666666666,12,23,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.11855670103092783
+东方红,205,0.1423611111111111,12,15,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.07731958762886598
+东方红,206,0.14305555555555555,12,33,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17010309278350516
+东方红,207,0.14375,11,85,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4381443298969072
+东方红,209,0.1451388888888889,15,43,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.22164948453608246
+东方红,210,0.14583333333333334,11,40,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20618556701030927
+东方红,211,0.14652777777777778,14,14,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.07216494845360824
+东方红,217,0.15069444444444444,17,73,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.37628865979381443
+东方红,218,0.15138888888888888,12,40,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20618556701030927
+东方红,219,0.15208333333333332,15,38,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1958762886597938
+东方红,224,0.15555555555555556,12,85,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4381443298969072
+东方红,225,0.15625,14,86,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.44329896907216493
+东方红,226,0.15694444444444444,17,145,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.7474226804123711
+东方红,227,0.15763888888888888,11,126,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.6494845360824743
+东方红,243,0.16875,13,19,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.0979381443298969
+东方红,247,0.17152777777777778,14,39,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20103092783505155
+东方红,253,0.17569444444444443,13,20,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10309278350515463
+东方红,254,0.1763888888888889,13,16,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08247422680412371
+东方红,255,0.17708333333333334,13,18,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.09278350515463918
+东方红,256,0.17777777777777778,15,27,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13917525773195877
+东方红,257,0.17847222222222223,14,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,262,0.18194444444444444,12,15,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.07731958762886598
+东方红,263,0.18263888888888888,14,24,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12371134020618557
+东方红,264,0.18333333333333332,14,20,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10309278350515463
+东方红,265,0.1840277777777778,14,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,266,0.18472222222222223,12,18,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.09278350515463918
+东方红,268,0.18611111111111112,12,14,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.07216494845360824
+东方红,269,0.18680555555555556,11,13,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.06701030927835051
+东方红,272,0.18888888888888888,12,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,273,0.18958333333333333,11,26,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13402061855670103
+东方红,274,0.19027777777777777,13,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,284,0.19722222222222222,20,55,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.28350515463917525
+东方红,285,0.19791666666666666,20,44,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.2268041237113402
+东方红,286,0.1986111111111111,17,46,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23711340206185566
+东方红,287,0.19930555555555557,14,42,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.21649484536082475
+东方红,300,0.20833333333333334,11,35,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.18041237113402062
+东方红,311,0.21597222222222223,11,21,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10824742268041238
+东方红,312,0.21666666666666667,12,52,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.26804123711340205
+东方红,313,0.21736111111111112,11,56,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.28865979381443296
+东方红,317,0.22013888888888888,11,61,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.31443298969072164
+东方红,324,0.225,11,39,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20103092783505155
+东方红,330,0.22916666666666666,14,64,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.32989690721649484
+东方红,343,0.23819444444444443,14,47,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.2422680412371134
+东方红,345,0.23958333333333334,11,18,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.09278350515463918
+东方红,347,0.24097222222222223,15,92,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4742268041237113
+东方红,350,0.24305555555555555,12,13,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.06701030927835051
+东方红,351,0.24375,13,16,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08247422680412371
+东方红,353,0.24513888888888888,16,54,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.27835051546391754
+东方红,354,0.24583333333333332,13,82,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.422680412371134
+东方红,356,0.24722222222222223,12,110,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5670103092783505
+东方红,357,0.24791666666666667,12,141,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.7268041237113402
+东方红,360,0.25,13,156,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.8041237113402062
+东方红,361,0.25069444444444444,16,157,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.8092783505154639
+东方红,362,0.2513888888888889,14,162,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.8350515463917526
+东方红,367,0.2548611111111111,14,173,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.8917525773195877
+东方红,372,0.25833333333333336,17,131,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.6752577319587629
+东方红,375,0.2604166666666667,11,125,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.6443298969072165
+东方红,377,0.26180555555555557,11,43,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.22164948453608246
+东方红,381,0.26458333333333334,12,32,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.16494845360824742
+东方红,387,0.26875,14,37,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.19072164948453607
+东方红,394,0.27361111111111114,15,152,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.7835051546391752
+东方红,395,0.2743055555555556,12,155,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.7989690721649485
+东方红,399,0.27708333333333335,12,86,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.44329896907216493
+东方红,400,0.2777777777777778,11,26,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13402061855670103
+东方红,415,0.2881944444444444,16,30,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15463917525773196
+东方红,416,0.28888888888888886,15,58,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.29896907216494845
+东方红,417,0.28958333333333336,12,74,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.38144329896907214
+东方红,420,0.2916666666666667,12,56,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.28865979381443296
+东方红,423,0.29375,12,13,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.06701030927835051
+东方红,424,0.29444444444444445,13,30,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15463917525773196
+东方红,425,0.2951388888888889,12,55,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.28350515463917525
+东方红,426,0.29583333333333334,13,59,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.30412371134020616
+东方红,427,0.2965277777777778,11,39,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20103092783505155
+东方红,428,0.2972222222222222,13,77,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.39690721649484534
+东方红,429,0.29791666666666666,12,72,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3711340206185567
+东方红,430,0.2986111111111111,12,13,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.06701030927835051
+东方红,431,0.29930555555555555,12,43,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.22164948453608246
+东方红,432,0.3,14,51,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.26288659793814434
+东方红,433,0.30069444444444443,12,47,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.2422680412371134
+东方红,434,0.3013888888888889,14,44,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.2268041237113402
+东方红,435,0.3020833333333333,14,37,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.19072164948453607
+东方红,436,0.30277777777777776,16,51,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.26288659793814434
+东方红,437,0.3034722222222222,12,49,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.25257731958762886
+东方红,438,0.30416666666666664,12,58,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.29896907216494845
+东方红,439,0.30486111111111114,12,49,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.25257731958762886
+东方红,440,0.3055555555555556,12,34,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17525773195876287
+东方红,441,0.30625,13,35,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.18041237113402062
+东方红,442,0.30694444444444446,12,39,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20103092783505155
+东方红,443,0.3076388888888889,12,32,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.16494845360824742
+东方红,444,0.30833333333333335,13,37,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.19072164948453607
+东方红,445,0.3090277777777778,12,72,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3711340206185567
+东方红,449,0.31180555555555556,11,18,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.09278350515463918
+东方红,450,0.3125,12,45,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23195876288659795
+东方红,451,0.31319444444444444,12,72,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3711340206185567
+东方红,452,0.3138888888888889,15,81,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4175257731958763
+东方红,453,0.3145833333333333,15,177,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.9123711340206185
+东方红,454,0.31527777777777777,13,107,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5515463917525774
+东方红,455,0.3159722222222222,15,90,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4639175257731959
+东方红,456,0.31666666666666665,11,97,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5
+东方红,457,0.3173611111111111,15,83,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.42783505154639173
+东方红,458,0.31805555555555554,15,46,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23711340206185566
+东方红,459,0.31875,16,37,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.19072164948453607
+东方红,460,0.3194444444444444,13,41,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.211340206185567
+东方红,461,0.32013888888888886,12,27,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13917525773195877
+东方红,462,0.32083333333333336,12,23,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.11855670103092783
+东方红,463,0.3215277777777778,15,51,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.26288659793814434
+东方红,466,0.3236111111111111,12,134,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.6907216494845361
+东方红,473,0.3284722222222222,13,45,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23195876288659795
+东方红,475,0.3298611111111111,11,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,479,0.3326388888888889,17,162,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.8350515463917526
+东方红,483,0.33541666666666664,13,39,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20103092783505155
+东方红,485,0.3368055555555556,14,182,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.9381443298969072
+东方红,486,0.3375,13,194,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,1.0
+东方红,487,0.33819444444444446,14,170,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.8762886597938144
+东方红,490,0.3402777777777778,11,158,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.8144329896907216
+东方红,492,0.3416666666666667,13,47,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.2422680412371134
+东方红,502,0.3486111111111111,19,27,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13917525773195877
+东方红,503,0.34930555555555554,22,30,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15463917525773196
+东方红,504,0.35,17,25,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12886597938144329
+东方红,508,0.3527777777777778,11,14,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.07216494845360824
+东方红,510,0.3541666666666667,14,35,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.18041237113402062
+东方红,511,0.3548611111111111,18,24,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12371134020618557
+东方红,512,0.35555555555555557,14,35,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.18041237113402062
+东方红,513,0.35625,11,31,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15979381443298968
+东方红,516,0.35833333333333334,11,29,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14948453608247422
+东方红,519,0.36041666666666666,16,30,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15463917525773196
+东方红,521,0.36180555555555555,11,10,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.05154639175257732
+东方红,522,0.3625,13,14,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.07216494845360824
+东方红,526,0.36527777777777776,12,13,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.06701030927835051
+东方红,528,0.36666666666666664,11,12,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.061855670103092786
+东方红,530,0.3680555555555556,13,14,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.07216494845360824
+东方红,531,0.36875,12,10,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.05154639175257732
+东方红,533,0.3701388888888889,14,63,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3247422680412371
+东方红,534,0.37083333333333335,11,60,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.30927835051546393
+东方红,536,0.37222222222222223,15,57,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.29381443298969073
+东方红,538,0.3736111111111111,13,61,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.31443298969072164
+东方红,541,0.37569444444444444,12,71,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.36597938144329895
+东方红,542,0.3763888888888889,19,63,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3247422680412371
+东方红,543,0.3770833333333333,18,55,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.28350515463917525
+东方红,544,0.37777777777777777,17,40,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20618556701030927
+东方红,567,0.39375,11,16,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08247422680412371
+东方红,603,0.41875,11,14,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.07216494845360824
+东方红,604,0.41944444444444445,11,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,605,0.4201388888888889,11,35,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.18041237113402062
+东方红,607,0.4215277777777778,12,34,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17525773195876287
+东方红,608,0.4222222222222222,14,30,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15463917525773196
+东方红,609,0.42291666666666666,12,35,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.18041237113402062
+东方红,610,0.4236111111111111,13,42,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.21649484536082475
+东方红,611,0.42430555555555555,13,45,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23195876288659795
+东方红,612,0.425,12,34,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17525773195876287
+东方红,614,0.4263888888888889,16,71,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.36597938144329895
+东方红,615,0.4270833333333333,14,58,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.29896907216494845
+东方红,616,0.42777777777777776,12,97,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5
+东方红,617,0.4284722222222222,11,73,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.37628865979381443
+东方红,631,0.43819444444444444,11,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,635,0.4409722222222222,13,141,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.7268041237113402
+东方红,640,0.4444444444444444,11,54,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.27835051546391754
+东方红,641,0.44513888888888886,15,26,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13402061855670103
+东方红,642,0.44583333333333336,17,27,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13917525773195877
+东方红,650,0.4513888888888889,13,47,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.2422680412371134
+东方红,651,0.45208333333333334,11,64,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.32989690721649484
+东方红,653,0.4534722222222222,14,34,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17525773195876287
+东方红,654,0.45416666666666666,16,25,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12886597938144329
+东方红,655,0.4548611111111111,13,46,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23711340206185566
+东方红,656,0.45555555555555555,13,23,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.11855670103092783
+东方红,657,0.45625,13,62,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.31958762886597936
+东方红,658,0.45694444444444443,14,77,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.39690721649484534
+东方红,659,0.4576388888888889,14,53,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.27319587628865977
+东方红,660,0.4583333333333333,13,56,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.28865979381443296
+东方红,665,0.4618055555555556,11,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,666,0.4625,12,26,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13402061855670103
+东方红,681,0.47291666666666665,11,23,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.11855670103092783
+东方红,682,0.4736111111111111,12,23,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.11855670103092783
+东方红,683,0.47430555555555554,12,16,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08247422680412371
+东方红,685,0.4756944444444444,12,42,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.21649484536082475
+东方红,690,0.4791666666666667,12,23,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.11855670103092783
+东方红,691,0.4798611111111111,12,17,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08762886597938144
+东方红,705,0.4895833333333333,11,13,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.06701030927835051
+东方红,706,0.49027777777777776,11,16,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08247422680412371
+东方红,726,0.5041666666666667,13,29,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14948453608247422
+东方红,727,0.5048611111111111,11,19,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.0979381443298969
+东方红,728,0.5055555555555555,15,31,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15979381443298968
+东方红,729,0.50625,12,25,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12886597938144329
+东方红,730,0.5069444444444444,18,21,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10824742268041238
+东方红,731,0.5076388888888889,13,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,745,0.5173611111111112,11,70,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.36082474226804123
+东方红,747,0.51875,13,48,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.24742268041237114
+东方红,749,0.5201388888888889,14,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,752,0.5222222222222223,14,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,768,0.5333333333333333,11,50,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.25773195876288657
+东方红,769,0.5340277777777778,13,37,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.19072164948453607
+东方红,770,0.5347222222222222,14,40,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20618556701030927
+东方红,772,0.5361111111111111,14,51,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.26288659793814434
+东方红,779,0.5409722222222222,13,30,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15463917525773196
+东方红,780,0.5416666666666666,12,53,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.27319587628865977
+东方红,783,0.54375,12,25,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12886597938144329
+东方红,790,0.5486111111111112,12,167,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.8608247422680413
+东方红,791,0.5493055555555556,13,172,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.8865979381443299
+东方红,792,0.55,14,186,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.9587628865979382
+东方红,800,0.5555555555555556,12,25,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12886597938144329
+东方红,802,0.5569444444444445,13,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,803,0.5576388888888889,15,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,804,0.5583333333333333,12,24,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12371134020618557
+东方红,807,0.5604166666666667,13,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,843,0.5854166666666667,14,40,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20618556701030927
+东方红,844,0.5861111111111111,15,36,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.18556701030927836
+东方红,845,0.5868055555555556,15,30,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15463917525773196
+东方红,846,0.5875,14,31,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15979381443298968
+东方红,847,0.5881944444444445,16,33,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17010309278350516
+东方红,848,0.5888888888888889,17,26,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13402061855670103
+东方红,849,0.5895833333333333,18,31,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15979381443298968
+东方红,850,0.5902777777777778,18,37,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.19072164948453607
+东方红,851,0.5909722222222222,15,33,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17010309278350516
+东方红,852,0.5916666666666667,11,24,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12371134020618557
+东方红,858,0.5958333333333333,12,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,860,0.5972222222222222,16,39,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20103092783505155
+东方红,861,0.5979166666666667,14,53,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.27319587628865977
+东方红,862,0.5986111111111111,12,58,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.29896907216494845
+东方红,869,0.6034722222222222,11,25,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12886597938144329
+东方红,870,0.6041666666666666,14,33,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17010309278350516
+东方红,871,0.6048611111111111,15,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,872,0.6055555555555555,12,38,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1958762886597938
+东方红,874,0.6069444444444444,13,25,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12886597938144329
+东方红,875,0.6076388888888888,13,46,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23711340206185566
+东方红,876,0.6083333333333333,19,43,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.22164948453608246
+东方红,877,0.6090277777777777,20,66,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3402061855670103
+东方红,878,0.6097222222222223,17,70,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.36082474226804123
+东方红,879,0.6104166666666667,15,72,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3711340206185567
+东方红,880,0.6111111111111112,17,69,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3556701030927835
+东方红,881,0.6118055555555556,18,56,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.28865979381443296
+东方红,882,0.6125,15,34,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17525773195876287
+东方红,884,0.6138888888888889,16,49,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.25257731958762886
+东方红,885,0.6145833333333334,19,47,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.2422680412371134
+东方红,887,0.6159722222222223,15,56,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.28865979381443296
+东方红,888,0.6166666666666667,12,74,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.38144329896907214
+东方红,889,0.6173611111111111,17,97,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5
+东方红,890,0.6180555555555556,17,92,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4742268041237113
+东方红,891,0.61875,21,105,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5412371134020618
+东方红,892,0.6194444444444445,15,91,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4690721649484536
+东方红,893,0.6201388888888889,18,83,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.42783505154639173
+东方红,894,0.6208333333333333,16,63,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3247422680412371
+东方红,895,0.6215277777777778,12,44,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.2268041237113402
+东方红,899,0.6243055555555556,14,9,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.04639175257731959
+东方红,900,0.625,14,17,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08762886597938144
+东方红,903,0.6270833333333333,16,20,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10309278350515463
+东方红,904,0.6277777777777778,16,25,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12886597938144329
+东方红,905,0.6284722222222222,16,29,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14948453608247422
+东方红,906,0.6291666666666667,17,24,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12371134020618557
+东方红,910,0.6319444444444444,11,12,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.061855670103092786
+东方红,919,0.6381944444444444,13,16,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08247422680412371
+东方红,922,0.6402777777777777,11,8,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.041237113402061855
+东方红,925,0.6423611111111112,11,10,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.05154639175257732
+东方红,931,0.6465277777777778,16,50,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.25773195876288657
+东方红,932,0.6472222222222223,14,46,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23711340206185566
+东方红,933,0.6479166666666667,14,35,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.18041237113402062
+东方红,943,0.6548611111111111,14,17,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08762886597938144
+东方红,944,0.6555555555555556,11,33,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17010309278350516
+东方红,946,0.6569444444444444,13,21,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10824742268041238
+东方红,947,0.6576388888888889,12,29,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14948453608247422
+东方红,948,0.6583333333333333,15,63,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3247422680412371
+东方红,949,0.6590277777777778,13,32,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.16494845360824742
+东方红,950,0.6597222222222222,12,41,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.211340206185567
+东方红,951,0.6604166666666667,14,24,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12371134020618557
+东方红,952,0.6611111111111111,14,12,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.061855670103092786
+东方红,959,0.6659722222222222,11,18,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.09278350515463918
+东方红,961,0.6673611111111111,15,39,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20103092783505155
+东方红,962,0.6680555555555555,14,23,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.11855670103092783
+东方红,966,0.6708333333333333,16,30,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15463917525773196
+东方红,967,0.6715277777777777,20,31,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15979381443298968
+东方红,968,0.6722222222222223,19,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,969,0.6729166666666667,13,23,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.11855670103092783
+东方红,970,0.6736111111111112,15,24,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.12371134020618557
+东方红,971,0.6743055555555556,14,33,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17010309278350516
+东方红,972,0.675,17,27,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13917525773195877
+东方红,973,0.6756944444444445,17,33,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17010309278350516
+东方红,974,0.6763888888888889,16,40,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20618556701030927
+东方红,975,0.6770833333333334,13,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,980,0.6805555555555556,17,29,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14948453608247422
+东方红,982,0.6819444444444445,13,40,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20618556701030927
+东方红,985,0.6840277777777778,11,16,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08247422680412371
+东方红,996,0.6916666666666667,15,38,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1958762886597938
+东方红,997,0.6923611111111111,12,41,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.211340206185567
+东方红,1000,0.6944444444444444,11,54,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.27835051546391754
+东方红,1001,0.6951388888888889,14,63,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3247422680412371
+东方红,1002,0.6958333333333333,13,45,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23195876288659795
+东方红,1003,0.6965277777777777,11,61,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.31443298969072164
+东方红,1005,0.6979166666666666,11,182,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.9381443298969072
+东方红,1008,0.7,11,168,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.865979381443299
+东方红,1010,0.7013888888888888,13,108,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5567010309278351
+东方红,1023,0.7104166666666667,11,180,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.9278350515463918
+东方红,1041,0.7229166666666667,11,32,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.16494845360824742
+东方红,1043,0.7243055555555555,12,54,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.27835051546391754
+东方红,1046,0.7263888888888889,18,23,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.11855670103092783
+东方红,1047,0.7270833333333333,16,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,1048,0.7277777777777777,11,11,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.05670103092783505
+东方红,1052,0.7305555555555555,11,15,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.07731958762886598
+东方红,1066,0.7402777777777778,16,18,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.09278350515463918
+东方红,1067,0.7409722222222223,11,12,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.061855670103092786
+东方红,1068,0.7416666666666667,12,17,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08762886597938144
+东方红,1069,0.7423611111111111,14,21,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10824742268041238
+东方红,1070,0.7430555555555556,14,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,1071,0.74375,14,33,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17010309278350516
+东方红,1073,0.7451388888888889,12,18,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.09278350515463918
+东方红,1074,0.7458333333333333,11,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,1077,0.7479166666666667,13,84,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4329896907216495
+东方红,1078,0.7486111111111111,12,40,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20618556701030927
+东方红,1092,0.7583333333333333,11,33,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17010309278350516
+东方红,1094,0.7597222222222222,12,37,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.19072164948453607
+东方红,1095,0.7604166666666666,14,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,1102,0.7652777777777777,13,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,1103,0.7659722222222223,12,19,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.0979381443298969
+东方红,1104,0.7666666666666667,11,15,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.07731958762886598
+东方红,1106,0.7680555555555556,11,18,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.09278350515463918
+东方红,1107,0.76875,12,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,1116,0.775,12,22,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.1134020618556701
+东方红,1127,0.7826388888888889,14,35,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.18041237113402062
+东方红,1128,0.7833333333333333,16,60,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.30927835051546393
+东方红,1129,0.7840277777777778,16,45,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23195876288659795
+东方红,1138,0.7902777777777777,18,63,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3247422680412371
+东方红,1148,0.7972222222222223,14,70,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.36082474226804123
+东方红,1149,0.7979166666666667,12,88,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4536082474226804
+东方红,1150,0.7986111111111112,12,107,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5515463917525774
+东方红,1151,0.7993055555555556,11,116,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5979381443298969
+东方红,1152,0.8,11,53,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.27319587628865977
+东方红,1154,0.8013888888888889,11,76,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3917525773195876
+东方红,1155,0.8020833333333334,15,69,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3556701030927835
+东方红,1156,0.8027777777777778,13,40,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20618556701030927
+东方红,1157,0.8034722222222223,14,32,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.16494845360824742
+东方红,1158,0.8041666666666667,11,78,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4020618556701031
+东方红,1165,0.8090277777777778,12,136,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.7010309278350515
+东方红,1166,0.8097222222222222,13,83,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.42783505154639173
+东方红,1167,0.8104166666666667,12,128,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.6597938144329897
+东方红,1168,0.8111111111111111,13,60,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.30927835051546393
+东方红,1170,0.8125,11,130,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.6701030927835051
+东方红,1171,0.8131944444444444,13,88,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4536082474226804
+东方红,1174,0.8152777777777778,13,74,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.38144329896907214
+东方红,1177,0.8173611111111111,11,122,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.6288659793814433
+东方红,1178,0.8180555555555555,12,41,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.211340206185567
+东方红,1179,0.81875,13,56,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.28865979381443296
+东方红,1182,0.8208333333333333,13,87,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4484536082474227
+东方红,1187,0.8243055555555555,12,28,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14432989690721648
+东方红,1209,0.8395833333333333,14,80,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.41237113402061853
+东方红,1211,0.8409722222222222,12,175,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.9020618556701031
+东方红,1223,0.8493055555555555,12,183,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.9432989690721649
+东方红,1234,0.8569444444444444,17,114,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5876288659793815
+东方红,1235,0.8576388888888888,16,114,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5876288659793815
+东方红,1254,0.8708333333333333,12,29,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.14948453608247422
+东方红,1255,0.8715277777777778,12,57,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.29381443298969073
+东方红,1256,0.8722222222222222,11,52,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.26804123711340205
+东方红,1259,0.8743055555555556,17,26,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13402061855670103
+东方红,1261,0.8756944444444444,14,74,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.38144329896907214
+东方红,1262,0.8763888888888889,11,119,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.6134020618556701
+东方红,1266,0.8791666666666667,13,88,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4536082474226804
+东方红,1270,0.8819444444444444,12,42,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.21649484536082475
+东方红,1271,0.8826388888888889,14,14,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.07216494845360824
+东方红,1272,0.8833333333333333,14,101,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.520618556701031
+东方红,1273,0.8840277777777777,12,159,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.8195876288659794
+东方红,1276,0.8861111111111111,11,125,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.6443298969072165
+东方红,1277,0.8868055555555555,12,89,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4587628865979381
+东方红,1278,0.8875,15,54,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.27835051546391754
+东方红,1279,0.8881944444444444,13,71,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.36597938144329895
+东方红,1280,0.8888888888888888,12,142,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.7319587628865979
+东方红,1281,0.8895833333333333,13,139,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.7164948453608248
+东方红,1282,0.8902777777777777,12,167,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.8608247422680413
+东方红,1283,0.8909722222222223,14,171,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.8814432989690721
+东方红,1284,0.8916666666666667,17,137,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.7061855670103093
+东方红,1287,0.89375,11,40,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.20618556701030927
+东方红,1289,0.8951388888888889,11,41,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.211340206185567
+东方红,1290,0.8958333333333334,11,8,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.041237113402061855
+东方红,1294,0.8986111111111111,11,188,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.9690721649484536
+东方红,1297,0.9006944444444445,12,126,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.6494845360824743
+东方红,1298,0.9013888888888889,12,51,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.26288659793814434
+东方红,1299,0.9020833333333333,15,31,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15979381443298968
+东方红,1300,0.9027777777777778,11,53,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.27319587628865977
+东方红,1301,0.9034722222222222,14,44,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.2268041237113402
+东方红,1302,0.9041666666666667,11,31,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.15979381443298968
+东方红,1312,0.9111111111111111,14,86,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.44329896907216493
+东方红,1316,0.9138888888888889,12,14,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.07216494845360824
+东方红,1320,0.9166666666666666,11,81,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4175257731958763
+东方红,1332,0.925,11,95,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4896907216494845
+东方红,1337,0.9284722222222223,13,63,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3247422680412371
+东方红,1338,0.9291666666666667,13,42,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.21649484536082475
+东方红,1339,0.9298611111111111,14,41,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.211340206185567
+东方红,1340,0.9305555555555556,12,20,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.10309278350515463
+东方红,1341,0.93125,12,32,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.16494845360824742
+东方红,1347,0.9354166666666667,14,152,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.7835051546391752
+东方红,1348,0.9361111111111111,11,143,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.7371134020618557
+东方红,1349,0.9368055555555556,11,153,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.788659793814433
+东方红,1350,0.9375,11,51,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.26288659793814434
+东方红,1353,0.9395833333333333,14,23,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.11855670103092783
+东方红,1354,0.9402777777777778,11,27,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.13917525773195877
+东方红,1355,0.9409722222222222,11,33,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.17010309278350516
+东方红,1360,0.9444444444444444,12,70,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.36082474226804123
+东方红,1364,0.9472222222222222,13,46,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.23711340206185566
+东方红,1366,0.9486111111111111,14,44,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.2268041237113402
+东方红,1367,0.9493055555555555,11,69,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3556701030927835
+东方红,1368,0.95,11,63,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3247422680412371
+东方红,1369,0.9506944444444444,12,155,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.7989690721649485
+东方红,1371,0.9520833333333333,12,72,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.3711340206185567
+东方红,1376,0.9555555555555556,11,81,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.4175257731958763
+东方红,1378,0.9569444444444445,12,114,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5876288659793815
+东方红,1418,0.9847222222222223,15,97,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5
+东方红,1419,0.9854166666666667,16,103,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.5309278350515464
+东方红,1426,0.9902777777777778,12,17,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,0.08762886597938144
