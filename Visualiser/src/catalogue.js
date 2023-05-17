@@ -96,7 +96,7 @@ function update_shown_films() {
 		if(search_input.length > 0) {
 			if(search_mode == 0) {
 				//If searching by mode=0, only add those with wanted titles/tranlsated titles/keys
-				if(f.title.includes(search_input) || f.translated.includes(search_input) || f.key.includes(search_input)) {
+				if(f.title.includes(search_input) || f.translated.toUpperCase().includes(search_input.toUpperCase()) || f.key.includes(search_input)) {
 					add_shown_film(f, to_show);
 					to_show++;
 					continue;
