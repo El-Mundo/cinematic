@@ -49,8 +49,12 @@ public class JSONConverter {
 		}
 	}
 	
-	public static void main(String[] args) throws IOException {
-		writeMetadataJSON();
+	public static void main(String[] args) {
+		try {
+			writeMetadataJSON();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	private static void writeMetadataJSON() throws IOException {
