@@ -1,0 +1,451 @@
+film,frame,pos,num_people,num_heads,geo_category,production,year,type,n_heads
+宋士杰,878,0.7536480686695279,11,31,Shanghai (state),Shanghai Film Studio,1956,Opera,1.0
+青松岭,922,0.6720116618075802,13,47,Northeast,Changchun Film Studio,1965,Feature,1.0
+飞越天险,167,0.15769593956562794,11,115,Beijing,Beijing Film Studio,1959,Feature,1.0
+春暖花开,813,0.7291479820627803,10,91,Beijing,Beijing Film Studio,1960,Feature,1.0
+脚印,366,0.9312977099236641,12,16,Beijing,August First Film Studio,1955,Feature,1.0
+一贯害人道,1266,0.9882903981264637,10,69,Beijing,Beijing Film Studio,1952,Feature,1.0
+红色邮路,706,0.6691943127962086,13,49,Beijing,Beijing Film Studio,1966,Feature,1.0
+我们是一代人,106,0.09013605442176871,10,38,Northeast,Changchun Film Studio,1960,Feature,1.0
+怒潮,66,0.05560235888795282,16,154,Beijing,August First Film Studio,1963,Feature,1.0
+暴风骤雨,1295,0.9984579799537394,14,85,Beijing,Beijing Film Studio,1961,Feature,1.0
+哈森与加米拉,163,0.1380186282811177,10,111,Shanghai (state),Shanghai Film Studio,1955,Feature,1.0
+两家人,289,0.31828193832599116,10,32,Northeast,Changchun Film Studio,1963,Feature,1.0
+前哨,587,0.4945240101095198,12,23,Northeast,Changchun Film Studio,1959,Feature,1.0
+黄沙绿浪,1176,0.9325931800158604,12,177,Shanghai (state),Haiyan Film Studio,1965,Feature,1.0
+马,83,0.152014652014652,14,21,Northeast,Changchun Film Studio,1956,Feature,1.0
+马,396,0.7252747252747253,10,21,Northeast,Changchun Film Studio,1956,Feature,1.0
+渡江探险,43,0.044605809128630707,10,68,Beijing,August First Film Studio,1958,Feature,1.0
+自有后来人,261,0.22538860103626943,14,77,Northeast,Changchun Film Studio,1963,Feature,1.0
+十二次列车,848,0.9177489177489178,10,70,Beijing,August First Film Studio,1960,Feature,1.0
+渔岛之子,355,0.4318734793187348,11,50,Canton,Pearl River Film Studio,1959,Feature,1.0
+一件提案,121,0.12913553895410887,13,164,Beijing,Beijing Film Studio,1954,Feature,1.0
+我们村里的年轻人（续集）,233,0.2159406858202039,11,31,Northeast,Changchun Film Studio,1963,Feature,1.0
+十三陵水库畅想曲,31,0.029580152671755726,10,62,Beijing,Beijing Film Studio,1958,Feature,1.0
+民主青年进行曲,67,0.05587989991659716,12,135,Beijing,Beijing Film Studio,1950,Feature,1.0
+地雷战,193,0.21208791208791208,14,79,Beijing,August First Film Studio,1962,Feature,1.0
+三毛流浪记,809,0.9711884753901561,11,169,Shanghai (private),Kunlun Film Company,1949,Feature,1.0
+画中人,830,0.6882255389718076,11,38,Northeast,Changchun Film Studio,1958,Feature,1.0
+新儿女英雄传,338,0.20634920634920634,11,100,Beijing,Beijing Film Studio,1951,Feature,1.0
+羊城暗哨,95,0.08217993079584775,14,48,Shanghai (state),Haiyan Film Studio,1957,Feature,1.0
+斩断魔爪,111,0.10561370123691723,10,44,Shanghai (state),Shanghai Film Studio,1954,Feature,1.0
+云雾山中,737,0.7421953675730111,10,39,Northeast,Changchun Film Studio,1959,Feature,1.0
+狼牙山五壮士,402,0.4123076923076923,10,50,Beijing,August First Film Studio,1958,Feature,1.0
+罗汉钱,1152,0.9458128078817734,15,84,Shanghai (state),Jiangnan Film Studio,1957,Opera,1.0
+秋翁遇仙记,926,0.932527693856999,11,26,Shanghai (state),Shanghai Film Studio,1956,Feature,1.0
+英雄儿女,672,0.5213343677269201,11,183,Northeast,Changchun Film Studio,1964,Feature,1.0
+游园惊梦,174,0.40749414519906324,14,85,Beijing,Central Newsreel and Documentary Film Studio,1956,Feature,1.0
+抗旱曲,204,0.2764227642276423,13,43,Xi'an,Xi'an Film Studio,1960,Feature,1.0
+奇袭,120,0.1342281879194631,11,46,Beijing,August First Film Studio,1960,Feature,1.0
+锦上添花,236,0.27634660421545665,21,54,Beijing,Beijing Film Studio,1962,Feature,1.0
+金银滩,1203,0.9693795326349718,10,114,Shanghai (state),Shanghai Film Studio,1953,Feature,1.0
+蔓萝花,243,0.2621359223300971,10,99,Shanghai (state),Haiyan Film Studio,1961,Musical,1.0
+翠岗红旗,92,0.07972270363951472,11,73,Shanghai (state),Shanghai Film Studio,1951,Feature,1.0
+党的女儿,30,0.027700831024930747,11,54,Northeast,Changchun Film Studio,1958,Feature,1.0
+年青的一代,1113,0.8548387096774194,19,151,Shanghai (state),Tianma Film Studio,1965,Feature,1.0
+青春的园地,284,0.2961418143899896,12,97,Shanghai (state),Shanghai Film Studio,1955,Feature,1.0
+地下航线,1085,0.8700882117080995,12,53,Shanghai (state),Tianma Film Studio,1959,Feature,1.0
+鬼神不灵,437,0.9180672268907563,10,43,Beijing,Beijing Film Studio,1950,Feature,1.0
+女司机,678,0.6869300911854104,10,79,Shanghai (state),Shanghai Film Studio,1951,Feature,1.0
+我这一辈子,383,0.3056664006384677,15,44,Shanghai (private),Wenhua Film Company,1950,Feature,1.0
+康庄大道,897,0.9422268907563025,15,131,Northeast,Changchun Film Studio,1959,Feature,1.0
+钢珠飞车,801,0.9196326061997704,10,52,Northeast,Changchun Film Studio,1959,Feature,1.0
+水手长的故事,1165,0.9923339011925043,21,65,Shanghai (state),Haiyan Film Studio,1963,Feature,1.0
+哥俩好,189,0.19915700737618547,15,178,Beijing,August First Film Studio,1962,Feature,1.0
+李双双,677,0.5836206896551724,13,60,Shanghai (state),Haiyan Film Studio,1962,Feature,1.0
+英雄坦克手,754,0.9128329297820823,11,66,Beijing,August First Film Studio,1962,Feature,1.0
+山间铃响马帮来,92,0.08958130477117819,13,42,Shanghai (state),Shanghai Film Studio,1954,Feature,1.0
+冰上姐妹,309,0.2603201347935973,11,67,Northeast,Changchun Film Studio,1959,Feature,1.0
+冲破黎明前的黑暗,84,0.0748663101604278,11,82,Beijing,August First Film Studio,1956,Feature,1.0
+大地重光,72,0.06593406593406594,10,110,Shanghai (state),Shanghai Film Studio,1950,Feature,1.0
+春风吹到诺敏河,1222,0.960691823899371,11,170,Northeast,Northeast Film Studio,1954,Feature,1.0
+冰山上的来客,1093,0.896636587366694,10,94,Northeast,Changchun Film Studio,1963,Feature,1.0
+情探,301,0.2968441814595661,13,46,Shanghai (state),Jiangnan Film Studio,1958,Opera,1.0
+如此多情,59,0.09190031152647975,13,44,Northeast,Changchun Film Studio,1956,Feature,1.0
+水乡的春天,1247,0.981117230527144,12,26,Shanghai (state),Shanghai Film Studio,1955,Feature,1.0
+边寨烽火,957,0.9579579579579579,12,140,Northeast,Changchun Film Studio,1957,Feature,1.0
+不夜城,884,0.6523985239852399,14,156,Shanghai (state),Jiangnan Film Studio,1957,Feature,1.0
+不夜城,885,0.6531365313653137,15,156,Shanghai (state),Jiangnan Film Studio,1957,Feature,1.0
+江山多娇,1035,0.9556786703601108,14,179,Beijing,August First Film Studio,1959,Feature,1.0
+刘三姐,599,0.43914956011730205,11,159,Northeast,Changchun Film Studio,1960,Musical,1.0
+蚕花姑娘,1115,0.9497444633730835,12,55,Shanghai (state),Tianma Film Studio,1963,Feature,1.0
+北国江南,356,0.2514124293785311,14,68,Shanghai (state),Haiyan Film Studio,1963,Feature,1.0
+海阔天空,783,0.6726804123711341,11,104,Beijing,August First Film Studio,1958,Feature,1.0
+沙家店粮站,45,0.0430622009569378,12,54,Northeast,Northeast Film Studio,1954,Feature,1.0
+荒山泪,634,0.5,17,30,Beijing,Beijing Film Studio,1956,Opera,1.0
+荒山泪,655,0.5165615141955836,14,30,Beijing,Beijing Film Studio,1956,Opera,1.0
+芦笙恋歌,174,0.1596330275229358,11,93,Northeast,Changchun Film Studio,1957,Feature,1.0
+水,280,0.4794520547945205,14,148,Beijing,August First Film Studio,1957,Feature,1.0
+一百个放心,563,0.6419612314709237,16,128,Beijing,August First Film Studio,1966,Feature,1.0
+红梅岭,327,0.29863013698630136,10,118,Xi'an,Xi'an Film Studio,1965,Musical,1.0
+哥哥和妹妹,394,0.5051282051282051,12,65,Northeast,Changchun Film Studio,1956,Feature,1.0
+工地青年,110,0.10858835143139191,12,46,Northeast,Changchun Film Studio,1958,Feature,1.0
+凤凰之歌,1053,0.9616438356164384,15,71,Shanghai (state),Jiangnan Film Studio,1957,Feature,1.0
+军歌嘹亮,429,0.38683498647430115,13,124,Xi'an,Xi'an Film Studio,1965,Feature,1.0
+中华女儿,659,0.6416747809152873,12,63,Northeast,Northeast Film Studio,1949,Feature,1.0
+马兰花,394,0.41693121693121693,13,35,Shanghai (state),Haiyan Film Studio,1960,Feature,1.0
+青春的脚步,208,0.21621621621621623,12,69,Northeast,Changchun Film Studio,1957,Feature,1.0
+妈妈要我出嫁,502,0.5590200445434298,10,90,Northeast,Changchun Film Studio,1956,Feature,1.0
+夏天的故事,21,0.020854021847070508,12,71,Northeast,Changchun Film Studio,1955,Feature,1.0
+野火春风斗古城,170,0.14249790444258173,18,39,Beijing,August First Film Studio,1963,Feature,1.0
+战上海,634,0.5183973834832379,10,85,Beijing,August First Film Studio,1959,Feature,1.0
+和平保卫者,626,0.9675425038639877,12,116,Beijing,Beijing Film Studio,1950,Feature,1.0
+今天我休息,654,0.6449704142011834,14,43,Shanghai (state),Haiyan Film Studio,1959,Feature,1.0
+战火中的青春,753,0.6851683348498635,18,41,Northeast,Changchun Film Studio,1959,Feature,1.0
+丽人行,1078,0.8693548387096774,12,40,Shanghai (private),Kunlun Film Company,1949,Feature,1.0
+百岁挂帅,855,0.6213662790697675,10,81,Shanghai (state),Haiyan Film Studio,1959,Opera,1.0
+孙悟空三打白骨精,808,0.7100175746924429,10,19,Shanghai (state),Tianma Film Studio,1960,Opera,1.0
+花为媒,1282,0.9945694336695112,12,33,Northeast,Changchun Film Studio,1963,Feature,1.0
+花为媒,1284,0.9961210240496509,13,33,Northeast,Changchun Film Studio,1963,Feature,1.0
+耕云播雨,607,0.6921322690992018,13,39,Beijing,Beijing Film Studio,1960,Feature,1.0
+激流,142,0.12157534246575342,10,63,Shanghai (state),Haiyan Film Studio,1960,Feature,1.0
+红孩子,1043,0.8167580266249022,17,79,Northeast,Changchun Film Studio,1958,Feature,1.0
+大李小李和老李,828,0.8406091370558376,14,86,Shanghai (state),Tianma Film Studio,1962,Feature,1.0
+胜利重逢,1087,0.993601462522852,10,159,Shanghai (state),Shanghai Film Studio,1951,Feature,1.0
+农家乐,882,0.8963414634146342,10,119,Shanghai (state),Shanghai Film Studio,1950,Feature,1.0
+箭杆河边,1259,0.9960443037974683,10,96,Beijing,Beijing Film Studio,1964,Opera,1.0
+望江亭,1078,0.9826800364630811,18,38,Shanghai (state),Haiyan Film Studio,1958,Opera,1.0
+望江亭,1079,0.98359161349134,14,38,Shanghai (state),Haiyan Film Studio,1958,Opera,1.0
+上饶集中营,454,0.3996478873239437,14,163,Shanghai (state),Shanghai Film Studio,1951,Feature,1.0
+花好月圆,399,0.31666666666666665,16,69,Northeast,Changchun Film Studio,1958,Feature,1.0
+摩雅傣,1211,0.9901880621422731,11,44,Shanghai (state),Haiyan Film Studio,1960,Feature,1.0
+暑假的礼物,708,0.8784119106699751,15,74,Northeast,Changchun Film Studio,1961,Feature,1.0
+心连心,295,0.2669683257918552,10,32,Northeast,Changchun Film Studio,1958,Feature,1.0
+游园惊梦(1960),553,0.7209908735332464,12,26,Beijing,Beijing Film Studio,1960,Opera,1.0
+冬梅,800,0.7497656982193065,10,26,Northeast,Changchun Film Studio,1961,Feature,1.0
+天罗地网,111,0.09635416666666667,15,68,Shanghai (state),Shanghai Film Studio,1955,Feature,1.0
+七十二家房客,969,0.9969135802469136,11,90,Canton,Pearl River Film Studio & Hong Kong Hongtu Film Company,1963,Feature,1.0
+平原游击队,294,0.2739981360671016,10,38,Northeast,Changchun Film Studio,1955,Feature,1.0
+平原游击队,1061,0.9888164026095061,13,38,Northeast,Changchun Film Studio,1955,Feature,1.0
+母女教师,1,9.970089730807576E-4,13,73,Northeast,Changchun Film Studio,1957,Feature,1.0
+上海姑娘,221,0.21027592768791628,10,31,Beijing,Beijing Film Studio,1958,Feature,1.0
+梅兰芳的舞台艺术（上集）,177,0.13480578827113482,10,51,Beijing,Beijing Film Studio,1955,Opera,1.0
+第三次试验,273,0.8100890207715133,12,59,Shanghai (state),Haiyan Film Studio,1958,Artistic Documentary,1.0
+三关排宴,478,0.32807137954701443,13,88,Northeast,Changchun Film Studio,1962,Opera,1.0
+椰林曲,124,0.10598290598290598,11,51,Shanghai (state),Tianma Film Studio,1957,Feature,1.0
+无穷的潜力,320,0.31714568880079286,12,87,Northeast,Northeast Film Studio,1954,Feature,1.0
+逆风千里,17,0.014273719563392108,19,141,Canton,Pearl River Film Studio,1964,Feature,1.0
+猛河的黎明,1036,0.8626144879267277,23,64,Northeast,Changchun Film Studio,1955,Feature,1.0
+万木春,859,0.8901554404145078,10,30,Northeast,Changchun Film Studio,1961,Feature,1.0
+谁是被抛弃的人,390,0.4140127388535032,11,30,Shanghai (state),Haiyan Film Studio,1958,Feature,1.0
+赵小兰,609,0.99185667752443,11,29,Beijing,Beijing Film Studio,1953,Feature,1.0
+巴山红浪,957,0.8629395852119026,14,47,Xi'an,Xi'an Film Studio,1961,Feature,1.0
+伟大的起点,592,0.46909667194928684,15,38,Shanghai (state),Shanghai Film Studio,1954,Feature,1.0
+伟大的起点,593,0.46988906497622823,16,38,Shanghai (state),Shanghai Film Studio,1954,Feature,1.0
+白衣战士,587,0.6352813852813853,11,70,Northeast,Northeast Film Studio,1949,Feature,1.0
+景颇姑娘,671,0.5959147424511545,12,59,Northeast,Changchun Film Studio,1965,Feature,1.0
+武松,110,0.08100147275405008,13,23,Shanghai (state),Tianma Film Studio,1963,Opera,1.0
+一天一夜,483,0.5426966292134832,10,51,Beijing,Beijing Film Studio,1958,Artistic Documentary,1.0
+五朵红云,934,0.9883597883597883,11,34,Beijing,August First Film Studio,1959,Musical,1.0
+五朵红云,937,0.9915343915343915,12,34,Beijing,August First Film Studio,1959,Musical,1.0
+金钥匙,44,0.049217002237136466,11,34,Northeast,Changchun Film Studio,1965,Opera,1.0
+山里的人,871,0.9325481798715204,11,45,Beijing,Beijing Film Studio,1958,Feature,1.0
+寻爱记,96,0.12435233160621761,10,85,Northeast,Changchun Film Studio,1957,Feature,1.0
+北大荒人,643,0.5227642276422764,14,70,Beijing,Beijing Film Studio,1961,Feature,1.0
+白手起家,574,0.8710166919575114,11,70,Northeast,Changchun Film Studio,1958,Artistic Documentary,1.0
+大风浪里的小故事,575,0.6104033970276008,13,83,Shanghai (state),Tianma Film Studio,1958,Artistic Documentary,1.0
+抓壮丁,475,0.4123263888888889,11,22,Beijing,August First Film Studio,1963,Feature,1.0
+红花遍地开,874,0.9520697167755992,10,178,Beijing,Beijing Film Studio,1960,Performance,1.0
+球迷,774,0.781029263370333,10,80,Shanghai (state),Tianma Film Studio,1963,Feature,1.0
+长空比翼,595,0.5293594306049823,18,111,Beijing,August First Film Studio,1958,Feature,1.0
+新局长到来之前,358,0.6404293381037567,10,19,Northeast,Changchun Film Studio,1956,Feature,1.0
+林家铺子,523,0.5298885511651469,15,77,Beijing,Beijing Film Studio,1959,Feature,1.0
+生命的火花,47,0.04284412032816773,13,104,Xi'an,Xi'an Film Studio,1962,Feature,1.0
+生命的火花,48,0.04375569735642662,11,104,Xi'an,Xi'an Film Studio,1962,Feature,1.0
+雷锋,944,0.9682051282051282,14,162,Beijing,August First Film Studio,1964,Feature,1.0
+走向新中国,1058,0.9429590017825312,10,93,Beijing,Beijing Film Studio,1951,Feature,1.0
+虎穴追踪,614,0.5926640926640927,11,55,Northeast,Changchun Film Studio,1956,Feature,1.0
+广场杂技表演,14,0.031818181818181815,10,125,Shanghai (state),Shanghai Film Studio,1955,Performance,1.0
+满意不满意,903,0.8784046692607004,12,168,Northeast,Changchun Film Studio,1963,Feature,1.0
+湖上的斗争,95,0.0823937554206418,11,100,Shanghai (state),Shanghai Film Studio,1955,Feature,1.0
+林则徐,651,0.5420482930890924,18,59,Shanghai (state),Haiyan Film Studio,1959,Feature,1.0
+刘巧儿,1235,0.988,12,145,Northeast,Changchun Film Studio,1956,Opera,1.0
+儿女亲事,663,0.8381795195954488,12,54,Beijing,Beijing Film Studio,1950,Feature,1.0
+青年鲁班,302,0.29235237173281703,10,39,Beijing,Beijing Film Studio,1964,Feature,1.0
+宋景诗,316,0.20282413350449294,12,100,Shanghai (state),Shanghai Film Studio,1955,Feature,1.0
+柯山红日,613,0.4830575256107171,10,54,Beijing,August First Film Studio,1960,Feature,1.0
+红色背篓,1014,0.8863636363636364,10,63,Beijing,Beijing Film Studio,1965,Feature,1.0
+刘胡兰,977,0.9485436893203884,10,55,Northeast,Northeast Film Studio,1950,Feature,1.0
+小足球队,467,0.44688995215311006,12,184,Shanghai (state),Haiyan Film Studio,1965,Feature,1.0
+换了人间,199,0.1778373547810545,12,31,Northeast,Changchun Film Studio,1959,Feature,1.0
+二百五小传,108,0.0972972972972973,15,28,Shanghai (private),Datong Film Company,1949,Feature,1.0
+不拘小节的人,483,0.7691082802547771,11,66,Northeast,Changchun Film Studio,1956,Feature,1.0
+神秧手,309,0.744578313253012,15,70,Northeast,Changchun Film Studio,1960,Feature,1.0
+红色娘子军,357,0.268018018018018,11,62,Shanghai (state),Tianma Film Studio,1961,Feature,1.0
+东进序曲,266,0.2189300411522634,11,61,Beijing,August First Film Studio,1962,Feature,1.0
+祖国的花朵,37,0.04061470911086718,11,91,Northeast,Changchun Film Studio,1955,Feature,1.0
+碧空银花,70,0.06937561942517344,12,91,Xi'an,Xi'an Film Studio,1960,Feature,1.0
+林海雪原,1236,0.8822269807280514,15,43,Beijing,August First Film Studio,1960,Feature,1.0
+燎原,1031,0.8234824281150159,12,158,Shanghai (state),Tianma Film Studio,1962,Feature,1.0
+探亲记,464,0.4225865209471767,14,57,Beijing,Beijing Film Studio,1958,Feature,1.0
+早春二月,420,0.3211009174311927,17,51,Beijing,Beijing Film Studio,1963,Feature,1.0
+闽江橘子红,95,0.09644670050761421,14,29,Shanghai (state),Shanghai Film Studio,1955,Feature,1.0
+淮上人家,313,0.233060312732688,12,130,Shanghai (state),Shanghai Film Studio,1954,Feature,1.0
+智取华山,1376,0.9899280575539569,15,64,Beijing,Beijing Film Studio,1953,Feature,1.0
+昆仑山上一棵草,141,0.19054054054054054,12,32,Beijing,Beijing Film Studio,1962,Feature,1.0
+霓虹灯下的哨兵,242,0.17587209302325582,12,127,Shanghai (state),Tianma Film Studio,1964,Feature,1.0
+山村姐妹,1130,0.9929701230228472,13,89,Beijing,Beijing Film Studio,1965,Feature,1.0
+突破乌江,571,0.5311627906976745,12,25,Beijing,August First Film Studio,1961,Feature,1.0
+为了六十一个阶级弟兄,236,0.33618233618233617,14,39,Beijing,Beijing Film Studio,1960,Feature,1.0
+杨门女将,239,0.14441087613293052,12,36,Beijing,Beijing Film Studio,1960,Opera,1.0
+龙须沟,1005,0.777262180974478,14,60,Beijing,Beijing Film Studio,1952,Feature,1.0
+梅兰芳的舞台艺术（下集）,931,0.8268206039076377,14,19,Beijing,Beijing Film Studio,1956,Opera,1.0
+农奴,714,0.6729500471253534,11,34,Beijing,August First Film Studio,1963,Feature,1.0
+皮包,253,0.55,12,24,Northeast,Changchun Film Studio,1956,Feature,1.0
+雾海夜航,74,0.07716371220020855,11,72,Shanghai (state),Tianma Film Studio,1957,Feature,1.0
+雾海夜航,123,0.12825860271115747,13,72,Shanghai (state),Tianma Film Studio,1957,Feature,1.0
+雪海银山,402,0.6644628099173554,16,43,Xi'an,Xi'an Film Studio,1959,Feature,1.0
+炉火正红,509,0.4614687216681777,13,55,Northeast,Changchun Film Studio,1962,Feature,1.0
+女审,1038,0.9193976970770593,16,156,Shanghai (state),Haiyan Film Studio,1960,Opera,1.0
+大浪淘沙,158,0.10618279569892473,11,86,Canton,Pearl River Film Studio,1966,Feature,1.0
+春水长流,341,0.462059620596206,13,69,Northeast,Changchun Film Studio,1958,Feature,1.0
+南海的早晨,1030,0.9865900383141762,11,115,Northeast,Changchun Film Studio,1964,Feature,1.0
+夫妇进行曲,1025,0.8591785414920369,16,35,Shanghai (private),Changjiang Film Studio,1951,Feature,1.0
+红河激浪,302,0.25811965811965815,12,97,Beijing,Beijing Film Studio,1963,Feature,1.0
+红旗歌,588,0.5166959578207382,11,77,Northeast,Northeast Film Studio,1950,Feature,1.0
+飞刀华,455,0.3939393939393939,12,132,Shanghai (state),Haiyan Film Studio,1963,Feature,1.0
+乌鸦与麻雀,851,0.6607142857142857,11,34,Shanghai (private),Kunlun Film Company,1949,Feature,1.0
+柜台,430,0.5295566502463054,13,51,Shanghai (state),Tianma Film Studio,1965,Feature,1.0
+高歌猛进,187,0.18984771573604062,15,97,Northeast,Northeast Film Studio,1950,Feature,1.0
+葡萄熟了的时候,971,0.9594861660079052,12,37,Northeast,Northeast Film Studio,1952,Feature,1.0
+浪涛滚滚,229,0.1642754662840746,13,125,Beijing,Beijing Film Studio,1965,Feature,1.0
+沙漠追匪记,853,0.9988290398126464,11,29,Shanghai (state),Tianma Film Studio,1959,Feature,1.0
+渡江侦察记,31,0.024256651017214397,14,71,Shanghai (state),Shanghai Film Studio,1954,Feature,1.0
+青春红似火,1027,0.9725378787878788,14,47,Beijing,August First Film Studio,1966,Feature,1.0
+这决不是小事情,209,0.2760898282694848,16,42,Beijing,August First Film Studio,1956,Feature,1.0
+以革命的名义,261,0.14638250140213124,15,25,Beijing,Beijing Film Studio,1960,Feature,1.0
+槐树庄,1037,0.8970588235294118,14,173,Beijing,August First Film Studio,1962,Feature,1.0
+搜书院,51,0.03563941299790356,13,33,Shanghai (state),Shanghai Film Studio,1956,Opera,1.0
+乔老爷上轿,79,0.0950661853188929,14,117,Shanghai (state),Haiyan Film Studio,1959,Feature,1.0
+跟踪追击,145,0.12414383561643835,14,49,Canton,Pearl River Film Studio,1963,Feature,1.0
+齐王求将,977,0.7872683319903304,11,164,Canton,Pearl River Film Studio & Hong Kong Hongtu Film Company,1962,Opera,1.0
+战斗里成长,807,0.7263726372637264,14,67,Beijing,August First Film Studio,1957,Feature,1.0
+庵堂认母,521,0.7464183381088825,14,20,Shanghai (state),Shanghai Film Studio,1956,Opera,1.0
+向阳花开,22,0.021505376344086023,12,78,Shanghai (state),Tianma Film Studio,1960,Feature,1.0
+母亲,79,0.0632,15,165,Shanghai (private),Wenhua Film Company,1949,Feature,1.0
+路考,235,0.19616026711185308,14,46,Northeast,Changchun Film Studio,1965,Feature,1.0
+千万不要忘记,1016,0.8516345347862532,14,65,Beijing,Beijing Film Studio,1964,Feature,1.0
+汾水长流,746,0.5651515151515152,13,97,Beijing,Beijing Film Studio,1963,Feature,1.0
+神秘的旅伴,1036,0.9971126082771896,12,23,Northeast,Changchun Film Studio,1955,Feature,1.0
+小二黑结婚,123,0.12933753943217666,12,117,Beijing,Beijing Film Studio,1964,Feature,1.0
+苗家儿女,93,0.09393939393939393,13,88,Shanghai (state),Jiangnan Film Studio,1958,Feature,1.0
+天山歌声,910,0.935251798561151,11,86,Xi'an,Xi'an Film Studio,1959,Feature,1.0
+花儿朵朵,841,0.9905771495877503,12,132,Beijing,Beijing Film Studio,1962,Feature,1.0
+五更寒,1098,0.8413793103448276,15,31,Beijing,August First Film Studio,1957,Feature,1.0
+两个小足球队,61,0.06573275862068965,11,113,Shanghai (state),Shanghai Film Studio,1956,Feature,1.0
+烽火列车,34,0.030797101449275364,12,52,Northeast,Changchun Film Studio,1960,Feature,1.0
+岸边激浪,89,0.10090702947845805,15,66,Beijing,August First Film Studio,1964,Feature,1.0
+陕北牧歌,805,0.8455882352941176,12,39,Beijing,Beijing Film Studio,1951,Feature,1.0
+无形的战线,739,0.6294718909710392,12,22,Northeast,Northeast Film Studio,1949,Feature,1.0
+沙漠里的战斗,1295,0.9969207082371054,12,30,Shanghai (state),Shanghai Film Studio,1956,Feature,1.0
+龙马精神,60,0.04754358161648178,12,68,Beijing,Beijing Film Studio,1965,Feature,1.0
+尚小云舞台艺术,87,0.08123249299719888,13,42,Xi'an,Xi'an Film Studio,1962,Opera,1.0
+红石钟声,456,0.38513513513513514,13,75,Beijing,Beijing Film Studio,1966,Feature,1.0
+扑不灭的火焰,69,0.05793450881612091,11,93,Northeast,Changchun Film Studio,1956,Feature,1.0
+51号兵站,651,0.5771276595744681,11,34,Shanghai (state),Haiyan Film Studio,1961,Feature,1.0
+永恒的友谊,115,0.10295434198746643,12,37,Xi'an,Xi'an Film Studio,1960,Feature,1.0
+蝴蝶杯,126,0.09224011713030747,12,25,Northeast,Changchun Film Studio,1957,Opera,1.0
+延安游击队,115,0.10295434198746643,12,37,Xi'an,Xi'an Film Studio,1961,Feature,1.0
+刘明珠,344,0.26339969372128635,12,39,Canton,Pearl River Film Studio & Hong Kong Hongtu Film Company,1964,Feature,1.0
+刘明珠,1258,0.9632465543644717,17,39,Canton,Pearl River Film Studio & Hong Kong Hongtu Film Company,1964,Feature,1.0
+青山恋,838,0.7370272647317502,14,45,Shanghai (state),Haiyan Film Studio,1964,Feature,1.0
+未完成的喜剧,483,0.5062893081761006,11,93,Northeast,Changchun Film Studio,1957,Feature,1.0
+五彩路,96,0.0898876404494382,11,25,Beijing,Beijing Film Studio,1960,Feature,1.0
+乘风破浪,480,0.42105263157894735,12,40,Shanghai (state),Jiangnan Film Studio,1957,Feature,1.0
+枯木逢春,329,0.2878390201224847,16,53,Shanghai (state),Haiyan Film Studio,1961,Feature,1.0
+鸡毛信,666,0.7466367713004485,11,59,Shanghai (state),Shanghai Film Studio,1954,Feature,1.0
+友谊,44,0.05282112845138055,11,18,Beijing,August First Film Studio,1959,Feature,1.0
+寂静的山林,774,0.6813380281690141,11,28,Northeast,Changchun Film Studio,1957,Feature,1.0
+护士日记,1140,0.9921671018276762,13,62,Shanghai (state),Jiangnan Film Studio,1957,Feature,1.0
+革命家庭,861,0.7592592592592593,13,90,Beijing,Beijing Film Studio,1960,Feature,1.0
+革命家庭,867,0.7645502645502645,17,90,Beijing,Beijing Film Studio,1960,Feature,1.0
+辽远的乡村,410,0.38497652582159625,12,138,Northeast,Northeast Film Studio,1950,Feature,1.0
+韩江花似锦,385,0.35714285714285715,13,51,Canton,Pearl River Film Studio,1962,Opera,1.0
+秘密图纸,577,0.6217672413793104,13,56,Beijing,August First Film Studio,1965,Feature,1.0
+三年早知道,866,0.9020833333333333,11,52,Northeast,Changchun Film Studio,1958,Feature,1.0
+洛神,561,0.7470039946737683,11,21,Beijing,Beijing Film Studio,1956,Opera,1.0
+女理发师,454,0.7707979626485568,13,33,Shanghai (state),Tianma Film Studio,1962,Feature,1.0
+球场风波,307,0.3373626373626374,11,106,Shanghai (state),Haiyan Film Studio,1957,Feature,1.0
+秦娘美,1232,0.9911504424778761,15,75,Shanghai (state),Haiyan Film Studio,1960,Opera,1.0
+打击侵略者,1081,0.9791666666666666,13,101,Beijing,August First Film Studio,1965,Feature,1.0
+黎明的河边,46,0.054502369668246446,12,38,Northeast,Changchun Film Studio,1958,Feature,1.0
+碧海丹心,872,0.6998394863563403,12,118,Beijing,August First Film Studio,1962,Feature,1.0
+独立大队,1018,0.7897595034910784,15,79,Northeast,Changchun Film Studio,1964,Feature,1.0
+洞箫横吹,279,0.2569060773480663,12,45,Shanghai (state),Haiyan Film Studio,1957,Feature,1.0
+洞箫横吹,408,0.3756906077348066,11,45,Shanghai (state),Haiyan Film Studio,1957,Feature,1.0
+回民支队,1176,0.9568755085435313,11,75,Beijing,August First Film Studio,1959,Feature,1.0
+三朵小红花,865,0.9874429223744292,12,15,Beijing,Beijing Film Studio,1965,Opera,1.0
+赤峰号,176,0.20927467300832342,14,25,Beijing,August First Film Studio,1959,Feature,1.0
+鲁班的传说,565,0.5836776859504132,12,103,Shanghai (state),Jiangnan Film Studio,1958,Feature,1.0
+团结起来到明天,1143,0.9982532751091703,12,183,Shanghai (state),Shanghai Film Studio,1951,Feature,1.0
+生活的浪花,1183,0.9672935404742437,12,42,Beijing,Beijing Film Studio,1958,Feature,1.0
+林冲,34,0.031164069660861594,11,22,Shanghai (state),Jiangnan Film Studio,1958,Feature,1.0
+上海之春,318,0.29417206290471787,14,177,Shanghai (state),Tianma Film Studio,1965,Performance,1.0
+舞台姐妹,130,0.10030864197530864,14,165,Shanghai (state),Tianma Film Studio,1965,Feature,1.0
+追鱼,416,0.3891487371375117,13,22,Shanghai (state),Tianma Film Studio,1959,Opera,1.0
+春燕展翅,818,0.9058693244739756,16,25,Beijing,Beijing Film Studio,1963,Performance,1.0
+并肩前进,909,0.9901960784313726,15,50,Northeast,Changchun Film Studio,1958,Feature,1.0
+红霞,264,0.2996594778660613,11,57,Beijing,August First Film Studio,1958,Musical,1.0
+激战前夜,437,0.4844789356984479,11,33,Beijing,August First Film Studio,1957,Feature,1.0
+朝阳沟,367,0.2887490165224233,12,28,Northeast,Changchun Film Studio,1963,Opera,1.0
+鬼话,282,0.8757763975155279,14,21,Northeast,Northeast Film Studio,1951,Feature,1.0
+牧人之子,321,0.26055194805194803,13,31,Northeast,Changchun Film Studio,1957,Feature,1.0
+海鹰,950,0.9368836291913215,11,12,Beijing,August First Film Studio,1959,Feature,1.0
+太阳刚刚出山,173,0.1858216970998926,13,19,Northeast,Changchun Film Studio,1960,Feature,1.0
+女飞行员,1330,0.9379407616361072,17,58,Beijing,Beijing Film Studio,1966,Feature,1.0
+革命历史歌曲表演唱,188,0.16305290546400694,12,67,Beijing,August First Film Studio,1963,Performance,1.0
+六号门,547,0.4695278969957081,11,150,Northeast,Northeast Film Studio,1952,Feature,1.0
+宝山之歌,299,0.7806788511749347,11,34,Northeast,Changchun Film Studio,1958,Artistic Documentary,1.0
+阿福寻宝记,411,0.4910394265232975,13,95,Shanghai (state),Jiangnan Film Studio,1957,Feature,1.0
+李时珍,924,0.7433628318584071,12,64,Shanghai (state),Shanghai Film Studio,1956,Feature,1.0
+魔术师的奇遇,102,0.17926186291739896,17,107,Shanghai (state),Tianma Film Studio,1962,Feature,1.0
+两个巡逻兵,442,0.425,15,71,Shanghai (state),Jiangnan Film Studio,1958,Feature,1.0
+冰雪金达莱,1108,0.9831410825199645,14,32,Northeast,Changchun Film Studio,1963,Feature,1.0
+不能走那条路,602,0.8674351585014409,11,22,Shanghai (state),Shanghai Film Studio,1954,Feature,1.0
+兵临城下,759,0.6236647493837305,15,46,Northeast,Changchun Film Studio,1964,Feature,1.0
+三滴血,1133,0.8127690100430416,14,19,Xi'an,Xi'an Film Studio,1960,Opera,1.0
+南岛风云,146,0.12575366063738158,12,57,Shanghai (state),Shanghai Film Studio,1955,Feature,1.0
+百凤朝阳,74,0.10511363636363637,11,24,Beijing,Beijing Film Studio,1959,Performance,1.0
+百凤朝阳,618,0.8778409090909091,13,24,Beijing,Beijing Film Studio,1959,Performance,1.0
+宝葫芦的秘密,74,0.0910209102091021,14,27,Shanghai (state),Tianma Film Studio,1963,Feature,1.0
+地下尖兵,930,0.8303571428571429,11,55,Northeast,Changchun Film Studio,1957,Feature,1.0
+一日千里,533,0.6612903225806451,14,59,Beijing,August First Film Studio,1958,Feature,1.0
+马兰花开,86,0.07933579335793357,13,31,Northeast,Changchun Film Studio,1956,Feature,1.0
+海上风暴,276,0.2884012539184953,18,62,Shanghai (state),Shanghai Film Studio,1951,Feature,1.0
+小铃铛,13,0.01631116687578419,11,50,Beijing,Beijing Film Studio,1964,Feature,1.0
+红日,339,0.22156862745098038,16,161,Shanghai (state),Tianma Film Studio,1963,Feature,1.0
+返老还童,51,0.06480304955527319,14,52,Beijing,August First Film Studio,1958,Feature,1.0
+彩蝶纷飞,75,0.12953367875647667,11,62,Beijing,Beijing Film Studio,1964,Performance,1.0
+如此爹娘,1037,0.9971153846153846,14,38,Shanghai (state),Haiyan Film Studio,1963,Feature,1.0
+复试,59,0.1059245960502693,13,24,Northeast,Changchun Film Studio,1957,Feature,1.0
+黑山阻击战,390,0.38272816486751715,11,82,Beijing,August First Film Studio,1958,Feature,1.0
+土地,272,0.21316614420062696,12,26,Northeast,Northeast Film Studio,1954,Feature,1.0
+天仙配,718,0.6227233304423244,11,11,Shanghai (state),Shanghai Film Studio,1955,Opera,1.0
+英雄小八路,389,0.3598519888991674,15,77,Shanghai (state),Tianma Film Studio,1961,Feature,1.0
+胜利在望,869,0.6618431073876618,11,48,Beijing,August First Film Studio,1965,Feature,1.0
+南海潮,77,0.05507868383404864,14,73,Canton,Pearl River Film Studio,1962,Feature,1.0
+铁道卫士,16,0.013377926421404682,12,52,Northeast,Changchun Film Studio,1960,Feature,1.0
+悬崖,689,0.6618635926993276,11,55,Northeast,Changchun Film Studio,1958,Feature,1.0
+草原上的人们,768,0.6956521739130435,11,165,Northeast,Northeast Film Studio,1953,Feature,1.0
+草原上的人们,795,0.720108695652174,12,165,Northeast,Northeast Film Studio,1953,Feature,1.0
+罗小林的决心,21,0.04085603112840467,12,50,Northeast,Changchun Film Studio,1955,Feature,1.0
+春满人间,435,0.37694974003466203,15,58,Shanghai (state),Tianma Film Studio,1959,Feature,1.0
+锡城的故事,792,0.6959578207381371,11,36,Northeast,Changchun Film Studio,1959,Feature,1.0
+一颗红心,33,0.03019213174748399,11,12,Northeast,Changchun Film Studio,1965,Opera,1.0
+甲午风云,1160,0.9515996718621821,11,84,Northeast,Changchun Film Studio,1962,Feature,1.0
+勐垅沙,357,0.32903225806451614,11,102,Beijing,August First Film Studio,1960,Feature,1.0
+红珊瑚,1223,0.9951179820992677,11,17,Beijing,August First Film Studio,1961,Feature,1.0
+粮食,351,0.312,12,34,Beijing,Beijing Film Studio,1959,Feature,1.0
+女跳水队员,283,0.25426774483378256,19,115,Northeast,Changchun Film Studio,1964,Feature,1.0
+宇宙锋,677,0.8558786346396966,11,15,Northeast,Northeast Film Studio,1954,Opera,1.0
+南征北战,1120,0.7593220338983051,15,183,Shanghai (state),Shanghai Film Studio,1952,Feature,1.0
+水上春秋,282,0.2549728752260398,11,57,Beijing,Beijing Film Studio,1959,Feature,1.0
+黄浦江的故事,1191,0.9941569282136895,12,173,Shanghai (state),Haiyan Film Studio,1959,Feature,1.0
+董存瑞,121,0.10024855012427507,14,125,Northeast,Changchun Film Studio,1955,Feature,1.0
+风暴,620,0.5223251895534962,15,108,Beijing,Beijing Film Studio,1959,Feature,1.0
+特快列车,121,0.1194471865745311,16,87,Northeast,Changchun Film Studio,1965,Feature,1.0
+英雄诗篇,296,0.3152289669861555,11,30,Canton,Pearl River Film Studio,1960,Feature,1.0
+矿灯,497,0.434061135371179,11,29,Beijing,Beijing Film Studio,1959,Feature,1.0
+牧童投军,699,0.7032193158953722,13,103,Shanghai (state),Haiyan Film Studio,1957,Feature,1.0
+吕梁英雄,533,0.5042573320719016,14,47,Beijing,Beijing Film Studio,1950,Feature,1.0
+缅甸文化代表团访华演出,531,0.9943820224719101,19,138,Shanghai (state),Haiyan Film Studio,1960,Performance,1.0
+白毛女,1258,0.9858934169278997,11,92,Northeast,Northeast Film Studio,1950,Feature,1.0
+三八线上,777,0.8691275167785235,15,48,Beijing,August First Film Studio,1960,Feature,1.0
+三八线上,779,0.8713646532438478,11,48,Beijing,August First Film Studio,1960,Feature,1.0
+三八线上,805,0.9004474272930649,15,48,Beijing,August First Film Studio,1960,Feature,1.0
+烈火中永生,1157,0.6948948948948949,11,152,Beijing,Beijing Film Studio,1965,Feature,1.0
+三毛学生意,24,0.026755852842809364,11,34,Shanghai (state),Tianma Film Studio,1958,Feature,1.0
+表,1254,0.98973954222573,16,57,Shanghai (private),Wenhua Film Company,1949,Feature,1.0
+英雄司机,1209,0.9877450980392157,11,128,Northeast,Northeast Film Studio,1954,Feature,1.0
+传枪记,837,0.9964285714285714,14,29,Northeast,Changchun Film Studio,1965,Opera,1.0
+梁山伯与祝英台,227,0.17762128325508608,11,11,Shanghai (state),Shanghai Film Studio,1954,Opera,1.0
+青春之歌,651,0.3459086078639745,17,124,Beijing,Beijing Film Studio,1959,Feature,1.0
+地道战,1141,0.9870242214532872,16,99,Beijing,August First Film Studio,1965,Feature,1.0
+人欢马叫,1341,0.9970260223048327,16,39,Xi'an,Xi'an Film Studio,1965,Opera,1.0
+第一列快车,26,0.04340567612687813,11,41,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,1.0
+一场风波,827,0.8237051792828686,11,49,Shanghai (state),Shanghai Film Studio,1954,Feature,1.0
+丰收,557,0.5407766990291262,13,33,Northeast,Northeast Film Studio,1953,Feature,1.0
+小兵张嘎,1151,0.9473251028806584,14,105,Beijing,Beijing Film Studio,1963,Feature,1.0
+家庭问题,1084,0.9963235294117647,15,87,Shanghai (state),Tianma Film Studio,1964,Feature,1.0
+谁是凶手,552,0.7540983606557377,12,74,Shanghai (state),Shanghai Film Studio,1956,Feature,1.0
+斗诗亭,1074,0.9880404783808647,18,35,Shanghai (state),Tianma Film Studio,1960,Feature,1.0
+红领巾的故事,789,0.9645476772616137,14,89,Northeast,Changchun Film Studio,1958,Artistic Documentary,1.0
+陈三五娘,33,0.02564102564102564,11,69,Shanghai (state),Tianma Film Studio,1957,Opera,1.0
+小伙伴,100,0.12300123001230012,12,59,Shanghai (state),Shanghai Film Studio,1956,Feature,1.0
+分水岭,1019,0.9769894534995206,14,118,Beijing,August First Film Studio,1964,Feature,1.0
+借东风,684,0.6223839854413102,13,27,Beijing,Beijing Film Studio,1957,Opera,1.0
+草原雄鹰,98,0.09432146294513956,14,30,Beijing,Beijing Film Studio,1964,Feature,1.0
+小白旗的风波,223,0.3284241531664212,12,42,Shanghai (state),Shanghai Film Studio,1956,Feature,1.0
+金铃传,797,0.7258652094717668,11,64,Beijing,August First Film Studio,1958,Feature,1.0
+穆桂英挂帅,282,0.30486486486486486,11,89,Beijing,Central Newsreel and Documentary Film Studio,1959,Opera,1.0
+国庆十点钟,1082,0.9712746858168761,11,122,Northeast,Changchun Film Studio,1956,Feature,1.0
+新队员,222,0.25813953488372093,13,43,Canton,Pearl River Film Studio,1960,Feature,1.0
+毛子佩闯宫,378,0.3181818181818182,11,25,Canton,Pearl River Film Studio & Hong Kong Hongtu Film Company,1963,Opera,1.0
+春催桃李,509,0.4661172161172161,13,58,Shanghai (state),Haiyan Film Studio,1961,Feature,1.0
+群英会,1131,0.952020202020202,11,10,Beijing,Beijing Film Studio,1957,Opera,1.0
+宝莲灯,487,0.505711318795431,13,48,Shanghai (state),Tianma Film Studio,1959,Musical,1.0
+为了和平,1092,0.8544600938967136,13,140,Shanghai (state),Shanghai Film Studio,1956,Feature,1.0
+女篮5号,668,0.6466602129719264,18,175,Shanghai (state),Tianma Film Studio,1957,Feature,1.0
+光芒万丈,770,0.7921810699588477,13,125,Northeast,Northeast Film Studio,1949,Feature,1.0
+英雄岛,661,0.8200992555831266,12,56,Beijing,August First Film Studio,1959,Feature,1.0
+苦菜花,908,0.6957854406130268,14,177,Beijing,August First Film Studio,1965,Feature,1.0
+再生记,769,0.6606529209621993,12,88,Northeast,Changchun Film Studio,1960,Feature,1.0
+徐秋影案件,1063,0.9743354720439963,15,82,Northeast,Changchun Film Studio,1958,Feature,1.0
+服务员,62,0.08985507246376812,16,40,Northeast,Changchun Film Studio,1958,Artistic Documentary,1.0
+哀乐中年,540,0.43724696356275305,12,97,Shanghai (private),Wenhua Film Company,1949,Feature,1.0
+红鹰展翅,70,0.07007007007007007,11,62,Beijing,August First Film Studio,1960,Feature,1.0
+柳毅传书,513,0.40172278778386844,11,11,Northeast,Changchun Film Studio,1962,Opera,1.0
+爱厂如家,814,0.9146067415730337,11,176,Shanghai (state),Jiangnan Film Studio,1958,Artistic Documentary,1.0
+老兵新传,26,0.020186335403726708,11,53,Shanghai (state),Haiyan Film Studio,1959,Feature,1.0
+暴风中的雄鹰,1160,0.9634551495016611,11,41,Northeast,Changchun Film Studio,1957,Feature,1.0
+光荣人家,50,0.05181347150259067,11,35,Northeast,Northeast Film Studio,1950,Feature,1.0
+光荣人家,324,0.33575129533678755,13,35,Northeast,Northeast Film Studio,1950,Feature,1.0
+光荣人家,820,0.8497409326424871,13,35,Northeast,Northeast Film Studio,1950,Feature,1.0
+十五贯,803,0.5861313868613138,15,33,Shanghai (state),Shanghai Film Studio,1956,Opera,1.0
+海上神鹰,980,0.9919028340080972,13,49,Northeast,Changchun Film Studio,1959,Feature,1.0
+红鹰,219,0.24579124579124578,14,29,Beijing,August First Film Studio,1960,Musical,1.0
+红鹰,220,0.24691358024691357,12,29,Beijing,August First Film Studio,1960,Musical,1.0
+红鹰,740,0.8305274971941639,11,29,Beijing,August First Film Studio,1960,Musical,1.0
+上甘岭,1190,0.8002689979825152,11,20,Northeast,Changchun Film Studio,1956,Feature,1.0
+还魂记,490,0.35328046142754144,12,11,Northeast,Changchun Film Studio,1960,Opera,1.0
+家,389,0.2679063360881543,13,42,Shanghai (state),Shanghai Film Studio,1956,Feature,1.0
+笑逐颜开,264,0.21204819277108433,15,42,Northeast,Changchun Film Studio & Harbin Film Studio,1959,Feature,1.0
+情长谊深,709,0.5933054393305439,11,48,Shanghai (state),Tianma Film Studio,1957,Feature,1.0
+阿诗玛,216,0.21011673151750973,12,54,Shanghai (state),Haiyan Film Studio,1964,Feature,1.0
+铁道游击队,900,0.8982035928143712,11,41,Shanghai (state),Shanghai Film Studio,1956,Feature,1.0
+兰兰和冬冬,440,0.6758832565284179,12,55,Shanghai (state),Tianma Film Studio,1958,Feature,1.0
+丰收之后,723,0.5715415019762846,17,135,Shanghai (state),Haiyan Film Studio,1964,Feature,1.0
+小刀会,267,0.26125244618395305,11,103,Shanghai (state),Tianma Film Studio,1961,Musical,1.0
+三个母亲,543,0.46055979643765904,11,102,Shanghai (state),Haiyan Film Studio,1959,Feature,1.0
+桃花扇,123,0.08945454545454545,13,45,Xi'an,Xi'an Film Studio,1963,Feature,1.0
+金沙江畔,872,0.7669305189094108,11,60,Shanghai (state),Tianma Film Studio,1963,Feature,1.0
+患难之交,774,0.7113970588235294,11,18,Northeast,Changchun Film Studio,1958,Feature,1.0
+带兵的人,307,0.2577665827036104,15,93,Beijing,August First Film Studio,1964,Feature,1.0
+马戏团的新节目,292,0.2510748065348237,13,70,Northeast,Changchun Film Studio,1961,Feature,1.0
+马戏团的新节目,295,0.25365434221840066,15,70,Northeast,Changchun Film Studio,1961,Feature,1.0
+万水千山,493,0.42981691368788144,11,67,Beijing,August First Film Studio,1959,Feature,1.0
+三进山城,1025,0.9678942398489141,14,117,Northeast,Changchun Film Studio,1965,Feature,1.0
+停战以后,1013,0.7103786816269285,14,78,Beijing,Beijing Film Studio,1962,Feature,1.0
+鄂尔多斯风暴,59,0.057004830917874394,12,161,Beijing,August First Film Studio,1962,Feature,1.0
+春雷,506,0.6597131681877445,11,47,Beijing,Beijing Film Studio,1961,Musical,1.0
+羌笛颂,794,0.6711749788672866,16,63,Northeast,Changchun Film Studio,1960,Feature,1.0
+东方红,486,0.3375,13,194,Beijing,August First Film Studio & Beijing Film Studio & Central Newsreel and Documentary Film Studio,1965,Performance,1.0
+女社长,316,0.2875341219290264,13,44,Northeast,Changchun Film Studio,1958,Feature,1.0
+山村新曲,1260,0.9929078014184397,11,42,Canton,Pearl River Film Studio,1965,Opera,1.0
+我们村里的年轻人（上集）,978,0.8225399495374264,12,87,Northeast,Changchun Film Studio,1959,Feature,1.0
+山村会计,535,0.6114285714285714,17,30,Northeast,Changchun Film Studio,1965,Feature,1.0
+赵一曼,604,0.546112115732369,13,69,Northeast,Northeast Film Studio,1950,Feature,1.0
+祝福,456,0.40896860986547084,13,33,Beijing,Beijing Film Studio,1956,Feature,1.0
+英雄虎胆,176,0.16842105263157894,11,21,Beijing,August First Film Studio,1958,Feature,1.0
+古刹钟声,428,0.45195353748680045,12,26,Northeast,Changchun Film Studio,1958,Feature,1.0
+落水记,20,0.02358490566037736,14,36,Shanghai (state),Shanghai Film Studio,1956,Feature,1.0
+五朵金花,672,0.5863874345549738,11,75,Northeast,Changchun Film Studio,1959,Feature,1.0
+聂耳,88,0.06616541353383458,12,167,Shanghai (state),Haiyan Film Studio,1959,Feature,1.0
+欢天喜地,374,0.47522236340533675,12,139,Shanghai (private),Datong Film Company,1949,Feature,1.0
+欢天喜地,560,0.7115628970775095,11,139,Shanghai (private),Datong Film Company,1949,Feature,1.0
+柳堡的故事,748,0.7898627243928195,13,54,Beijing,August First Film Studio,1957,Feature,1.0
+春天来了,1121,0.9876651982378855,12,83,Shanghai (state),Shanghai Film Studio,1956,Feature,1.0
+钢铁战士,970,0.8531222515391381,15,82,Northeast,Northeast Film Studio,1950,Feature,1.0
+卫国保家,990,0.9392789373814042,11,66,Northeast,Northeast Film Studio,1950,Feature,1.0
+海魂,683,0.6419172932330827,14,134,Shanghai (state),Haiyan Film Studio,1957,Feature,1.0
+永不消逝的电波,457,0.3462121212121212,11,52,Beijing,August First Film Studio,1958,Feature,1.0

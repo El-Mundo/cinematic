@@ -16,8 +16,9 @@ public class CrowdResults {
 			HEAD_BOXES = "CV/crowd/head_boxes.csv",
 			FOUND_FRAMES = "CV/crowd/found_frames.csv",
 			FRAME_COUNTS = "CV/crowd/processed_videos.csv";
-	private static String filerType = "Performance"; //Set a type to filter films, otherwise keep all
-	private static final boolean RUN_ALL_TYPES = true; //Set to true to run all types, otherwise only run the type above
+	private static String filerType = ""; //Set a type to filter films, otherwise keep all
+	private static final boolean RUN_ALL_TYPES = false; //Set to true to run all types, otherwise only run the type above
+	private static final boolean MAXIMUM_ONLY = true; //Set to true to only run the maximum number of heads per film
 
 	int numPeople, numHeads;
 	public CrowdResults() {
@@ -164,6 +165,9 @@ public class CrowdResults {
 		String output = "CV/crowd_results.csv";
 		if(!filerType.isBlank())
 			output = "CV/crowd/crowd_results-" + filerType + ".csv";
+		if(MAXIMUM_ONLY)
+			output = output.replace(".csv", "-max.csv");
+		
 		BufferedWriter bw = new BufferedWriter(new FileWriter(output));
 		bw.write("film,frame,pos,num_people,num_heads,geo_category,production,year,type,n_heads\n");
 		for(String key : keys) {
@@ -213,6 +217,10 @@ public class CrowdResults {
 			double normHeads = 0.0;
 			if(maxHeads > 0.001) {
 				normHeads = (double)numHeads / (double)maxHeads;
+			}
+			if(MAXIMUM_ONLY) {
+				if(numHeads != maxHeads)
+					continue;
 			}
 			bw.write(key + "," + pos + "," + numPeople + "," + numHeads + "," + cat + "," + studio + "," + year + "," + type + "," + normHeads + "\n");
 		}
