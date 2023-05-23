@@ -30,6 +30,12 @@ CV/thumbnails/cache/
 CV/models/
 #Ignore all CV boxes
 CV/crowd/boxes.csv
+CV/crowd/boxes-Soviet.csv
+CV/crowd/head_boxes-Soviet.csv
+CV/crowd/found_frames-Soviet.csv
+CV/crowd/boxes-Hollywood.csv
+CV/crowd/head_boxes-Hollywood.csv
+CV/crowd/found_frames-Hollywood.csv
 
 ##################### PYTHON IGNORE ##########################
 # Byte-compiled / optimized / DLL files

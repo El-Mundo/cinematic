@@ -12,13 +12,14 @@ import java.util.HashMap;
 import OCR.JAVA.Film;
 
 public class CrowdResults {
-	private static final String PERSON_BOXES = "CV/crowd/boxes.csv",
-			HEAD_BOXES = "CV/crowd/head_boxes.csv",
-			FOUND_FRAMES = "CV/crowd/found_frames.csv",
+	private static final String PERSON_BOXES = "CV/crowd/boxes-Hollywood.csv",
+			HEAD_BOXES = "CV/crowd/head_boxes-Hollywood.csv",
+			FOUND_FRAMES = "CV/crowd/found_frames-Hollywood.csv",
 			FRAME_COUNTS = "CV/crowd/processed_videos.csv";
+	private static boolean NON_CHN = true; //The metadata only contains Chinese films, so some auto-generated info must be applied to non-Chinese films
 	private static String filerType = ""; //Set a type to filter films, otherwise keep all
 	private static final boolean RUN_ALL_TYPES = false; //Set to true to run all types, otherwise only run the type above
-	private static final boolean MAXIMUM_ONLY = true; //Set to true to only run the maximum number of heads per film
+	private static final boolean MAXIMUM_ONLY = false; //Set to true to only run the maximum number of heads per film
 
 	int numPeople, numHeads;
 	public CrowdResults() {
@@ -162,7 +163,7 @@ public class CrowdResults {
 		}
 
 		// Write results to an integrated file
-		String output = "CV/crowd_results.csv";
+		String output = "CV/crowd_results-Hollywood.csv";
 		if(!filerType.isBlank())
 			output = "CV/crowd/crowd_results-" + filerType + ".csv";
 		if(MAXIMUM_ONLY)
@@ -178,25 +179,38 @@ public class CrowdResults {
 			int total = filmToFrameCount.get(film);
 			double pos = (double)frame / (double)total;
 			if(pos > 1.0000) System.out.println("Found a frame with pos > 1: " + key);
-			String[] cats = filmObj.getCategory();
-			String cat = "";
-			if(cats.length > 1) {
-				boolean hkct = false;
-				if(cats[0].equals("Canton") && cats[1].equals("Hong Kong"))
-					hkct = true;
-				else if (cats[0].equals("Hong Kong") && cats[1].equals("Canton"))
-					hkct = true;
-				if(!hkct)
-					System.out.println("Found an unexpected multi-region film: " + film);
-				else {
-					cat = "Canton";
-				}
+
+			String cat;
+			String studio;
+			int year;
+			String type;
+
+			if(NON_CHN) {
+				cat = "Non-Chinese";
+				studio = "Non-Chinese";
+				year = 1950;
+				type = "Feature";
 			}else{
-				cat = cats[0];
+				String[] cats = filmObj.getCategory();
+				cat = "";
+				if(cats.length > 1) {
+					boolean hkct = false;
+					if(cats[0].equals("Canton") && cats[1].equals("Hong Kong"))
+						hkct = true;
+					else if (cats[0].equals("Hong Kong") && cats[1].equals("Canton"))
+						hkct = true;
+					if(!hkct)
+						System.out.println("Found an unexpected multi-region film: " + film);
+					else {
+						cat = "Canton";
+					}
+				}else{
+					cat = cats[0];
+				}
+				studio = filmObj.productionToString();
+				year = filmObj.year;
+				type = filmObj.getFilmType();
 			}
-			String studio = filmObj.productionToString();
-			int year = filmObj.year;
-			String type = filmObj.getFilmType();
 
 			if(!filerType.isBlank())
 				if(!filerType.equals(type))
