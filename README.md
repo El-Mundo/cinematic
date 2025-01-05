@@ -2,6 +2,12 @@
 
 This project preserves the information about 732 Chinese films produced in the "Seventeen Years Period" (1949-1966).
 
+## Documents
+
+[Design Report](https://github.com/El-Mundo/cinematic/blob/master/quantitative_film_analysis_github.pdf)
+
+[Video Document](https://github.com/El-Mundo/cinematic/blob/master/VideoDocument.pdf)
+
 As the project consists of several parts focusing on different technical frameworks, please refer to the video below and [the video document](https://github.com/El-Mundo/cinematic/blob/master/VideoDocument.pdf) for a full demonstration of its functions.
 
 https://github.com/user-attachments/assets/2451f37f-54b3-4b92-9559-7d2b2d0c0110
